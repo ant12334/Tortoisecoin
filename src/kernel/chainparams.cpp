@@ -88,15 +88,15 @@ public:
         consensus.signet_challenge.clear();
         consensus.nSubsidyHalvingInterval = 210000;
         consensus.script_flag_exceptions.emplace( // BIP16 exception
-            uint256{"00000000000002dc756eebf4f49723ed8d30cc28a5f108eb94b1ba88ac4f9c22"}, SCRIPT_VERIFY_NONE);
+            uint256{}, SCRIPT_VERIFY_NONE);
         consensus.script_flag_exceptions.emplace( // Taproot exception
-            uint256{"0000000000000000000f14c35b2d841e986ab5441de8c585d5ffe55ea1e395ad"}, SCRIPT_VERIFY_P2SH | SCRIPT_VERIFY_WITNESS);
-        consensus.BIP34Height = 227931;
-        consensus.BIP34Hash = uint256{"000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"};
-        consensus.BIP65Height = 388381; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
-        consensus.BIP66Height = 363725; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
-        consensus.CSVHeight = 419328; // 000000000000000004a1b34462cb8aeebd5799177f7a29cf28f2d1961716b5b5
-        consensus.SegwitHeight = 481824; // 0000000000000000001c8018d9cb3b742ef25114f27563e3fc4a1902167f9893
+            uint256{}, SCRIPT_VERIFY_P2SH | SCRIPT_VERIFY_WITNESS);
+        consensus.BIP34Height = 0;
+        consensus.BIP34Hash = uint256{};
+        consensus.BIP65Height = 0; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
+        consensus.BIP66Height = 0; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
+        consensus.CSVHeight = 0; // 000000000000000004a1b34462cb8aeebd5799177f7a29cf28f2d1961716b5b5
+        consensus.SegwitHeight = 0; // 0000000000000000001c8018d9cb3b742ef25114f27563e3fc4a1902167f9893
         consensus.MinBIP9WarningHeight = 483840; // segwit activation height + miner confirmation window
         consensus.powLimit = uint256{"00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff"};
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
@@ -127,10 +127,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xf9;
+        pchMessageStart[0] = 0x7e;
         pchMessageStart[1] = 0xbe;
-        pchMessageStart[2] = 0xb4;
-        pchMessageStart[3] = 0xd9;
+        pchMessageStart[2] = 0x3d;
+        pchMessageStart[3] = 0x1b;
         nDefaultPort = 8333;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 720;
@@ -156,13 +156,13 @@ public:
         vSeeds.emplace_back("seed.tortoisecoin.wiz.biz."); // Jason Maurice
         vSeeds.emplace_back("seed.mainnet.achownodes.xyz."); // Ava Chow, only supports x1, x5, x9, x49, x809, x849, xd, x400, x404, x408, x448, xc08, xc48, x40c
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,24);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,128);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-        bech32_hrp = "bc";
+        bech32_hrp = "tc";
 
         vFixedSeeds = std::vector<uint8_t>(std::begin(chainparams_seed_main), std::end(chainparams_seed_main));
 
@@ -170,25 +170,13 @@ public:
         m_is_mockable_chain = false;
 
         m_assumeutxo_data = {
-            {
-                .height = 840'000,
-                .hash_serialized = AssumeutxoHash{uint256{"a2a5521b1b5ab65f67818e5e8eccabb7171a517f9e2382208f77687310768f96"}},
-                .m_chain_tx_count = 991032194,
-                .blockhash = consteval_ctor(uint256{"0000000000000000000320283a032748cef8227873ff4872689bf23f1cda83a5"}),
-            },
-            {
-                .height = 880'000,
-                .hash_serialized = AssumeutxoHash{uint256{"dbd190983eaf433ef7c15f78a278ae42c00ef52e0fd2a54953782175fbadcea9"}},
-                .m_chain_tx_count = 1145604538,
-                .blockhash = consteval_ctor(uint256{"000000000000000000010b17283c3c400507969a9c2afd1dcf2082ec5cca2880"}),
-            }
         };
 
         chainTxData = ChainTxData{
             // Data from RPC: getchaintxstats 4096 00000000000000000001b658dd1120e82e66d2790811f89ede9742ada3ed6d77
-            .nTime    = 1741017141,
-            .tx_count = 1161875261,
-            .dTxRate  = 4.620728156243148,
+            .nTime    = 0,
+            .tx_count = 0,
+            .dTxRate  = 0,
         };
     }
 };
@@ -259,13 +247,13 @@ public:
         vSeeds.emplace_back("testnet-seed.bluematt.me."); // Just a static list of stable node(s), only supports x9
         vSeeds.emplace_back("seed.testnet.achownodes.xyz."); // Ava Chow, only supports x1, x5, x9, x49, x809, x849, xd, x400, x404, x408, x448, xc08, xc48, x40c
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,85);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        bech32_hrp = "tb";
+        bech32_hrp = "bb";
 
         vFixedSeeds = std::vector<uint8_t>(std::begin(chainparams_seed_test), std::end(chainparams_seed_test));
 
