@@ -335,8 +335,8 @@ target_link_libraries(bitcoin_node
 # Tortoisecoin Core bitcoind.
 if(BUILD_DAEMON)
   add_executable(bitcoind
-    bitcoind.cpp
-    init/bitcoind.cpp
+    tortoisecoind.cpp
+    init/tortoisecoind.cpp
   )
   add_windows_resources(bitcoind bitcoind-res.rc)
   target_link_libraries(bitcoind
@@ -348,7 +348,7 @@ if(BUILD_DAEMON)
 endif()
 if(ENABLE_IPC AND BUILD_DAEMON)
   add_executable(tortoisecoin-node
-    bitcoind.cpp
+    tortoisecoind.cpp
     init/tortoisecoin-node.cpp
   )
   target_link_libraries(tortoisecoin-node

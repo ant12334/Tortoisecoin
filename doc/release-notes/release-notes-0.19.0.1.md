@@ -945,7 +945,7 @@ Build system changes
 - #16885 Update tx-size-small comment with relevant CVE disclosure (instagibbs)
 - #16900 Fix doxygen comment for SignTransaction in rpc/rawtransaction_util (MarcoFalke)
 - #16914 Update homebrew instruction for doxygen (Sjors)
-- #16912 Remove Doxygen intro from src/bitcoind.cpp (ch4ot1c)
+- #16912 Remove Doxygen intro from src/tortoisecoind.cpp (ch4ot1c)
 - #16960 replace outdated OpenSSL comment in test README (fanquake)
 - #16968 Remove MSVC update step from translation process (laanwj)
 - #16953 Improve test READMEs (fjahr)

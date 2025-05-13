@@ -735,7 +735,7 @@ Threads
 -------
 
 - [Main thread (`bitcoind`)](https://doxygen.bitcoincore.org/bitcoind_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97)
-  : Started from `main()` in `bitcoind.cpp`. Responsible for starting up and
+  : Started from `main()` in `tortoisecoind.cpp`. Responsible for starting up and
   shutting down the application.
 
 - [Init load (`b-initload`)](https://doxygen.bitcoincore.org/namespacenode.html#ab4305679079866f0f420f7dbf278381d)
