@@ -58,13 +58,13 @@
         <translation type="unfinished">&amp;Velg</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Dette er Bitcoin-adressene dine for å sende betalinger. Kontroller alltid beløpet og mottakeradressen før du sender mynter.</translation>
+        <source>These are your Tortoisecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Dette er Tortoisecoin-adressene dine for å sende betalinger. Kontroller alltid beløpet og mottakeradressen før du sender mynter.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Tortoisecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Dette er Bitcoin-adressene dine for å motta betalinger. Bruk knappen ‘Opprett ny mottaksadresse’ i mottaksfanen for å opprette nye adresser.Signering er kun mulig med adresser av typen ‘legacy’.</translation>
+        <translation type="unfinished">Dette er Tortoisecoin-adressene dine for å motta betalinger. Bruk knappen ‘Opprett ny mottaksadresse’ i mottaksfanen for å opprette nye adresser.Signering er kun mulig med adresser av typen ‘legacy’.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -416,8 +416,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Proxy er aktivert: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Send mynter til en Bitcoin-adresse</translation>
+        <source>Send coins to a Tortoisecoin address</source>
+        <translation type="unfinished">Send mynter til en Tortoisecoin-adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -456,16 +456,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Signer &amp;melding…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Signer meldinger med Bitcoin-adressene dine for å bevise at du eier dem</translation>
+        <source>Sign messages with your Tortoisecoin addresses to prove you own them</source>
+        <translation type="unfinished">Signer meldinger med Tortoisecoin-adressene dine for å bevise at du eier dem</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Verifiser melding…</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verifiser meldinger for å sikre at de ble signert med de spesifiserte Bitcoin-adressene</translation>
+        <source>Verify messages to ensure they were signed with specified Tortoisecoin addresses</source>
+        <translation type="unfinished">Verifiser meldinger for å sikre at de ble signert med de spesifiserte Tortoisecoin-adressene</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -524,8 +524,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Kobler til jevnaldrende…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Be om betalinger (genererer QR-koder og bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and tortoisecoin: URIs)</source>
+        <translation type="unfinished">Be om betalinger (genererer QR-koder og tortoisecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -579,16 +579,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Oppdatert</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Last inn delvis signert Bitcoin-transaksjon</translation>
+        <source>Load Partially Signed Tortoisecoin Transaction</source>
+        <translation type="unfinished">Last inn delvis signert Tortoisecoin-transaksjon</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">Last inn PSBT fra &amp;utklippstavle…</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Last inn delvis signert Bitcoin-transaksjon fra utklippstavlen</translation>
+        <source>Load Partially Signed Tortoisecoin Transaction from clipboard</source>
+        <translation type="unfinished">Last inn delvis signert Tortoisecoin-transaksjon fra utklippstavlen</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -607,8 +607,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Mottaksadresser</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">Åpne en bitcoin: URI</translation>
+        <source>Open a tortoisecoin: URI</source>
+        <translation type="unfinished">Åpne en tortoisecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -645,8 +645,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Migrer en lommebok</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Vis %1 hjelpetekst for å få en liste over mulige Bitcoin kommandolinjealternativer</translation>
+        <source>Show the %1 help message to get a list with possible Tortoisecoin command-line options</source>
+        <translation type="unfinished">Vis %1 hjelpetekst for å få en liste over mulige Tortoisecoin kommandolinjealternativer</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -702,11 +702,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">V&amp;is</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Tortoisecoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n aktive tilkoblinger til Bitcoin-nettverket.</numerusform>
-            <numerusform>1%n aktive tilkoblinger til Bitcoin-nettverket.</numerusform>
+            <numerusform>%n aktive tilkoblinger til Tortoisecoin-nettverket.</numerusform>
+            <numerusform>1%n aktive tilkoblinger til Tortoisecoin-nettverket.</numerusform>
         </translation>
     </message>
     <message>

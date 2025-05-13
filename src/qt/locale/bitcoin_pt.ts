@@ -58,13 +58,13 @@
         <translation type="unfinished">Escol&amp;her</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Estes são os seus endereços Bitcoin para enviar pagamentos. Verifique sempre a quantia e o endereço de receção antes de enviar moedas.</translation>
+        <source>These are your Tortoisecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Estes são os seus endereços Tortoisecoin para enviar pagamentos. Verifique sempre a quantia e o endereço de receção antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Tortoisecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Estes são os seus endereços Bitcoin para receber pagamentos. Utilize o botão "Criar novo endereço de receção" no separador "Receber" para criar novos endereços.
+        <translation type="unfinished">Estes são os seus endereços Tortoisecoin para receber pagamentos. Utilize o botão "Criar novo endereço de receção" no separador "Receber" para criar novos endereços.
 A assinatura só é possível com endereços do tipo "legado".</translation>
     </message>
     <message>
@@ -327,8 +327,8 @@ A assinatura só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Quantia</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation type="unfinished">Introduza um endereço Bitcoin (ex. %1)</translation>
+        <source>Enter a Tortoisecoin address (e.g. %1)</source>
+        <translation type="unfinished">Introduza um endereço Tortoisecoin (ex. %1)</translation>
     </message>
     <message>
         <source>Unroutable</source>
@@ -491,8 +491,8 @@ A assinatura só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">O proxy está &lt;b&gt;ativado&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Enviar moedas para um endereço Bitcoin</translation>
+        <source>Send coins to a Tortoisecoin address</source>
+        <translation type="unfinished">Enviar moedas para um endereço Tortoisecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -535,16 +535,16 @@ A assinatura só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Assinar &amp;mensagem…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Assine as mensagens com os seus endereços Bitcoin para provar que é o proprietário dos mesmos</translation>
+        <source>Sign messages with your Tortoisecoin addresses to prove you own them</source>
+        <translation type="unfinished">Assine as mensagens com os seus endereços Tortoisecoin para provar que é o proprietário dos mesmos</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Verificar mensagem…</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verifique mensagens para assegurar que foram assinadas com o endereço Bitcoin especificado</translation>
+        <source>Verify messages to ensure they were signed with specified Tortoisecoin addresses</source>
+        <translation type="unfinished">Verifique mensagens para assegurar que foram assinadas com o endereço Tortoisecoin especificado</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -603,8 +603,8 @@ A assinatura só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">A conectar aos pares…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Solicitar pagamentos (gera códigos QR e bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and tortoisecoin: URIs)</source>
+        <translation type="unfinished">Solicitar pagamentos (gera códigos QR e tortoisecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -658,16 +658,16 @@ A assinatura só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Atualizado</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Carregar transação de Bitcoin parcialmente assinada</translation>
+        <source>Load Partially Signed Tortoisecoin Transaction</source>
+        <translation type="unfinished">Carregar transação de Tortoisecoin parcialmente assinada</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">Carregar PSBT da área de transferência...</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Carregar transação de Bitcoin parcialmente assinada da área de transferência.</translation>
+        <source>Load Partially Signed Tortoisecoin Transaction from clipboard</source>
+        <translation type="unfinished">Carregar transação de Tortoisecoin parcialmente assinada da área de transferência.</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -686,8 +686,8 @@ A assinatura só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">&amp;Endereços de receção</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">Abrir um bitcoin URI</translation>
+        <source>Open a tortoisecoin: URI</source>
+        <translation type="unfinished">Abrir um tortoisecoin URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -724,7 +724,7 @@ A assinatura só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Migrar uma carteira</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Tortoisecoin command-line options</source>
         <translation type="unfinished">Mostrar a mensagem de ajuda %1 para obter uma lista com possíveis opções a usar na linha de comandos.</translation>
     </message>
     <message>
@@ -784,11 +784,11 @@ A assinatura só é possível com endereços do tipo "legado".</translation>
         <translation type="unfinished">Mo&amp;strar</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Tortoisecoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n conexão ativa na rede Bitcoin.</numerusform>
-            <numerusform>%n conexões ativas na rede Bitcoin.</numerusform>
+            <numerusform>%n conexão ativa na rede Tortoisecoin.</numerusform>
+            <numerusform>%n conexões ativas na rede Tortoisecoin.</numerusform>
         </translation>
     </message>
     <message>
@@ -1306,8 +1306,8 @@ O processo de migração criará uma cópia de segurança da carteira antes da m
         <translation type="unfinished">Editar endereço de envio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">O endereço introduzido "%1" não é um endereço bitcoin válido.</translation>
+        <source>The entered address "%1" is not a valid Tortoisecoin address.</source>
+        <translation type="unfinished">O endereço introduzido "%1" não é um endereço tortoisecoin válido.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1393,8 +1393,8 @@ O processo de migração criará uma cópia de segurança da carteira antes da m
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 irá descarregar e armazenar uma cópia da cadeia de blocos da Bitcoin.</translation>
+        <source>%1 will download and store a copy of the Tortoisecoin block chain.</source>
+        <translation type="unfinished">%1 irá descarregar e armazenar uma cópia da cadeia de blocos da Tortoisecoin.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1482,8 +1482,8 @@ O processo de migração criará uma cópia de segurança da carteira antes da m
         <translation type="unfinished">Formulário</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation type="unfinished">As transações recentes podem ainda não ser visíveis e, por isso, o saldo da sua carteira pode estar incorreto. Esta informação estará correta assim que a sua carteira terminar a sincronização com a rede bitcoin, conforme detalhado abaixo.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the tortoisecoin network, as detailed below.</source>
+        <translation type="unfinished">As transações recentes podem ainda não ser visíveis e, por isso, o saldo da sua carteira pode estar incorreto. Esta informação estará correta assim que a sua carteira terminar a sincronização com a rede tortoisecoin, conforme detalhado abaixo.</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1537,8 +1537,8 @@ O processo de migração criará uma cópia de segurança da carteira antes da m
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation type="unfinished">Abrir um URI de bitcoin</translation>
+        <source>Open tortoisecoin URI</source>
+        <translation type="unfinished">Abrir um URI de tortoisecoin</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1583,11 +1583,11 @@ O processo de migração criará uma cópia de segurança da carteira antes da m
     </message>
     <message>
         <source>Full path to a %1 compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
-        <translation type="unfinished">Caminho completo para um script compatível %1 com Bitcoin Core (exemplo C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Cuidado: um programa malicioso (malware) pode roubar as suas moedas!</translation>
+        <translation type="unfinished">Caminho completo para um script compatível %1 com Tortoisecoin Core (exemplo C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Cuidado: um programa malicioso (malware) pode roubar as suas moedas!</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">Abrir automaticamente a porta do cliente Bitcoin no router. Esta função apenas funciona se o router suportar PCP ou NAT-PMP e essas opções estiverem ativadas. A porta externa pode ser atribuída aleatoriamente.</translation>
+        <source>Automatically open the Tortoisecoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Abrir automaticamente a porta do cliente Tortoisecoin no router. Esta função apenas funciona se o router suportar PCP ou NAT-PMP e essas opções estiverem ativadas. A porta externa pode ser atribuída aleatoriamente.</translation>
     </message>
     <message>
         <source>Map port using PCP or NA&amp;T-PMP</source>
@@ -1717,8 +1717,8 @@ O processo de migração criará uma cópia de segurança da carteira antes da m
         <translation type="unfinished">Permitir cone&amp;xões de entrada</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Conectar à rede da Bitcoin através dum proxy SOCLS5.</translation>
+        <source>Connect to the Tortoisecoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Conectar à rede da Tortoisecoin através dum proxy SOCLS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1797,8 +1797,8 @@ O processo de migração criará uma cópia de segurança da carteira antes da m
         <translation type="unfinished">Escolha se deve mostrar as funcionalidades de controlo de moedas ou não.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Conecte-se à rede Bitcoin através de um proxy SOCKS5 separado para serviços Tor Onion</translation>
+        <source>Connect to the Tortoisecoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Conecte-se à rede Tortoisecoin através de um proxy SOCKS5 separado para serviços Tor Onion</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1890,8 +1890,8 @@ O processo de migração criará uma cópia de segurança da carteira antes da m
         <translation type="unfinished">Formulário</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">A informação apresentada pode estar desatualizada. A sua carteira sincroniza-se automaticamente com a rede Bitcoin após o estabelecimento de conexões, mas este processo ainda não está concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tortoisecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">A informação apresentada pode estar desatualizada. A sua carteira sincroniza-se automaticamente com a rede Tortoisecoin após o estabelecimento de conexões, mas este processo ainda não está concluído.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2102,16 +2102,16 @@ ID da transação: %1</translation>
         <translation type="unfinished">Erro do pedido de pagamento</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation type="unfinished">Não é possível iniciar o bitcoin: manipulador do click-to-pay</translation>
+        <source>Cannot start tortoisecoin: click-to-pay handler</source>
+        <translation type="unfinished">Não é possível iniciar o tortoisecoin: manipulador do click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">Manuseamento de URI</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation type="unfinished">'bitcoin://' não é um URI válido. Utilize 'bitcoin:'.</translation>
+        <source>'tortoisecoin://' is not a valid URI. Use 'tortoisecoin:' instead.</source>
+        <translation type="unfinished">'tortoisecoin://' não é um URI válido. Utilize 'tortoisecoin:'.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -2122,8 +2122,8 @@ Devido a falhas de segurança no BIP70, é recomendado que todas as instruções
 Se está a receber este erro, deverá pedir ao comerciante para fornecer um URI compatível com BIP21.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">O URI não pode ser analisado! Isto pode ser causado por um endereço Bitcoin inválido ou por parâmetros URI malformados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Tortoisecoin address or malformed URI parameters.</source>
+        <translation type="unfinished">O URI não pode ser analisado! Isto pode ser causado por um endereço Tortoisecoin inválido ou por parâmetros URI malformados.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2280,8 +2280,8 @@ Se está a receber este erro, deverá pedir ao comerciante para fornecer um URI 
         <translation type="unfinished">Endereços locais</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation type="unfinished">Endereços de rede que seu nó Bitcoin está usando atualmente para se comunicar com outros nós.</translation>
+        <source>Network addresses that your Tortoisecoin node is currently using to communicate with other nodes.</source>
+        <translation type="unfinished">Endereços de rede que seu nó Tortoisecoin está usando atualmente para se comunicar com outros nós.</translation>
     </message>
     <message>
         <source>Block chain</source>
@@ -2731,8 +2731,8 @@ Para mais informação acerca da utilização desta consola, escreva %6.
         <translation type="unfinished">&amp;Mensagem:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">Uma mensagem opcional a anexar ao pedido de pagamento, que será mostrada quando o pedido for aberto. Nota: a mensagem não será enviada com o pagamento através da rede Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Tortoisecoin network.</source>
+        <translation type="unfinished">Uma mensagem opcional a anexar ao pedido de pagamento, que será mostrada quando o pedido for aberto. Nota: a mensagem não será enviada com o pagamento através da rede Tortoisecoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -3028,8 +3028,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para um tamanho de transação de 500 bytes virtuais (metade de 1 kvB) resultaria em uma taxa de apenas 50 satoshis.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation type="unfinished">Quando há menos volume de transações do que espaço nos blocos, os mineradores, bem como os pares de retransmissão, podem impor uma taxa mínima. Pagar apenas esta taxa mínima não faz mal, mas tenha em atenção que isto pode resultar numa transação nunca confirmada, uma vez que há mais procura de transações de bitcoin do que a rede pode processar.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for tortoisecoin transactions than the network can process.</source>
+        <translation type="unfinished">Quando há menos volume de transações do que espaço nos blocos, os mineradores, bem como os pares de retransmissão, podem impor uma taxa mínima. Pagar apenas esta taxa mínima não faz mal, mas tenha em atenção que isto pode resultar numa transação nunca confirmada, uma vez que há mais procura de transações de tortoisecoin do que a rede pode processar.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -3114,8 +3114,8 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
         <translation type="unfinished">Criar &amp;não assinado</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Cria uma transação de Bitcoin parcialmente assinada (PSBT - sigla em inglês) para ser usada por exemplo com uma carteira %1 offline ou uma carteira de hardware compatível com PSBT.</translation>
+        <source>Creates a Partially Signed Tortoisecoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Cria uma transação de Tortoisecoin parcialmente assinada (PSBT - sigla em inglês) para ser usada por exemplo com uma carteira %1 offline ou uma carteira de hardware compatível com PSBT.</translation>
     </message>
     <message>
         <source>%1 to '%2'</source>
@@ -3170,9 +3170,9 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
         <translation type="unfinished">Pode aumentar a taxa depois (sinaliza "substituir por taxa", BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Tortoisecoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
-        <translation type="unfinished">Por favor, reveja sua proposta de transação. Isto irá produzir uma Transação de Bitcoin parcialmente assinada (PSBT, sigla em inglês) a qual pode guardar ou copiar e então assinar com por exemplo uma carteira %1 offine ou uma PSBT compatível com carteira de hardware.</translation>
+        <translation type="unfinished">Por favor, reveja sua proposta de transação. Isto irá produzir uma Transação de Tortoisecoin parcialmente assinada (PSBT, sigla em inglês) a qual pode guardar ou copiar e então assinar com por exemplo uma carteira %1 offine ou uma PSBT compatível com carteira de hardware.</translation>
     </message>
     <message>
         <source>%1 from wallet '%2'</source>
@@ -3184,9 +3184,9 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
         <translation type="unfinished">Deseja criar esta transação?</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Tortoisecoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
-        <translation type="unfinished">Por favor, reveja a sua transação. Pode criar e enviar esta transação ou criar uma transação Bitcoin parcialmente assinada (PSBT), que pode guardar ou copiar e depois assinar com, por exemplo, uma carteira %1 offline, ou uma carteira de hardware compatível com PSBT.</translation>
+        <translation type="unfinished">Por favor, reveja a sua transação. Pode criar e enviar esta transação ou criar uma transação Tortoisecoin parcialmente assinada (PSBT), que pode guardar ou copiar e depois assinar com, por exemplo, uma carteira %1 offline, ou uma carteira de hardware compatível com PSBT.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -3263,8 +3263,8 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Aviso: endereço Bitcoin inválido</translation>
+        <source>Warning: Invalid Tortoisecoin address</source>
+        <translation type="unfinished">Aviso: endereço Tortoisecoin inválido</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3302,8 +3302,8 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
         <translation type="unfinished">Escolha o endereço utilizado anteriormente</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation type="unfinished">O endereço Bitcoin para onde enviar o pagamento</translation>
+        <source>The Tortoisecoin address to send the payment to</source>
+        <translation type="unfinished">O endereço Tortoisecoin para onde enviar o pagamento</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -3338,8 +3338,8 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
         <translation type="unfinished">Introduza uma etiqueta para este endereço para o adicionar à sua lista de endereços usados</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">Uma mensagem que foi anexada ao bitcoin: URI que será armazenada com a transação para sua referência. Nota: esta mensagem não será enviada através da rede Bitcoin.</translation>
+        <source>A message that was attached to the tortoisecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Tortoisecoin network.</source>
+        <translation type="unfinished">Uma mensagem que foi anexada ao tortoisecoin: URI que será armazenada com a transação para sua referência. Nota: esta mensagem não será enviada através da rede Tortoisecoin.</translation>
     </message>
 </context>
 <context>
@@ -3368,8 +3368,8 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
         <translation type="unfinished">Você pode assinar mensagens com seus endereços legados (P2PKH) para provar que pode receber bitcoins enviados a eles. Tenha cuidado para não assinar nada vago ou aleatório, pois ataques de phishing podem tentar enganá-lo para assinar sua identidade para eles. Assine apenas declarações totalmente detalhadas com as quais você concorda.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation type="unfinished">O endereço Bitcoin com o qual assinar a mensagem</translation>
+        <source>The Tortoisecoin address to sign the message with</source>
+        <translation type="unfinished">O endereço Tortoisecoin com o qual assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3392,8 +3392,8 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
         <translation type="unfinished">Copiar a assinatura atual para a área de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation type="unfinished">Assine a mensagem para provar que é o proprietário deste endereço Bitcoin</translation>
+        <source>Sign the message to prove you own this Tortoisecoin address</source>
+        <translation type="unfinished">Assine a mensagem para provar que é o proprietário deste endereço Tortoisecoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3416,8 +3416,8 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
         <translation type="unfinished">Introduza o endereço do destinatário, a mensagem (certifique-se que copia com exatidão as quebras de linha, os espaços, tabulações, etc.) e a assinatura abaixo para verificar a mensagem. Tenha cuidado para não ler mais na assinatura do que o que está na própria mensagem assinada, para evitar ser enganado por um ataque de intermediário (man-in-the-middle). Note que isto apenas prova que a parte que assina recebe com este endereço, não podendo provar o remetente de nenhuma transação!</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation type="unfinished">O endereço Bitcoin com o qual a mensagem foi assinada</translation>
+        <source>The Tortoisecoin address the message was signed with</source>
+        <translation type="unfinished">O endereço Tortoisecoin com o qual a mensagem foi assinada</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -3428,8 +3428,8 @@ Nota: como a taxa é calculada por byte, uma taxa de "100 satoshis por kvB" para
         <translation type="unfinished">A assinatura dada quando a mensagem foi assinada</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation type="unfinished">Verifique a mensagem para assegurar que foi assinada com o endereço Bitcoin especificado</translation>
+        <source>Verify the message to ensure it was signed with the specified Tortoisecoin address</source>
+        <translation type="unfinished">Verifique a mensagem para assegurar que foi assinada com o endereço Tortoisecoin especificado</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3958,7 +3958,7 @@ Vá ao menu Ficheiro &gt; Abrir carteira para carregar uma carteira
     </message>
     <message>
         <source>Unable to decode PSBT from clipboard (invalid base64)</source>
-        <translation type="unfinished">Não foi possível descodificar a transação de Bitcoin parcialmente assinada (PSTB) da área de transferência (base64 inválida)</translation>
+        <translation type="unfinished">Não foi possível descodificar a transação de Tortoisecoin parcialmente assinada (PSTB) da área de transferência (base64 inválida)</translation>
     </message>
     <message>
         <source>Load Transaction Data</source>
@@ -3974,7 +3974,7 @@ Vá ao menu Ficheiro &gt; Abrir carteira para carregar uma carteira
     </message>
     <message>
         <source>Unable to decode PSBT</source>
-        <translation type="unfinished">Não foi possível descodificar a transação de Bitcoin parcialmente assinada (PSTB)</translation>
+        <translation type="unfinished">Não foi possível descodificar a transação de Tortoisecoin parcialmente assinada (PSTB)</translation>
     </message>
 </context>
 <context>
@@ -4086,14 +4086,14 @@ Vá ao menu Ficheiro &gt; Abrir carteira para carregar uma carteira
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>tortoisecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Os programadores de %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s corrompido. Tente utilizar a ferramenta de carteira bitcoin-wallet para recuperar ou restaurar uma cópia de segurança.</translation>
+        <source>%s corrupt. Try using the wallet tool tortoisecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s corrompido. Tente utilizar a ferramenta de carteira tortoisecoin-wallet para recuperar ou restaurar uma cópia de segurança.</translation>
     </message>
     <message>
         <source>%s failed to validate the -assumeutxo snapshot state. This indicates a hardware problem, or a bug in the software, or a bad software modification that allowed an invalid snapshot to be loaded. As a result of this, the node will shut down and stop using any state that was built on the snapshot, resetting the chain height from %d to %d. On the next restart, the node will resume syncing from %d without using any snapshot data. Please report this incident to %s, including how you obtained the snapshot. The invalid snapshot chainstate will be left on disk in case it is helpful in diagnosing the issue that caused this error.</source>
@@ -4140,8 +4140,8 @@ Vá ao menu Ficheiro &gt; Abrir carteira para carregar uma carteira
         <translation type="unfinished">Erro: o registo do identificador do ficheiro de dump está incorreto. Obteve-se "%s", mas era esperado "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Erro: esta versão do bitcoin-wallet apenas suporta ficheiros dump na versão 1. (Versão atual: %s)</translation>
+        <source>Error: Dumpfile version is not supported. This version of tortoisecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Erro: esta versão do tortoisecoin-wallet apenas suporta ficheiros dump na versão 1. (Versão atual: %s)</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>

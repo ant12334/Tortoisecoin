@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2021-present The Bitcoin Core developers
+# Copyright (c) 2021-present The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test for assumeutxo, a means of quickly bootstrapping a node using
@@ -487,7 +487,7 @@ class AssumeutxoTest(BitcoinTestFramework):
         # TODO: This is a hack to set m_best_header to the correct value after
         # dumptxoutset/reconsiderblock. Otherwise the wrong error messages are
         # returned in following tests. It can be removed once this bug is
-        # fixed. See also https://github.com/bitcoin/bitcoin/issues/26245
+        # fixed. See also https://github.com/tortoisecoin/tortoisecoin/issues/26245
         self.restart_node(0, ["-reindex"])
 
         # Ensure n0 is back at the tip

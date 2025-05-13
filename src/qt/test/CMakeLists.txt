@@ -1,4 +1,4 @@
-# Copyright (c) 2024-present The Bitcoin Core developers
+# Copyright (c) 2024-present The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or https://opensource.org/license/mit/.
 
@@ -11,7 +11,7 @@ add_executable(test_bitcoin-qt
   test_main.cpp
   uritests.cpp
   util.cpp
-  ../../init/bitcoin-qt.cpp
+  ../../init/tortoisecoin-qt.cpp
 )
 
 target_link_libraries(test_bitcoin-qt

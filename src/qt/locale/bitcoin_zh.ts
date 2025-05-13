@@ -54,7 +54,7 @@
         <translation type="unfinished">选择(&amp;H)</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Tortoisecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">这些是你的比特币支付地址。在发送之前，一定要核对金额和接收地址。</translation>
     </message>
     <message>
@@ -313,7 +313,7 @@
         <translation type="unfinished">金额</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Tortoisecoin address (e.g. %1)</source>
         <translation type="unfinished">请输入一个比特币地址 (例如 %1)</translation>
     </message>
     <message>
@@ -467,7 +467,7 @@
         <translation type="unfinished">标签工具栏</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and tortoisecoin: URIs)</source>
         <translation type="unfinished">请求支付(生成二维码和比特币链接)</translation>
     </message>
     <message>
@@ -537,7 +537,7 @@
         <translation type="unfinished">&amp;接受地址</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a tortoisecoin: URI</source>
         <translation type="unfinished">打开比特币: URI</translation>
     </message>
     <message>
@@ -571,7 +571,7 @@
         <translation type="unfinished">迁移一个钱包</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Tortoisecoin command-line options</source>
         <translation type="unfinished">显示%1帮助消息以获得可能包含Bitcoin命令行选项的列表</translation>
     </message>
     <message>
@@ -631,7 +631,7 @@
         <translation type="unfinished">显示(&amp;H)</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Tortoisecoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform> %n 与比特币网络接。</numerusform>
@@ -1076,7 +1076,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">编辑付款地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Tortoisecoin address.</source>
         <translation type="unfinished">输入的地址 %1 并不是有效的比特币地址。</translation>
     </message>
     <message>
@@ -1122,7 +1122,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
+        <source>Tortoisecoin</source>
         <translation type="unfinished">比特币</translation>
     </message>
     <message numerus="yes">
@@ -1163,7 +1163,7 @@ The migration process will create a backup of the wallet before migrating. This 
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Tortoisecoin block chain.</source>
         <translation type="unfinished">%1 将会下载并存储比特币区块链。</translation>
     </message>
     <message>
@@ -1252,8 +1252,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">窗体</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation type="unfinished">最近的交易可能還看不到，因此錢包餘額可能不正確。在錢包軟體完成跟 bitcoin 網路的同步後，這裡的資訊就會正確。詳情請見下面。</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the tortoisecoin network, as detailed below.</source>
+        <translation type="unfinished">最近的交易可能還看不到，因此錢包餘額可能不正確。在錢包軟體完成跟 tortoisecoin 網路的同步後，這裡的資訊就會正確。詳情請見下面。</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1307,7 +1307,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open tortoisecoin URI</source>
         <translation type="unfinished">打开比特币URI</translation>
     </message>
     <message>
@@ -1356,7 +1356,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">与%1兼容的脚本文件路径（例如 C:\Downloads\hwi.exe 或者 /Users/you/Downloads/hwi.py ）。注意：恶意软件可以偷币！</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the Tortoisecoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
         <translation type="unfinished">自动在路由器上打开比特币客户端端口。仅当您的路由器支持PCP或NAT-PMP并且已启用时才有效。外部端口可能是随机的。</translation>
     </message>
     <message>
@@ -1487,7 +1487,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">允许传入连接(&amp;G)</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Tortoisecoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished">通过 SOCKS5 代理连接比特币网络。</translation>
     </message>
     <message>
@@ -1567,7 +1567,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">是否显示手动选币功能。</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the Tortoisecoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation type="unfinished">连接比特币网络时专门为Tor onion服务使用另一个 SOCKS5 代理。</translation>
     </message>
     <message>
@@ -1664,7 +1664,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">窗体</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tortoisecoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished">现在显示的消息可能是过期的。在连接上比特币网络节点后，您的钱包将自动与网络同步，但是这个过程还没有完成。</translation>
     </message>
     <message>
@@ -1879,16 +1879,16 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">支付请求出错</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation type="unfinished">无法启动 bitcoin: 协议的“一键支付”处理程序</translation>
+        <source>Cannot start tortoisecoin: click-to-pay handler</source>
+        <translation type="unfinished">无法启动 tortoisecoin: 协议的“一键支付”处理程序</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI 处理</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation type="unfinished">‘bitcoin://’不是合法的URI。请改用'bitcoin:'。</translation>
+        <source>'tortoisecoin://' is not a valid URI. Use 'tortoisecoin:' instead.</source>
+        <translation type="unfinished">‘tortoisecoin://’不是合法的URI。请改用'tortoisecoin:'。</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1899,7 +1899,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
 如果您看到了這個錯誤，您應該要求商家提供與BIP21相容的URI。</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Tortoisecoin address or malformed URI parameters.</source>
         <translation type="unfinished">无法解析 URI 地址！可能是因为比特币地址无效，或是 URI 参数格式错误。</translation>
     </message>
     <message>
@@ -2052,7 +2052,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation type="unfinished">本地地址</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
+        <source>Network addresses that your Tortoisecoin node is currently using to communicate with other nodes.</source>
         <translation type="unfinished">您的比特币节点正在使用网络地址与其他节点联系。</translation>
     </message>
     <message>
@@ -2507,7 +2507,7 @@ For more information on using this console, type %6.
         <translation type="unfinished">消息(&amp;M):</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Tortoisecoin network.</source>
         <translation type="unfinished">可在支付请求上备注一条信息，在打开支付请求时可以看到。注意:该消息不是通过比特币网络传送。</translation>
     </message>
     <message>
@@ -2800,7 +2800,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 注意：由於手續費是按每字節計算的，對於虛擬大小為500字節（半千字節）的交易，手續費率為「每千字節100聰」，最終將只收取50聰的手續費。</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for tortoisecoin transactions than the network can process.</source>
         <translation type="unfinished">當交易量小於可用區塊空間時，礦工和節點可能會執行最低手續費率限制。 以這個最低費率來支付手續費也是可以的，但請注意，一旦交易需求超出比特幣網路能處理的限度，你的交易可能永遠無法確認。</translation>
     </message>
     <message>
@@ -2886,7 +2886,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">创建未签名交易(&amp;E)</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Creates a Partially Signed Tortoisecoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <translation type="unfinished">產生一個部分簽名的比特幣交易（PSBT）以用於例如離線%1錢包或與PSBT相容的硬體錢包。</translation>
     </message>
     <message>
@@ -2907,7 +2907,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">或</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Tortoisecoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
         <translation type="unfinished">請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。</translation>
     </message>
@@ -2921,7 +2921,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">要创建这笔交易吗？</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Tortoisecoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
         <translation type="unfinished">请务必仔细检查您的交易。你可以创建并发送这笔交易；也可以创建一个“部分签名比特币交易(PSBT)”，它可以被保存下来或被复制出去，然后就可以对它进行签名，比如用离线%1钱包，或是用兼容PSBT的硬件钱包。</translation>
     </message>
@@ -2999,7 +2999,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Tortoisecoin address</source>
         <translation type="unfinished">警告: 比特币地址无效</translation>
     </message>
     <message>
@@ -3066,8 +3066,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">请为此地址输入一个标签以将它加入已用地址列表</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">bitcoin: URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过比特币网络传输。</translation>
+        <source>A message that was attached to the tortoisecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Tortoisecoin network.</source>
+        <translation type="unfinished">tortoisecoin: URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过比特币网络传输。</translation>
     </message>
 </context>
 <context>
@@ -3092,7 +3092,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">消息签名(&amp;S)</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Tortoisecoin address to sign the message with</source>
         <translation type="unfinished">用来对消息签名的地址</translation>
     </message>
     <message>
@@ -3116,7 +3116,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">复制当前签名至剪贴板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Tortoisecoin address</source>
         <translation type="unfinished">签名消息，以证明这个地址属于您</translation>
     </message>
     <message>
@@ -3140,7 +3140,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">请在下面输入接收者地址、消息（确保换行符、空格符、制表符等完全相同）和签名以验证消息。请仔细核对签名信息，以提防中间人攻击。请注意，这只是证明接收方可以用这个地址签名，它不能证明任何交易的发送人身份！</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The Tortoisecoin address the message was signed with</source>
         <translation type="unfinished">用来签名消息的地址</translation>
     </message>
     <message>
@@ -3152,7 +3152,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">对消息进行签署得到的签名数据</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Tortoisecoin address</source>
         <translation type="unfinished">验证消息，确保消息是由指定的比特币地址签名过的。</translation>
     </message>
     <message>
@@ -3800,13 +3800,13 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>tortoisecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s 开发者</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
+        <source>%s corrupt. Try using the wallet tool tortoisecoin-wallet to salvage or restoring a backup.</source>
         <translation type="unfinished">%s損壞。嘗試使用錢包工具bitcoin-wallet挽救或還原備份。</translation>
     </message>
     <message>
@@ -3856,8 +3856,8 @@ Go to File &gt; Open Wallet to load a wallet.
 %s。</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">錯誤: 轉儲文件版本不支援。 這個版本的 bitcoin-wallet 只支援版本為 1 的轉儲檔案。 得到的轉儲文件版本是%s</translation>
+        <source>Error: Dumpfile version is not supported. This version of tortoisecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">錯誤: 轉儲文件版本不支援。 這個版本的 tortoisecoin-wallet 只支援版本為 1 的轉儲檔案。 得到的轉儲文件版本是%s</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>

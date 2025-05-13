@@ -1,9 +1,9 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2022 The Bitcoin Core developers
+// Copyright (c) 2009-2022 The Tortoisecoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <bitcoin-build-config.h> // IWYU pragma: keep
+#include <tortoisecoin-build-config.h> // IWYU pragma: keep
 
 #include <chainparams.h>
 #include <clientversion.h>
@@ -112,7 +112,7 @@ int fork_daemon(bool nochdir, bool noclose, TokenPipeEnd& endpoint)
 static bool ParseArgs(NodeContext& node, int argc, char* argv[])
 {
     ArgsManager& args{*Assert(node.args)};
-    // If Qt is used, parameters/bitcoin.conf are parsed in qt/bitcoin.cpp's main()
+    // If Qt is used, parameters/tortoisecoin.conf are parsed in qt/tortoisecoin.cpp's main()
     SetupServerArgs(args, node.init->canListenIpc());
     std::string error;
     if (!args.ParseParameters(argc, argv, error)) {
@@ -142,8 +142,8 @@ static bool ProcessInitCommands(ArgsManager& args)
             strUsage += FormatParagraph(LicenseInfo());
         } else {
             strUsage += "\n"
-                "The " CLIENT_NAME " daemon (bitcoind) is a headless program that connects to the Bitcoin network to validate and relay transactions and blocks, as well as relaying addresses.\n\n"
-                "It provides the backbone of the Bitcoin network and its RPC, REST and ZMQ services can provide various transaction, block and address-related services.\n\n"
+                "The " CLIENT_NAME " daemon (bitcoind) is a headless program that connects to the Tortoisecoin network to validate and relay transactions and blocks, as well as relaying addresses.\n\n"
+                "It provides the backbone of the Tortoisecoin network and its RPC, REST and ZMQ services can provide various transaction, block and address-related services.\n\n"
                 "There is an optional wallet component which provides transaction services.\n\n"
                 "It can be used in a headless environment or as part of a server setup.\n"
                 "\n"

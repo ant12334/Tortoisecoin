@@ -58,13 +58,13 @@
         <translation type="unfinished">Nanga</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Hedzi ndi ḓiresi dzaṋu dza Bitcoin dza u rumela mbadelo. Tshifhinga tshoṱhe ṱolani tshelede na ḓiresi ine na ḓo i ṱanganedza musi ni sa athu rumela tshelede ya tsimbi.</translation>
+        <source>These are your Tortoisecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Hedzi ndi ḓiresi dzaṋu dza Tortoisecoin dza u rumela mbadelo. Tshifhinga tshoṱhe ṱolani tshelede na ḓiresi ine na ḓo i ṱanganedza musi ni sa athu rumela tshelede ya tsimbi.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Tortoisecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Hedzi ndi ḓiresi dzaṋu dza Bitcoin dza u ṱanganedza mbadelo. Shumisani butoni ya 'Sika ḓiresi ntswa ya u ṱanganedza' kha thebu ya u ṱanganedza u sika ḓiresi ntswa.U saina zwi konadzea fhedzi nga ḓiresi dza lushaka lwa 'legacy'.</translation>
+        <translation type="unfinished">Hedzi ndi ḓiresi dzaṋu dza Tortoisecoin dza u ṱanganedza mbadelo. Shumisani butoni ya 'Sika ḓiresi ntswa ya u ṱanganedza' kha thebu ya u ṱanganedza u sika ḓiresi ntswa.U saina zwi konadzea fhedzi nga ḓiresi dza lushaka lwa 'legacy'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -407,8 +407,8 @@ Faela ya zwishumiswa %1 i nga vha yo tshinyala kana i sa shumi.</translation>
         <translation type="unfinished">Proxy yo tendelwa: %1.</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Rumelani tshelede ya tsimbi kha ḓiresi ya Bitcoin .</translation>
+        <source>Send coins to a Tortoisecoin address</source>
+        <translation type="unfinished">Rumelani tshelede ya tsimbi kha ḓiresi ya Tortoisecoin .</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -451,16 +451,16 @@ Faela ya zwishumiswa %1 i nga vha yo tshinyala kana i sa shumi.</translation>
         <translation type="unfinished">Saina &amp;mulaedza...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Saini milaedza nga ḓiresi dzaṋu dza Bitcoin u sumbedza uri ndi vhaṋe vhayo .</translation>
+        <source>Sign messages with your Tortoisecoin addresses to prove you own them</source>
+        <translation type="unfinished">Saini milaedza nga ḓiresi dzaṋu dza Tortoisecoin u sumbedza uri ndi vhaṋe vhayo .</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Kha vha khwaṱhisedze mulaedza...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Kha vha khwaṱhisedze milaedza u vhona uri yo sainiwa nga ḓiresi dzo bulwaho dza Bitcoin </translation>
+        <source>Verify messages to ensure they were signed with specified Tortoisecoin addresses</source>
+        <translation type="unfinished">Kha vha khwaṱhisedze milaedza u vhona uri yo sainiwa nga ḓiresi dzo bulwaho dza Tortoisecoin </translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -520,8 +520,8 @@ U ṱanganya ṱhoho (%1%)...</translation>
         <translation type="unfinished">U ṱumana na thangana dza murole...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Humbelani mbadelo (u bveledza khoudu dza QR na bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and tortoisecoin: URIs)</source>
+        <translation type="unfinished">Humbelani mbadelo (u bveledza khoudu dza QR na tortoisecoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -542,7 +542,7 @@ U ṱanganya ṱhoho (%1%)...</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Tortoisecoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />

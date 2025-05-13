@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (c) 2018-present The Bitcoin Core developers
+# Copyright (c) 2018-present The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #
-# Be aware that bitcoind and bitcoin-qt differ in terms of localization: Qt
+# Be aware that bitcoind and tortoisecoin-qt differ in terms of localization: Qt
 # opts in to POSIX localization by running setlocale(LC_ALL, "") on startup,
 # whereas no such call is made in bitcoind.
 #
@@ -16,12 +16,12 @@
 # thus ignored.
 #
 # This results in situations where bitcoind is guaranteed to be running
-# with the classic locale ("C") whereas the locale of bitcoin-qt will vary
+# with the classic locale ("C") whereas the locale of tortoisecoin-qt will vary
 # depending on the user's environment variables.
 #
 # An example: Assuming the environment variable LC_ALL=de_DE then the
 # call std::to_string(1.23) will return "1.230000" in bitcoind but
-# "1,230000" in bitcoin-qt.
+# "1,230000" in tortoisecoin-qt.
 #
 # From the Qt documentation:
 # "On Unix/Linux Qt is configured to use the system locale settings by default.

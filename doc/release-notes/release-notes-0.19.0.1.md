@@ -1,13 +1,13 @@
-Bitcoin Core version 0.19.0.1 is now available from:
+Tortoisecoin Core version 0.19.0.1 is now available from:
 
-  <https://bitcoincore.org/bin/bitcoin-core-0.19.0.1/>
+  <https://bitcoincore.org/bin/tortoisecoin-core-0.19.0.1/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/bitcoin/bitcoin/issues>
+  <https://github.com/tortoisecoin/tortoisecoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
@@ -18,31 +18,31 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over `/Applications/Bitcoin-Qt` (on Mac)
-or `bitcoind`/`bitcoin-qt` (on Linux).
+installer (on Windows) or just copy over `/Applications/Tortoisecoin-Qt` (on Mac)
+or `bitcoind`/`tortoisecoin-qt` (on Linux).
 
-Upgrading directly from a version of Bitcoin Core that has reached its EOL is
+Upgrading directly from a version of Tortoisecoin Core that has reached its EOL is
 possible, but might take some time if the datadir needs to be migrated.  Old
-wallet versions of Bitcoin Core are generally supported.
+wallet versions of Tortoisecoin Core are generally supported.
 
 Compatibility
 ==============
 
-Bitcoin Core is supported and extensively tested on operating systems using
+Tortoisecoin Core is supported and extensively tested on operating systems using
 the Linux kernel, macOS 10.10+, and Windows 7 and newer. It is not recommended
-to use Bitcoin Core on unsupported systems.
+to use Tortoisecoin Core on unsupported systems.
 
-Bitcoin Core should also work on most other Unix-like systems but is not
+Tortoisecoin Core should also work on most other Unix-like systems but is not
 as frequently tested on them.
 
 From 0.17.0 onwards, macOS <10.10 is no longer supported. 0.17.0 is
 built using Qt 5.9.x, which doesn't support versions of macOS older than
-10.10. Additionally, Bitcoin Core does not yet change appearance when
+10.10. Additionally, Tortoisecoin Core does not yet change appearance when
 macOS "dark mode" is activated.
 
 Users running macOS Catalina may need to "right-click" and then choose "Open"
-to open the Bitcoin Core .dmg. This is due to new signing requirements
-imposed by Apple, which the Bitcoin Core project does not yet adhere too.
+to open the Tortoisecoin Core .dmg. This is due to new signing requirements
+imposed by Apple, which the Tortoisecoin Core project does not yet adhere too.
 
 Notable changes
 ===============
@@ -50,8 +50,8 @@ Notable changes
 New user documentation
 ----------------------
 
-- [Reduce memory](https://github.com/bitcoin/bitcoin/blob/master/doc/reduce-memory.md)
-  suggests configuration tweaks for running Bitcoin Core on systems with
+- [Reduce memory](https://github.com/tortoisecoin/tortoisecoin/blob/master/doc/reduce-memory.md)
+  suggests configuration tweaks for running Tortoisecoin Core on systems with
   limited memory. (#16339)
 
 New RPCs
@@ -78,7 +78,7 @@ New settings
 
 - `-blockfilterindex` enables the creation of BIP158 block filters for
   the entire blockchain.  Filters will be created in the background and
-  currently use about 4 GiB of space.  Note: this version of Bitcoin
+  currently use about 4 GiB of space.  Note: this version of Tortoisecoin
   Core does not serve block filters over the P2P network, although the
   local user may obtain block filters using the `getblockfilter` RPC.
   (#14121)
@@ -197,7 +197,7 @@ GUI changes
   type may be changed with the `-addresstype` configuration option.
   (#15711, #16497)
 
-- In 0.18.0, a `./configure` flag was introduced to allow disabling BIP70 support in the GUI (support was enabled by default). In 0.19.0, this flag is now __disabled__ by default. If you want to compile Bitcoin Core with BIP70 support in the GUI, you can pass `--enable-bip70` to `./configure`. (#15584)
+- In 0.18.0, a `./configure` flag was introduced to allow disabling BIP70 support in the GUI (support was enabled by default). In 0.19.0, this flag is now __disabled__ by default. If you want to compile Tortoisecoin Core with BIP70 support in the GUI, you can pass `--enable-bip70` to `./configure`. (#15584)
 
 Deprecated or removed configuration options
 -------------------------------------------
@@ -217,7 +217,7 @@ Deprecated or removed RPCs
 
 - `bumpfee` has a new `fee_rate` option as a replacement for the deprecated `totalFee`. (#16727)
 
-- `generate` is now removed after being deprecated in Bitcoin Core 0.18.
+- `generate` is now removed after being deprecated in Tortoisecoin Core 0.18.
   Use the `generatetoaddress` RPC instead. (#15492)
 
 P2P changes
@@ -226,12 +226,12 @@ P2P changes
 - BIP 61 reject messages were deprecated in v0.18. They are now disabled
   by default, but can be enabled by setting the `-enablebip61` command
   line option.  BIP 61 reject messages will be removed entirely in a
-  future version of Bitcoin Core. (#14054)
+  future version of Tortoisecoin Core. (#14054)
 
-- To eliminate well-known denial-of-service vectors in Bitcoin Core,
+- To eliminate well-known denial-of-service vectors in Tortoisecoin Core,
   especially for nodes with spinning disks, the default value for the
   `-peerbloomfilters` configuration option has been changed to false.
-  This prevents Bitcoin Core from sending the BIP111 NODE_BLOOM service
+  This prevents Tortoisecoin Core from sending the BIP111 NODE_BLOOM service
   flag, accepting BIP37 bloom filters, or serving merkle blocks or
   transactions matching a bloom filter.  Users who still want to provide
   bloom filter support may either set the configuration option to true
@@ -240,17 +240,17 @@ P2P changes
   `-whitebind` configuration options described elsewhere in these
   release notes.  For the near future, lightweight clients using public
   BIP111/BIP37 nodes should still be able to connect to older versions
-  of Bitcoin Core and nodes that have manually enabled BIP37 support,
+  of Tortoisecoin Core and nodes that have manually enabled BIP37 support,
   but developers of such software should consider migrating to either
   using specific BIP37 nodes or an alternative transaction filtering
   system. (#16152)
 
-- By default, Bitcoin Core will now make two additional outbound connections that are exclusively used for block-relay.  No transactions or addr messages will be processed on these connections. These connections are designed to add little additional memory or bandwidth resource requirements but should make some partitioning attacks more difficult to carry out. (#15759)
+- By default, Tortoisecoin Core will now make two additional outbound connections that are exclusively used for block-relay.  No transactions or addr messages will be processed on these connections. These connections are designed to add little additional memory or bandwidth resource requirements but should make some partitioning attacks more difficult to carry out. (#15759)
 
 Miscellaneous CLI Changes
 -------------------------
 
-- The `testnet` field in `bitcoin-cli -getinfo` has been renamed to
+- The `testnet` field in `tortoisecoin-cli -getinfo` has been renamed to
   `chain` and now returns the current network name as defined in BIP70
   (main, test, regtest). (#15566)
 
@@ -262,7 +262,7 @@ RPC
 
 - `getblockchaininfo` no longer returns a `bip9_softforks` object.
   Instead, information has been moved into the `softforks` object and
-  an additional `type` field describes how Bitcoin Core determines
+  an additional `type` field describes how Tortoisecoin Core determines
   whether that soft fork is active (e.g. BIP9 or BIP90).  See the RPC
   help for details. (#16060)
 
@@ -301,7 +301,7 @@ Network
 -------
 
 - When fetching a transaction announced by multiple peers, previous versions of
-  Bitcoin Core would sequentially attempt to download the transaction from each
+  Tortoisecoin Core would sequentially attempt to download the transaction from each
   announcing peer until the transaction is received, in the order that those
   peers' announcements were received.  In this release, the download logic has
   changed to randomize the fetch order across peers and to prefer sending
@@ -309,7 +309,7 @@ Network
   where inbound peers could prevent a node from getting a transaction.
   (#14897, #15834)
 
-- If a Tor hidden service is being used, Bitcoin Core will be bound to
+- If a Tor hidden service is being used, Tortoisecoin Core will be bound to
   the standard port 8333 even if a different port is configured for
   clearnet connections.  This prevents leaking node identity through use
   of identical non-default port numbers. (#15651)
@@ -333,7 +333,7 @@ Mempool and transaction relay
   segwit versions) are now accepted into the mempool, relayed, and
   mined.  Attempting to spend those outputs remains forbidden by policy
   ("non-standard").  When this change has been widely deployed, wallets
-  and services can accept any valid bech32 Bitcoin address without
+  and services can accept any valid bech32 Tortoisecoin address without
   concern that transactions paying future segwit versions will become
   stuck in an unconfirmed state. (#15846)
 
@@ -362,7 +362,7 @@ Wallet
   and default to not use the former in coin selection.  When setting
   this flag on an existing wallet, rescanning the blockchain is required
   to correctly mark previously used destinations.  Together with "avoid
-  partial spends" (added in Bitcoin Core v0.17.0), this can eliminate a
+  partial spends" (added in Tortoisecoin Core v0.17.0), this can eliminate a
   serious privacy issue where a malicious user can track spends by
   sending small payments to a previously-paid address that would then
   be included with unrelated inputs in future payments. (#13756)
@@ -424,7 +424,7 @@ Build system changes
 - #15834 Fix transaction relay bugs introduced in #14897 and expire transactions from peer in-flight map (sdaftuar)
 - #15651 torcontrol: Use the default/standard network port for Tor hidden services, even if the internal port is set differently (luke-jr)
 - #16188 Document what happens to getdata of unknown type (MarcoFalke)
-- #15649 Add ChaCha20Poly1305@Bitcoin AEAD (jonasschnelli)
+- #15649 Add ChaCha20Poly1305@Tortoisecoin AEAD (jonasschnelli)
 - #16152 Disable bloom filtering by default (TheBlueMatt)
 - #15993 Drop support of the insecure miniUPnPc versions (hebasto)
 - #16197 Use mockable time for tx download (MarcoFalke)
@@ -443,7 +443,7 @@ Build system changes
 - #15508 Refactor analyzepsbt for use outside RPC code (gwillen)
 - #15747 Remove plethora of Get*Balance (MarcoFalke)
 - #15728 Refactor relay transactions (jnewbery)
-- #15639 bitcoin-wallet tool: Drop libbitcoin_server.a dependency (ryanofsky)
+- #15639 tortoisecoin-wallet tool: Drop libbitcoin_server.a dependency (ryanofsky)
 - #15853 Remove unused import checkpoints.h (MarcoFalke)
 - #15780 add cachable amounts for caching credit/debit values (kallewoof)
 - #15778 Move maxtxfee from node to wallet (jnewbery)
@@ -618,7 +618,7 @@ Build system changes
 - #15919 Remove unused OpenSSL includes to make it more clear where OpenSSL is used (practicalswift)
 - #15978 .gitignore: Don't ignore depends patches (dongcarl)
 - #15939 gitian: Remove windows 32 bit build (MarcoFalke)
-- #15239 scripts and tools: Move non-linux build source tarballs to "bitcoin-binaries/version" directory (hebasto)
+- #15239 scripts and tools: Move non-linux build source tarballs to "tortoisecoin-binaries/version" directory (hebasto)
 - #14047 Add HKDF_HMAC256_L32 and method to negate a private key (jonasschnelli)
 - #16051 add patch to common dependencies (fanquake)
 - #16049 switch to secure download of all dependencies (Kemu)
@@ -697,7 +697,7 @@ Build system changes
 - #15866 Add missing syncwithvalidationinterfacequeue to wallet_import_rescan (MarcoFalke)
 - #15697 Make swap_magic_bytes in p2p_invalid_messages atomic (MarcoFalke)
 - #15895 Avoid re-reading config.ini unnecessarily (luke-jr)
-- #15896 feature_filelock, interface_bitcoin_cli: Use PACKAGE_NAME in messages rather than hardcoding Bitcoin Core (luke-jr)
+- #15896 feature_filelock, interface_bitcoin_cli: Use PACKAGE_NAME in messages rather than hardcoding Tortoisecoin Core (luke-jr)
 - #15897 QA/mininode: Send all headers upfront in send_blocks_and_test to avoid sending an unconnected one (luke-jr)
 - #15696 test_runner: Move feature_pruning to base tests (MarcoFalke)
 - #15869 Add settings merge test to prevent regresssions (ryanofsky)
@@ -863,7 +863,7 @@ Build system changes
 
 ### Documentation
 - #15514 Update Transifex links (fanquake)
-- #15513 add "sections" info to example bitcoin.conf (fanquake)
+- #15513 add "sections" info to example tortoisecoin.conf (fanquake)
 - #15530 Move wallet lock annotations to header (MarcoFalke)
 - #15562 remove duplicate clone step in build-windows.md (fanquake)
 - #15565 remove release note fragments (fanquake)
@@ -915,7 +915,7 @@ Build system changes
 - #16484 update labels in CONTRIBUTING.md (MarcoFalke)
 - #16483 update Python command in msvc readme (sipsorcery)
 - #16504 Add release note for the deprecated totalFee option of bumpfee (promag)
-- #16448 add note on precedence of options in bitcoin.conf (fanquake)
+- #16448 add note on precedence of options in tortoisecoin.conf (fanquake)
 - #16536 Update and extend benchmarking.md (ariard)
 - #16530 Fix grammar and punctuation in developer notes (Tech1k)
 - #16574 Add historical release notes for 0.18.1 (laanwj)
@@ -933,15 +933,15 @@ Build system changes
 - #16629 Add documentation for the new whitelist permissions (NicolasDorier)
 - #16723 Update labels in CONTRIBUTING.md (hebasto)
 - #16461 Tidy up shadowing section (promag)
-- #16621 add default bitcoin.conf locations (GChuf)
+- #16621 add default tortoisecoin.conf locations (GChuf)
 - #16752 Delete stale URL in test README (michaelfolkson)
 - #14862 Declare BLOCK_VALID_HEADER reserved (MarcoFalke)
 - #16806 Add issue templates for bug and feature request (MarcoFalke)
 - #16857 Elaborate need to re-login on Debian-based after usermod for Tor group (clashicly)
-- #16863 Add a missing closing parenthesis in the bitcoin-wallet's help (darosior)
+- #16863 Add a missing closing parenthesis in the tortoisecoin-wallet's help (darosior)
 - #16757 CChainState return values (MarcoFalke)
 - #16847 add comments clarifying how local services are advertised (jamesob)
-- #16812 Fix whitespace errs in .md files, bitcoin.conf, and Info.plist.in (ch4ot1c)
+- #16812 Fix whitespace errs in .md files, tortoisecoin.conf, and Info.plist.in (ch4ot1c)
 - #16885 Update tx-size-small comment with relevant CVE disclosure (instagibbs)
 - #16900 Fix doxygen comment for SignTransaction in rpc/rawtransaction_util (MarcoFalke)
 - #16914 Update homebrew instruction for doxygen (Sjors)
@@ -1086,4 +1086,4 @@ Thanks to everyone who directly contributed to this release:
 - Wladimir J. van der Laan
 - zenosage
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/bitcoin/bitcoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/tortoisecoin/tortoisecoin/).

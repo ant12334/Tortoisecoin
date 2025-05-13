@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-present The Bitcoin Core developers
+# Copyright (c) 2014-present The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Run regression test suite.
@@ -558,12 +558,12 @@ def run_tests(*, test_list, build_dir, tmpdir, jobs=1, enable_coverage=False, ar
     # Warn if there is not enough space on the testing dir
     min_space = MIN_FREE_SPACE + (jobs - 1) * ADDITIONAL_SPACE_PER_JOB
     if shutil.disk_usage(tmpdir).free < min_space:
-        print(f"{BOLD[1]}WARNING!{BOLD[0]} There may be insufficient free space in {tmpdir} to run the Bitcoin functional test suite. "
+        print(f"{BOLD[1]}WARNING!{BOLD[0]} There may be insufficient free space in {tmpdir} to run the Tortoisecoin functional test suite. "
               f"Running the test suite with fewer than {min_space // (1024 * 1024)} MB of free space might cause tests to fail.")
 
     tests_dir = f"{build_dir}/test/functional/"
     # This allows `test_runner.py` to work from an out-of-source build directory using a symlink,
-    # a hard link or a copy on any platform. See https://github.com/bitcoin/bitcoin/pull/27561.
+    # a hard link or a copy on any platform. See https://github.com/tortoisecoin/tortoisecoin/pull/27561.
     sys.path.append(tests_dir)
 
     flags = ['--cachedir={}'.format(cache_dir)] + args
@@ -838,7 +838,7 @@ class RPCCoverage():
     Coverage calculation works by having each test script subprocess write
     coverage files into a particular directory. These files contain the RPC
     commands invoked during testing, as well as a complete listing of RPC
-    commands per `bitcoin-cli help` (`rpc_interface.txt`).
+    commands per `tortoisecoin-cli help` (`rpc_interface.txt`).
 
     After all tests complete, the commands run are combined and diff'd against
     the complete list to calculate uncovered RPC commands.

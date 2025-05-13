@@ -22,9 +22,9 @@ user inputs. Such environments include the Python3 command line interpreter or
 * Python3
 * `bitcoind` built in the same repository as the `TestShell`.
 
-## 2. Importing `TestShell` from the Bitcoin Core repository
+## 2. Importing `TestShell` from the Tortoisecoin Core repository
 
-We can import the `TestShell` by adding the path of the configured Bitcoin Core
+We can import the `TestShell` by adding the path of the configured Tortoisecoin Core
 `test_framework` module to the beginning of the PATH variable, and then
 importing the `TestShell` class from the `test_shell` sub-package. Since
 the build system creates a copy of the `test_framework` module into a new `build/`
@@ -33,7 +33,7 @@ must be used.
 
 ```
 >>> import sys
->>> sys.path.insert(0, "/path/to/bitcoin/build/test/functional")
+>>> sys.path.insert(0, "/path/to/tortoisecoin/build/test/functional")
 >>> from test_framework.test_shell import TestShell
 ```
 
@@ -158,7 +158,7 @@ To prevent the logs from being removed after a shutdown, simply set the
 The following utility consolidates logs from the bitcoind nodes and the
 underlying `BitcoinTestFramework`:
 
-* `/path/to/bitcoin/build/test/functional/combine_logs.py
+* `/path/to/tortoisecoin/build/test/functional/combine_logs.py
   '/path/to/bitcoin_func_test_XXXXXXX'`
 
 ## 6. Custom `TestShell` parameters
@@ -173,9 +173,9 @@ can be called after the TestShell is shut down.
 | Test parameter key | Default Value | Description |
 |---|---|---|
 | `bind_to_localhost_only` | `True` | Binds bitcoind P2P services to `127.0.0.1` if set to `True`.|
-| `cachedir` | `"/path/to/bitcoin/build/test/cache"` | Sets the bitcoind datadir directory. |
+| `cachedir` | `"/path/to/tortoisecoin/build/test/cache"` | Sets the bitcoind datadir directory. |
 | `chain`  | `"regtest"` | Sets the chain-type for the underlying test bitcoind processes. |
-| `configfile` | `"/path/to/bitcoin/build/test/config.ini"` | Sets the location of the test framework config file. |
+| `configfile` | `"/path/to/tortoisecoin/build/test/config.ini"` | Sets the location of the test framework config file. |
 | `coveragedir` | `None` | Records bitcoind RPC test coverage into this directory if set. |
 | `loglevel` | `INFO` | Logs events at this level and higher. Can be set to `DEBUG`, `INFO`, `WARNING`, `ERROR` or `CRITICAL`. |
 | `nocleanup` | `False` | Cleans up temporary test directory if set to `True` during `shutdown`. |
@@ -185,7 +185,7 @@ can be called after the TestShell is shut down.
 | `rpc_timeout` | `60` | Sets the RPC server timeout for the underlying bitcoind processes. |
 | `setup_clean_chain` | `False` | A 200-block-long chain is initialized from cache by default. Instead, `setup_clean_chain` initializes an empty blockchain if set to `True`. |
 | `randomseed` | Random Integer | `TestShell().options.randomseed` is a member of `TestShell` which can be accessed during a test to seed a random generator. User can override default with a constant value for reproducible test runs. |
-| `supports_cli` | `False` | Whether the bitcoin-cli utility is compiled and available for the test. |
+| `supports_cli` | `False` | Whether the tortoisecoin-cli utility is compiled and available for the test. |
 | `tmpdir` | `"/var/folders/.../"` | Sets directory for test logs. Will be deleted upon a successful test run unless `nocleanup` is set to `True` |
 | `trace_rpc` | `False` | Logs all RPC calls if set to `True`. |
-| `usecli` | `False` | Uses the bitcoin-cli interface for all bitcoind commands instead of directly calling the RPC server. Requires `supports_cli`. |
+| `usecli` | `False` | Uses the tortoisecoin-cli interface for all bitcoind commands instead of directly calling the RPC server. Requires `supports_cli`. |

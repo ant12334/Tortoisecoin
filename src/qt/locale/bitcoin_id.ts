@@ -42,11 +42,11 @@
         <translation type="unfinished">&amp;Pilih</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Ini adalah alamat Bitcoin Anda untuk mengirim pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirim koin.</translation>
+        <source>These are your Tortoisecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Ini adalah alamat Tortoisecoin Anda untuk mengirim pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirim koin.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Tortoisecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Berikut ini adalah alamat-alamat bitcoinmu untuk menerima pembayaran. Gunakan tombol 'Buat alamat penerima baru' di tab menerima untuk membuat alamat baru.
 Tanda tangan hanya bisa digunakan dengan tipe alamat 'warisan'</translation>
@@ -169,7 +169,7 @@ Tanda tangan hanya bisa digunakan dengan tipe alamat 'warisan'</translation>
     </message>
     <message>
         <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Ingat mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi bitcoin Anda dari pencurian oleh malware yang menginfeksi komputer Anda.</translation>
+        <translation type="unfinished">Ingat mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi tortoisecoin Anda dari pencurian oleh malware yang menginfeksi komputer Anda.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -386,16 +386,16 @@ Tanda tangan hanya bisa digunakan dengan tipe alamat 'warisan'</translation>
         <translation type="unfinished">Tanda tangani dan kirim pessan...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Tanda tangani sebuah pesan menggunakan alamat Bitcoin Anda untuk membuktikan bahwa Anda adalah pemiliknya</translation>
+        <source>Sign messages with your Tortoisecoin addresses to prove you own them</source>
+        <translation type="unfinished">Tanda tangani sebuah pesan menggunakan alamat Tortoisecoin Anda untuk membuktikan bahwa Anda adalah pemiliknya</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Verifikasi pesan...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Bitcoin tertentu</translation>
+        <source>Verify messages to ensure they were signed with specified Tortoisecoin addresses</source>
+        <translation type="unfinished">Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Tortoisecoin tertentu</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -454,8 +454,8 @@ Tanda tangan hanya bisa digunakan dengan tipe alamat 'warisan'</translation>
         <translation type="unfinished">Menghubungkan ke peers...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Permintaan pembayaran (membuat kode QR dan bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and tortoisecoin: URIs)</source>
+        <translation type="unfinished">Permintaan pembayaran (membuat kode QR dan tortoisecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -508,16 +508,16 @@ Tanda tangan hanya bisa digunakan dengan tipe alamat 'warisan'</translation>
         <translation type="unfinished">Terbaru</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Muat transaksi Bitcoin yang ditandatangani seperapat</translation>
+        <source>Load Partially Signed Tortoisecoin Transaction</source>
+        <translation type="unfinished">Muat transaksi Tortoisecoin yang ditandatangani seperapat</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">Masukkan PSBT dari &amp;clipboard</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Muat transaksi Bitcoin yang ditandatangani seperapat dari clipboard</translation>
+        <source>Load Partially Signed Tortoisecoin Transaction from clipboard</source>
+        <translation type="unfinished">Muat transaksi Tortoisecoin yang ditandatangani seperapat dari clipboard</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -528,8 +528,8 @@ Tanda tangan hanya bisa digunakan dengan tipe alamat 'warisan'</translation>
         <translation type="unfinished">Buka konsol debug dan diagnosa node</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">Buka URI bitcoin:</translation>
+        <source>Open a tortoisecoin: URI</source>
+        <translation type="unfinished">Buka URI tortoisecoin:</translation>
     </message>
     <message>
         <source>Close wallet</source>
@@ -550,8 +550,8 @@ Tanda tangan hanya bisa digunakan dengan tipe alamat 'warisan'</translation>
         <translation type="unfinished">Tutup semua dompet</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Bitcoin yang memungkinkan</translation>
+        <source>Show the %1 help message to get a list with possible Tortoisecoin command-line options</source>
+        <translation type="unfinished">Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Tortoisecoin yang memungkinkan</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -594,10 +594,10 @@ Tanda tangan hanya bisa digunakan dengan tipe alamat 'warisan'</translation>
         <translation type="unfinished">Jendela Utama</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Tortoisecoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
+            <numerusform>%n active connection(s) to Tortoisecoin network.</numerusform>
         </translation>
     </message>
     <message>
@@ -877,8 +877,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation type="unfinished">Ubah alamat pengirim</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">Alamat yang dimasukkan "%1" bukanlah alamat Bitcoin yang valid.</translation>
+        <source>The entered address "%1" is not a valid Tortoisecoin address.</source>
+        <translation type="unfinished">Alamat yang dimasukkan "%1" bukanlah alamat Tortoisecoin yang valid.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -960,8 +960,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 akan mengunduh dan menyimpan salinan rantai blok Bitcoin.</translation>
+        <source>%1 will download and store a copy of the Tortoisecoin block chain.</source>
+        <translation type="unfinished">%1 akan mengunduh dan menyimpan salinan rantai blok Tortoisecoin.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1049,12 +1049,12 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
         <translation type="unfinished">Formulir</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation type="unfinished">Transaksi-transaksi terkini mungkin belum terlihat dan oleh karenanya, saldo dompet Anda mungkin tidak tepat. Informasi ini akan akurat ketika dompet Anda tersinkronisasi dengan jaringan Bitcoin, seperti rincian berikut.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the tortoisecoin network, as detailed below.</source>
+        <translation type="unfinished">Transaksi-transaksi terkini mungkin belum terlihat dan oleh karenanya, saldo dompet Anda mungkin tidak tepat. Informasi ini akan akurat ketika dompet Anda tersinkronisasi dengan jaringan Tortoisecoin, seperti rincian berikut.</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Usaha untuk menggunakan bitcoin yang dipengaruhi oleh transaksi yang belum terlihat tidak akan diterima oleh jaringan.</translation>
+        <translation type="unfinished">Usaha untuk menggunakan tortoisecoin yang dipengaruhi oleh transaksi yang belum terlihat tidak akan diterima oleh jaringan.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1291,8 +1291,8 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
 <context>
     <name>RPCConsole</name>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation type="unfinished">Alamat jaringan yang saat ini digunakan oleh node Bitcoin Anda untuk berkomunikasi dengan node lain.</translation>
+        <source>Network addresses that your Tortoisecoin node is currently using to communicate with other nodes.</source>
+        <translation type="unfinished">Alamat jaringan yang saat ini digunakan oleh node Tortoisecoin Anda untuk berkomunikasi dengan node lain.</translation>
     </message>
     <message>
         <source>Current number of transactions</source>
@@ -1437,7 +1437,7 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Anda dapat menandatangani pesan/perjanjian dengan alamat (P2PKH) Anda untuk membuktikan bahwa Anda dapat menerima bitcoin yang dikirimkan kepada mereka. Berhati-hatilah untuk tidak menandatangani sesuatu yang tidak jelas atau acak, karena serangan phishing mungkin mencoba menipu Anda agar menyerahkan identitas Anda kepada mereka. Hanya tandatangani pernyataan lengkap yang Anda setujui.</translation>
+        <translation type="unfinished">Anda dapat menandatangani pesan/perjanjian dengan alamat (P2PKH) Anda untuk membuktikan bahwa Anda dapat menerima tortoisecoin yang dikirimkan kepada mereka. Berhati-hatilah untuk tidak menandatangani sesuatu yang tidak jelas atau acak, karena serangan phishing mungkin mencoba menipu Anda agar menyerahkan identitas Anda kepada mereka. Hanya tandatangani pernyataan lengkap yang Anda setujui.</translation>
     </message>
     <message>
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
@@ -1517,7 +1517,7 @@ Proses migrasi akan mencadangkan dompet sebelum melakukan pemindahan. Fail cadan
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>tortoisecoin-core</name>
     <message>
         <source>%s failed to validate the -assumeutxo snapshot state. This indicates a hardware problem, or a bug in the software, or a bad software modification that allowed an invalid snapshot to be loaded. As a result of this, the node will shut down and stop using any state that was built on the snapshot, resetting the chain height from %d to %d. On the next restart, the node will resume syncing from %d without using any snapshot data. Please report this incident to %s, including how you obtained the snapshot. The invalid snapshot chainstate will be left on disk in case it is helpful in diagnosing the issue that caused this error.</source>
         <translation type="unfinished">%s gagal memvalidasi status snapshot -asumsikan UTXO (Keluaran Transaksi yang tidak terpakai). Ini mengindikasikan masalah perangkat keras, atau bug pada perangkat lunak, atau modifikasi perangkat lunak yang buruk yang memungkinkan snapshot yang tidak valid dimuat. Sebagai akibatnya, node akan dimatikan dan berhenti menggunakan status apa pun yang dibangun di atas snapshot, mengatur ulang tinggi rantai dari %d ke %d. Pada restart berikutnya, node akan melanjutkan sinkronisasi dari %d tanpa menggunakan data snapshot apa pun. Silakan laporkan kejadian ini ke %s, termasuk bagaimana Anda mendapatkan snapshot tersebut. Status rantai snapshot yang tidak valid akan dibiarkan di disk jika hal ini membantu dalam mendiagnosis masalah yang menyebabkan kesalahan ini.</translation>

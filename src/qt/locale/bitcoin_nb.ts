@@ -58,13 +58,13 @@
         <translation type="unfinished">&amp;Velg</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Dette er dine Bitcoin adresser for å sende betalinger. Husk å sjekke beløp og mottakeradressen før du sender mynter.</translation>
+        <source>These are your Tortoisecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Dette er dine Tortoisecoin adresser for å sende betalinger. Husk å sjekke beløp og mottakeradressen før du sender mynter.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Tortoisecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Dette er dine Bitcoin adresser for å motta betalinger. Bruk 'Lag ny mottaksadresse' knappen i motta tabben for å lage nye adresser. Signering er bare mulig for adresser av typen 'legacy'.</translation>
+        <translation type="unfinished">Dette er dine Tortoisecoin adresser for å motta betalinger. Bruk 'Lag ny mottaksadresse' knappen i motta tabben for å lage nye adresser. Signering er bare mulig for adresser av typen 'legacy'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -294,8 +294,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Beløp</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation type="unfinished">Oppgi en Bitcoin-adresse (f.eks. %1)</translation>
+        <source>Enter a Tortoisecoin address (e.g. %1)</source>
+        <translation type="unfinished">Oppgi en Tortoisecoin-adresse (f.eks. %1)</translation>
     </message>
     <message>
         <source>Unroutable</source>
@@ -467,8 +467,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Proxy er &lt;b&gt;slått på&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Send mynter til en Bitcoin adresse</translation>
+        <source>Send coins to a Tortoisecoin address</source>
+        <translation type="unfinished">Send mynter til en Tortoisecoin adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -511,16 +511,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Signer &amp;melding...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Signer meldingene med Bitcoin adresse for å bevise at diu eier dem</translation>
+        <source>Sign messages with your Tortoisecoin addresses to prove you own them</source>
+        <translation type="unfinished">Signer meldingene med Tortoisecoin adresse for å bevise at diu eier dem</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Verifiser melding...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verifiser meldinger for å sikre at de ble signert med en angitt Bitcoin adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Tortoisecoin addresses</source>
+        <translation type="unfinished">Verifiser meldinger for å sikre at de ble signert med en angitt Tortoisecoin adresse</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -579,8 +579,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Kobler til likemannsnettverket...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Be om betalinger (genererer QR-koder og bitcoin-URIer)</translation>
+        <source>Request payments (generates QR codes and tortoisecoin: URIs)</source>
+        <translation type="unfinished">Be om betalinger (genererer QR-koder og tortoisecoin-URIer)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -634,12 +634,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Oppdatert</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Last delvis signert Bitcoin transaksjon</translation>
+        <source>Load Partially Signed Tortoisecoin Transaction</source>
+        <translation type="unfinished">Last delvis signert Tortoisecoin transaksjon</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Last Delvis Signert Bitcoin Transaksjon fra utklippstavle</translation>
+        <source>Load Partially Signed Tortoisecoin Transaction from clipboard</source>
+        <translation type="unfinished">Last Delvis Signert Tortoisecoin Transaksjon fra utklippstavle</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -658,8 +658,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Mottaker adresser</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">Åpne en bitcoin: URI</translation>
+        <source>Open a tortoisecoin: URI</source>
+        <translation type="unfinished">Åpne en tortoisecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -688,8 +688,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Lukk alle lommebøker</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Vis %1-hjelpemeldingen for å få en liste over mulige Bitcoin-kommandolinjealternativer</translation>
+        <source>Show the %1 help message to get a list with possible Tortoisecoin command-line options</source>
+        <translation type="unfinished">Vis %1-hjelpemeldingen for å få en liste over mulige Tortoisecoin-kommandolinjealternativer</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -740,11 +740,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Skjul</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Tortoisecoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform> %n aktiv tilkobling til Bitcoin-nettverket.</numerusform>
-            <numerusform>%n aktive tilkoblinger til Bitcoin-nettverket.</numerusform>
+            <numerusform> %n aktiv tilkobling til Tortoisecoin-nettverket.</numerusform>
+            <numerusform>%n aktive tilkoblinger til Tortoisecoin-nettverket.</numerusform>
         </translation>
     </message>
     <message>
@@ -1161,8 +1161,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Rediger utsendingsadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">Den angitte adressen "%1" er ikke en gyldig Bitcoin-adresse.</translation>
+        <source>The entered address "%1" is not a valid Tortoisecoin address.</source>
+        <translation type="unfinished">Den angitte adressen "%1" er ikke en gyldig Tortoisecoin-adresse.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1244,8 +1244,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 vil laste ned og lagre en kopi av Bitcoin blokkjeden.</translation>
+        <source>%1 will download and store a copy of the Tortoisecoin block chain.</source>
+        <translation type="unfinished">%1 vil laste ned og lagre en kopi av Tortoisecoin blokkjeden.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1333,12 +1333,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Skjema</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation type="unfinished">Det kan hende nylige transaksjoner ikke vises enda, og at lommeboksaldoen dermed blir uriktig. Denne informasjonen vil rette seg når synkronisering av lommeboka mot bitcoin-nettverket er fullført, som anvist nedenfor.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the tortoisecoin network, as detailed below.</source>
+        <translation type="unfinished">Det kan hende nylige transaksjoner ikke vises enda, og at lommeboksaldoen dermed blir uriktig. Denne informasjonen vil rette seg når synkronisering av lommeboka mot tortoisecoin-nettverket er fullført, som anvist nedenfor.</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Forsøk på å bruke bitcoin som er påvirket av transaksjoner som ikke er vist enda godtas ikke av nettverket.</translation>
+        <translation type="unfinished">Forsøk på å bruke tortoisecoin som er påvirket av transaksjoner som ikke er vist enda godtas ikke av nettverket.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1384,8 +1384,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation type="unfinished">Åpne bitcoin URI</translation>
+        <source>Open tortoisecoin URI</source>
+        <translation type="unfinished">Åpne tortoisecoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1504,8 +1504,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Tillatt innkommend&amp;e tilkoblinger</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Koble til Bitcoin-nettverket gjennom en SOCKS5 proxy.</translation>
+        <source>Connect to the Tortoisecoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Koble til Tortoisecoin-nettverket gjennom en SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1568,8 +1568,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Skal myntkontroll funksjoner vises eller ikke.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Kobl til Bitcoin nettverket gjennom en separat SOCKS5 proxy for Tor onion tjenester. </translation>
+        <source>Connect to the Tortoisecoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Kobl til Tortoisecoin nettverket gjennom en separat SOCKS5 proxy for Tor onion tjenester. </translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1649,8 +1649,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Skjema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Bitcoin-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tortoisecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Tortoisecoin-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1852,16 +1852,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Feil ved betalingsforespørsel</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation type="unfinished">Kan ikke starte bitcoin: Klikk-og-betal håndterer</translation>
+        <source>Cannot start tortoisecoin: click-to-pay handler</source>
+        <translation type="unfinished">Kan ikke starte tortoisecoin: Klikk-og-betal håndterer</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI-håndtering</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation type="unfinished">'bitcoin: //' er ikke en gyldig URI. Bruk 'bitcoin:' i stedet.</translation>
+        <source>'tortoisecoin://' is not a valid URI. Use 'tortoisecoin:' instead.</source>
+        <translation type="unfinished">'tortoisecoin: //' er ikke en gyldig URI. Bruk 'tortoisecoin:' i stedet.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -1872,8 +1872,8 @@ Grunnet utbredte sikkerhetshull i BIP70 er det sterkt anbefalt å ignorere instr
 Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 kompatibel URI.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig bitcoin-adresse eller feilformede URI-parametre.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Tortoisecoin address or malformed URI parameters.</source>
+        <translation type="unfinished">URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig tortoisecoin-adresse eller feilformede URI-parametre.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2358,8 +2358,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">&amp;Melding:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Bitcoin-nettverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Tortoisecoin network.</source>
+        <translation type="unfinished">En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Tortoisecoin-nettverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2623,8 +2623,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Skjul innstillinger for transaksjonsgebyr</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation type="unfinished">Når det er mindre transaksjonsvolum enn plass i blokkene, kan minere så vel som noder håndheve et minimumsgebyr for videresending. Å kun betale minsteavgiften er helt greit, men vær klar over at dette kan skape en transaksjon som aldri blir bekreftet hvis det blir større etterspørsel etter bitcoin-transaksjoner enn nettverket kan behandle.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for tortoisecoin transactions than the network can process.</source>
+        <translation type="unfinished">Når det er mindre transaksjonsvolum enn plass i blokkene, kan minere så vel som noder håndheve et minimumsgebyr for videresending. Å kun betale minsteavgiften er helt greit, men vær klar over at dette kan skape en transaksjon som aldri blir bekreftet hvis det blir større etterspørsel etter tortoisecoin-transaksjoner enn nettverket kan behandle.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -2700,8 +2700,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Cr &amp; eate Usignert</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Oppretter en delvis signert Bitcoin-transaksjon (PSBT) for bruk med f.eks. en offline%1 lommebok eller en PSBT-kompatibel maskinvarelommebok.</translation>
+        <source>Creates a Partially Signed Tortoisecoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Oppretter en delvis signert Tortoisecoin-transaksjon (PSBT) for bruk med f.eks. en offline%1 lommebok eller en PSBT-kompatibel maskinvarelommebok.</translation>
     </message>
     <message>
         <source>%1 to '%2'</source>
@@ -2752,9 +2752,9 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Du kan øke gebyret senere (signaliserer Replace-By-Fee, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Tortoisecoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
-        <translation type="unfinished">Se over ditt transaksjonsforslag. Dette kommer til å produsere en Delvis Signert Bitcoin Transaksjon (PSBT) som du kan lagre eller kopiere og så signere med f.eks. en offline %1 lommebok, eller en PSBT kompatibel hardware lommebok.</translation>
+        <translation type="unfinished">Se over ditt transaksjonsforslag. Dette kommer til å produsere en Delvis Signert Tortoisecoin Transaksjon (PSBT) som du kan lagre eller kopiere og så signere med f.eks. en offline %1 lommebok, eller en PSBT kompatibel hardware lommebok.</translation>
     </message>
     <message>
         <source>Do you want to create this transaction?</source>
@@ -2822,8 +2822,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Advarsel Ugyldig bitcoin-adresse</translation>
+        <source>Warning: Invalid Tortoisecoin address</source>
+        <translation type="unfinished">Advarsel Ugyldig tortoisecoin-adresse</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2861,8 +2861,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Velg tidligere brukt adresse</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation type="unfinished">Bitcoin-adressen betalingen skal sendes til</translation>
+        <source>The Tortoisecoin address to send the payment to</source>
+        <translation type="unfinished">Tortoisecoin-adressen betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2897,8 +2897,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Skriv inn en merkelapp for denne adressen for å legge den til listen av brukte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">En melding som var tilknyttet bitcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Bitcoin-nettverket.</translation>
+        <source>A message that was attached to the tortoisecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Tortoisecoin network.</source>
+        <translation type="unfinished">En melding som var tilknyttet bitcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Tortoisecoin-nettverket.</translation>
     </message>
 </context>
 <context>
@@ -2919,8 +2919,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">&amp;Signer Melding</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation type="unfinished">Bitcoin-adressen meldingen skal signeres med</translation>
+        <source>The Tortoisecoin address to sign the message with</source>
+        <translation type="unfinished">Tortoisecoin-adressen meldingen skal signeres med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2943,8 +2943,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Kopier valgt signatur til utklippstavle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation type="unfinished">Signer meldingen for å bevise at du eier denne Bitcoin-adressen</translation>
+        <source>Sign the message to prove you own this Tortoisecoin address</source>
+        <translation type="unfinished">Signer meldingen for å bevise at du eier denne Tortoisecoin-adressen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2967,8 +2967,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">Skriv inn mottakerens adresse, melding (forsikre deg om at du kopier linjeskift, mellomrom, faner osv. nøyaktig) og underskrift nedenfor for å bekrefte meldingen. Vær forsiktig så du ikke leser mer ut av signaturen enn hva som er i den signerte meldingen i seg selv, for å unngå å bli lurt av et man-in-the-middle-angrep. Merk at dette bare beviser at den som signerer kan motta med adressen, dette beviser ikke hvem som har sendt transaksjoner!</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation type="unfinished">Bitcoin-adressen meldingen ble signert med</translation>
+        <source>The Tortoisecoin address the message was signed with</source>
+        <translation type="unfinished">Tortoisecoin-adressen meldingen ble signert med</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -2979,8 +2979,8 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
         <translation type="unfinished">signaturen som ble gitt da meldingen ble signert</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation type="unfinished">Verifiser meldingen for å være sikker på at den ble signert av den angitte Bitcoin-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Tortoisecoin address</source>
+        <translation type="unfinished">Verifiser meldingen for å være sikker på at den ble signert av den angitte Tortoisecoin-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3578,14 +3578,14 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>tortoisecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s-utviklerne</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s korrupt. Prøv å bruk lommebokverktøyet bitcoin-wallet til å fikse det eller laste en backup.</translation>
+        <source>%s corrupt. Try using the wallet tool tortoisecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s korrupt. Prøv å bruk lommebokverktøyet tortoisecoin-wallet til å fikse det eller laste en backup.</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet from version %i to version %i. Wallet version unchanged.</source>
@@ -3608,8 +3608,8 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
         <translation type="unfinished">Feil: Dumpfil identifiseringsoppføring stemmer ikke. Fikk "%s", forventet "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Feil: Dumpfil versjon er ikke støttet. Denne versjonen av bitcoin-lommebok støtter kun versjon 1 dumpfiler. Fikk dumpfil med versjon %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of tortoisecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Feil: Dumpfil versjon er ikke støttet. Denne versjonen av tortoisecoin-lommebok støtter kun versjon 1 dumpfiler. Fikk dumpfil med versjon %s</translation>
     </message>
     <message>
         <source>File %s already exists. If you are sure this is what you want, move it out of the way first.</source>

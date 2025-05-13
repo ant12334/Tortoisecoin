@@ -59,8 +59,8 @@
         <translation type="unfinished">&amp;Pilih</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Ini adalah alamat Bitcoin anda untuk pembayaran. Periksa jumlah dan alamat penerima sebelum membuat penghantaran koin sentiasa.</translation>
+        <source>These are your Tortoisecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Ini adalah alamat Tortoisecoin anda untuk pembayaran. Periksa jumlah dan alamat penerima sebelum membuat penghantaran koin sentiasa.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -330,8 +330,8 @@
         <translation type="unfinished">Aktiviti rangkaian dilumpuhkan</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Menghantar koin kepada alamat Bitcoin</translation>
+        <source>Send coins to a Tortoisecoin address</source>
+        <translation type="unfinished">Menghantar koin kepada alamat Tortoisecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -354,12 +354,12 @@
         <translation type="unfinished">sulitkan kata laluan milik peribadi anda</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">sahkan mesej bersama alamat bitcoin anda untuk menunjukkan alamat ini anda punya</translation>
+        <source>Sign messages with your Tortoisecoin addresses to prove you own them</source>
+        <translation type="unfinished">sahkan mesej bersama alamat tortoisecoin anda untuk menunjukkan alamat ini anda punya</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Sahkan mesej untuk memastikan mereka telah ditandatangani dengan alamat Bitcoin yang ditentukan</translation>
+        <source>Verify messages to ensure they were signed with specified Tortoisecoin addresses</source>
+        <translation type="unfinished">Sahkan mesej untuk memastikan mereka telah ditandatangani dengan alamat Tortoisecoin yang ditentukan</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -379,8 +379,8 @@
 </translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Request payments (generates QR codes and bitcoin: URIs)
+        <source>Request payments (generates QR codes and tortoisecoin: URIs)</source>
+        <translation type="unfinished">Request payments (generates QR codes and tortoisecoin: URIs)
 </translation>
     </message>
     <message>
@@ -455,10 +455,10 @@
         <translation type="unfinished">&amp;Sorok</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Tortoisecoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%nsambungan aktif ke rangkaian Bitcoin.</numerusform>
+            <numerusform>%nsambungan aktif ke rangkaian Tortoisecoin.</numerusform>
         </translation>
     </message>
     <message>
@@ -747,7 +747,7 @@ Jika dompet ini mengandungi sebarang skrip yang boleh diselesaikan tetapi tidak 
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>tortoisecoin-core</name>
     <message>
         <source>Done loading</source>
         <translation type="unfinished">Baca Selesai</translation>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017-present The Bitcoin Core developers
+# Copyright (c) 2017-present The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Class for bitcoind node under test"""
@@ -86,7 +86,7 @@ class TestNode():
         self.index = i
         self.p2p_conn_index = 1
         self.datadir_path = datadir_path
-        self.bitcoinconf = self.datadir_path / "bitcoin.conf"
+        self.bitcoinconf = self.datadir_path / "tortoisecoin.conf"
         self.stdout_dir = self.datadir_path / "stdout"
         self.stderr_dir = self.datadir_path / "stderr"
         self.chain = chain
@@ -105,7 +105,7 @@ class TestNode():
         # Note that common args are set in the config file (see initialize_datadir)
         self.extra_args = extra_args
         self.version = version
-        # Configuration for logging is set as command-line args rather than in the bitcoin.conf file.
+        # Configuration for logging is set as command-line args rather than in the tortoisecoin.conf file.
         # This means that starting a bitcoind using the temp dir to debug a failed test won't
         # spam debug.log.
         self.args = self.binaries.daemon_argv() + [
@@ -221,7 +221,7 @@ class TestNode():
         # If listening and no -bind is given, then bitcoind would bind P2P ports on
         # 0.0.0.0:P and 127.0.0.1:P+1 (for incoming Tor connections), where P is
         # a unique port chosen by the test framework and configured as port=P in
-        # bitcoin.conf. To avoid collisions, change it to 127.0.0.1:tor_port().
+        # tortoisecoin.conf. To avoid collisions, change it to 127.0.0.1:tor_port().
         will_listen = all(e != "-nolisten" and e != "-listen=0" for e in extra_args)
         has_explicit_bind = self.has_explicit_bind or any(e.startswith("-bind=") for e in extra_args)
         if will_listen and not has_explicit_bind:
@@ -883,7 +883,7 @@ def arg_to_cli(arg):
 
 
 class TestNodeCLI():
-    """Interface to bitcoin-cli for an individual node"""
+    """Interface to tortoisecoin-cli for an individual node"""
     def __init__(self, binaries, datadir):
         self.options = []
         self.binaries = binaries
@@ -892,7 +892,7 @@ class TestNodeCLI():
         self.log = logging.getLogger('TestFramework.bitcoincli')
 
     def __call__(self, *options, input=None):
-        # TestNodeCLI is callable with bitcoin-cli command-line options
+        # TestNodeCLI is callable with tortoisecoin-cli command-line options
         cli = TestNodeCLI(self.binaries, self.datadir)
         cli.options = [str(o) for o in options]
         cli.input = input
@@ -911,7 +911,7 @@ class TestNodeCLI():
         return results
 
     def send_cli(self, clicommand=None, *args, **kwargs):
-        """Run bitcoin-cli command. Deserializes returned string as python object."""
+        """Run tortoisecoin-cli command. Deserializes returned string as python object."""
         pos_args = [arg_to_cli(arg) for arg in args]
         named_args = [str(key) + "=" + arg_to_cli(value) for (key, value) in kwargs.items()]
         p_args = self.binaries.rpc_argv() + [f"-datadir={self.datadir}"] + self.options
@@ -920,7 +920,7 @@ class TestNodeCLI():
         if clicommand is not None:
             p_args += [clicommand]
         p_args += pos_args + named_args
-        self.log.debug("Running bitcoin-cli {}".format(p_args[2:]))
+        self.log.debug("Running tortoisecoin-cli {}".format(p_args[2:]))
         process = subprocess.Popen(p_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         cli_stdout, cli_stderr = process.communicate(input=self.input)
         returncode = process.poll()

@@ -46,13 +46,13 @@
         <translation type="unfinished">Wielt déi Adress, fir Mënz mat ze erhuelen.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Dat sinn Är Bitcoin-Adresse fir Bezuelungen ze schécken. Iwwerpréift ëmmer de Betrag an d'Erhaltsadress virum verschécke vu Mënz.</translation>
+        <source>These are your Tortoisecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Dat sinn Är Tortoisecoin-Adresse fir Bezuelungen ze schécken. Iwwerpréift ëmmer de Betrag an d'Erhaltsadress virum verschécke vu Mënz.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Tortoisecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Dat sinn är Bitcoin-Adressen fir Zuelungen ze erhuelen. Benotzt de 'Nei Erhaltsadress erstellen' Knäppchen am 'Erhalts'-Tab, fir nei Adressen ze erstellen. 
+        <translation type="unfinished">Dat sinn är Tortoisecoin-Adressen fir Zuelungen ze erhuelen. Benotzt de 'Nei Erhaltsadress erstellen' Knäppchen am 'Erhalts'-Tab, fir nei Adressen ze erstellen. 
 D'Signatur ass nëmmen mat Adressen vum Typ 'legacy' méiglech.</translation>
     </message>
     <message>
@@ -182,7 +182,7 @@ D'Signatur ass nëmmen mat Adressen vum Typ 'legacy' méiglech.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Tortoisecoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />

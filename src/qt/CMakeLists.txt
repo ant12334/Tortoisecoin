@@ -1,4 +1,4 @@
-# Copyright (c) 2023-present The Bitcoin Core developers
+# Copyright (c) 2023-present The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or https://opensource.org/license/mit/.
 
@@ -56,7 +56,7 @@ set(CMAKE_AUTOUIC_SEARCH_PATHS forms)
 
 # TODO: The file(GLOB ...) command should be replaced with an explicit
 # file list. Such a change must be synced with the corresponding change
-# to https://github.com/bitcoin-core/bitcoin-maintainer-tools/blob/main/update-translations.py
+# to https://github.com/tortoisecoin-core/tortoisecoin-maintainer-tools/blob/main/update-translations.py
 file(GLOB ts_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} locale/*.ts)
 set_source_files_properties(${ts_files} PROPERTIES OUTPUT_LOCATION ${CMAKE_CURRENT_BINARY_DIR}/locale)
 qt6_add_translation(qm_files ${ts_files})
@@ -68,8 +68,8 @@ configure_file(bitcoin_locale.qrc bitcoin_locale.qrc USE_SOURCE_PERMISSIONS COPY
 add_library(bitcoinqt STATIC EXCLUDE_FROM_ALL
   bantablemodel.cpp
   bantablemodel.h
-  bitcoin.cpp
-  bitcoin.h
+  tortoisecoin.cpp
+  tortoisecoin.h
   bitcoinaddressvalidator.cpp
   bitcoinaddressvalidator.h
   bitcoinamountfield.cpp
@@ -124,7 +124,7 @@ add_library(bitcoinqt STATIC EXCLUDE_FROM_ALL
   utilitydialog.h
   $<$<PLATFORM_ID:Windows>:winshutdownmonitor.cpp>
   $<$<PLATFORM_ID:Windows>:winshutdownmonitor.h>
-  bitcoin.qrc
+  tortoisecoin.qrc
   ${CMAKE_CURRENT_BINARY_DIR}/bitcoin_locale.qrc
 )
 target_compile_definitions(bitcoinqt
@@ -250,40 +250,40 @@ if(qt_lib_type STREQUAL "STATIC_LIBRARY")
   )
 endif()
 
-add_executable(bitcoin-qt
+add_executable(tortoisecoin-qt
   main.cpp
-  ../init/bitcoin-qt.cpp
+  ../init/tortoisecoin-qt.cpp
 )
 
-add_windows_resources(bitcoin-qt res/bitcoin-qt-res.rc)
+add_windows_resources(tortoisecoin-qt res/tortoisecoin-qt-res.rc)
 
-target_link_libraries(bitcoin-qt
+target_link_libraries(tortoisecoin-qt
   core_interface
   bitcoinqt
   bitcoin_node
 )
 
-import_plugins(bitcoin-qt)
-install_binary_component(bitcoin-qt HAS_MANPAGE)
+import_plugins(tortoisecoin-qt)
+install_binary_component(tortoisecoin-qt HAS_MANPAGE)
 if(WIN32)
-  set_target_properties(bitcoin-qt PROPERTIES WIN32_EXECUTABLE TRUE)
+  set_target_properties(tortoisecoin-qt PROPERTIES WIN32_EXECUTABLE TRUE)
 endif()
 
 if(ENABLE_IPC)
-  add_executable(bitcoin-gui
+  add_executable(tortoisecoin-gui
     main.cpp
-    ../init/bitcoin-gui.cpp
+    ../init/tortoisecoin-gui.cpp
   )
-  target_link_libraries(bitcoin-gui
+  target_link_libraries(tortoisecoin-gui
     core_interface
     bitcoinqt
     bitcoin_node
     bitcoin_ipc
   )
-  import_plugins(bitcoin-gui)
-  install_binary_component(bitcoin-gui)
+  import_plugins(tortoisecoin-gui)
+  install_binary_component(tortoisecoin-gui)
   if(WIN32)
-    set_target_properties(bitcoin-gui PROPERTIES WIN32_EXECUTABLE TRUE)
+    set_target_properties(tortoisecoin-gui PROPERTIES WIN32_EXECUTABLE TRUE)
   endif()
 endif()
 

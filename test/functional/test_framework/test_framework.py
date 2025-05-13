@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-present The Bitcoin Core developers
+# Copyright (c) 2014-present The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Base class for RPC testing."""
@@ -58,7 +58,7 @@ class SkipTest(Exception):
 
 
 class Binaries:
-    """Helper class to provide information about bitcoin binaries
+    """Helper class to provide information about tortoisecoin binaries
 
     Attributes:
         paths: Object returned from get_binary_paths() containing information
@@ -77,19 +77,19 @@ class Binaries:
         return self._argv(self.paths.bitcoind)
 
     def rpc_argv(self):
-        "Return argv array that should be used to invoke bitcoin-cli"
+        "Return argv array that should be used to invoke tortoisecoin-cli"
         return self._argv(self.paths.bitcoincli)
 
     def util_argv(self):
-        "Return argv array that should be used to invoke bitcoin-util"
+        "Return argv array that should be used to invoke tortoisecoin-util"
         return self._argv(self.paths.bitcoinutil)
 
     def wallet_argv(self):
-        "Return argv array that should be used to invoke bitcoin-wallet"
+        "Return argv array that should be used to invoke tortoisecoin-wallet"
         return self._argv(self.paths.bitcoinwallet)
 
     def chainstate_argv(self):
-        "Return argv array that should be used to invoke bitcoin-chainstate"
+        "Return argv array that should be used to invoke tortoisecoin-chainstate"
         return self._argv(self.paths.bitcoinchainstate)
 
     def _argv(self, bin_path):
@@ -124,9 +124,9 @@ class BitcoinTestMetaClass(type):
 
 
 class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
-    """Base class for a bitcoin test script.
+    """Base class for a tortoisecoin test script.
 
-    Individual bitcoin test scripts should subclass this class and override the set_test_params() and run_test() methods.
+    Individual tortoisecoin test scripts should subclass this class and override the set_test_params() and run_test() methods.
 
     Individual tests can also override the following methods to customize the test setup:
 
@@ -239,7 +239,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         parser.add_argument("--pdbonfailure", dest="pdbonfailure", default=False, action="store_true",
                             help="Attach a python debugger if test fails")
         parser.add_argument("--usecli", dest="usecli", default=False, action="store_true",
-                            help="use bitcoin-cli instead of RPC for all commands")
+                            help="use tortoisecoin-cli instead of RPC for all commands")
         parser.add_argument("--perf", dest="perf", default=False, action="store_true",
                             help="profile running nodes with perf for the duration of the test")
         parser.add_argument("--valgrind", dest="valgrind", default=False, action="store_true",
@@ -280,10 +280,10 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         paths = types.SimpleNamespace()
         binaries = {
             "bitcoind": ("bitcoind", "BITCOIND"),
-            "bitcoin-cli": ("bitcoincli", "BITCOINCLI"),
-            "bitcoin-util": ("bitcoinutil", "BITCOINUTIL"),
-            "bitcoin-chainstate": ("bitcoinchainstate", "BITCOINCHAINSTATE"),
-            "bitcoin-wallet": ("bitcoinwallet", "BITCOINWALLET"),
+            "tortoisecoin-cli": ("bitcoincli", "BITCOINCLI"),
+            "tortoisecoin-util": ("bitcoinutil", "BITCOINUTIL"),
+            "tortoisecoin-chainstate": ("bitcoinchainstate", "BITCOINCHAINSTATE"),
+            "tortoisecoin-wallet": ("bitcoinwallet", "BITCOINWALLET"),
         }
         for binary, [attribute_name, env_variable_name] in binaries.items():
             default_filename = os.path.join(
@@ -915,7 +915,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
             self.log.debug("Copy cache directory {} to node {}".format(cache_node_dir, i))
             to_dir = get_datadir_path(self.options.tmpdir, i)
             shutil.copytree(cache_node_dir, to_dir)
-            initialize_datadir(self.options.tmpdir, i, self.chain, self.disable_autoconnect)  # Overwrite port/rpcport in bitcoin.conf
+            initialize_datadir(self.options.tmpdir, i, self.chain, self.disable_autoconnect)  # Overwrite port/rpcport in tortoisecoin.conf
 
     def _initialize_chain_clean(self):
         """Initialize empty blockchain for use by the test.
@@ -979,24 +979,24 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
             raise SkipTest("wallet has not been compiled.")
 
     def skip_if_no_wallet_tool(self):
-        """Skip the running test if bitcoin-wallet has not been compiled."""
+        """Skip the running test if tortoisecoin-wallet has not been compiled."""
         if not self.is_wallet_tool_compiled():
-            raise SkipTest("bitcoin-wallet has not been compiled")
+            raise SkipTest("tortoisecoin-wallet has not been compiled")
 
     def skip_if_no_bitcoin_util(self):
-        """Skip the running test if bitcoin-util has not been compiled."""
+        """Skip the running test if tortoisecoin-util has not been compiled."""
         if not self.is_bitcoin_util_compiled():
-            raise SkipTest("bitcoin-util has not been compiled")
+            raise SkipTest("tortoisecoin-util has not been compiled")
 
     def skip_if_no_bitcoin_chainstate(self):
-        """Skip the running test if bitcoin-chainstate has not been compiled."""
+        """Skip the running test if tortoisecoin-chainstate has not been compiled."""
         if not self.is_bitcoin_chainstate_compiled():
-            raise SkipTest("bitcoin-chainstate has not been compiled")
+            raise SkipTest("tortoisecoin-chainstate has not been compiled")
 
     def skip_if_no_cli(self):
-        """Skip the running test if bitcoin-cli has not been compiled."""
+        """Skip the running test if tortoisecoin-cli has not been compiled."""
         if not self.is_cli_compiled():
-            raise SkipTest("bitcoin-cli has not been compiled.")
+            raise SkipTest("tortoisecoin-cli has not been compiled.")
 
     def skip_if_no_previous_releases(self):
         """Skip the running test if previous releases are not available."""
@@ -1017,7 +1017,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
             raise SkipTest("external signer support has not been compiled.")
 
     def is_cli_compiled(self):
-        """Checks whether bitcoin-cli was compiled."""
+        """Checks whether tortoisecoin-cli was compiled."""
         return self.config["components"].getboolean("ENABLE_CLI")
 
     def is_external_signer_compiled(self):
@@ -1029,15 +1029,15 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         return self.config["components"].getboolean("ENABLE_WALLET")
 
     def is_wallet_tool_compiled(self):
-        """Checks whether bitcoin-wallet was compiled."""
+        """Checks whether tortoisecoin-wallet was compiled."""
         return self.config["components"].getboolean("ENABLE_WALLET_TOOL")
 
     def is_bitcoin_util_compiled(self):
-        """Checks whether bitcoin-util was compiled."""
+        """Checks whether tortoisecoin-util was compiled."""
         return self.config["components"].getboolean("ENABLE_BITCOIN_UTIL")
 
     def is_bitcoin_chainstate_compiled(self):
-        """Checks whether bitcoin-chainstate was compiled."""
+        """Checks whether tortoisecoin-chainstate was compiled."""
         return self.config["components"].getboolean("ENABLE_BITCOIN_CHAINSTATE")
 
     def is_zmq_compiled(self):

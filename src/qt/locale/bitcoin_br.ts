@@ -58,13 +58,13 @@
         <translation type="unfinished">C&amp;hoaz</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Ho adresoù Bitcoin evit kas paeamantoù int. Gwirekaat ar sammad hag an adres a resev bewezh a-raok kas gwenneien.</translation>
+        <source>These are your Tortoisecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Ho adresoù Tortoisecoin evit kas paeamantoù int. Gwirekaat ar sammad hag an adres a resev bewezh a-raok kas gwenneien.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Tortoisecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Ho adresoù Bitcoin evit resev paeamantoù eo. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <translation type="unfinished">Ho adresoù Tortoisecoin evit resev paeamantoù eo. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</translation>
     </message>
     <message>
@@ -310,7 +310,7 @@ Signing is only possible with addresses of the type 'legacy'.</translation>
         <translation type="unfinished">&amp;Diskouel</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Tortoisecoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />
@@ -850,7 +850,7 @@ Signing is only possible with addresses of the type 'legacy'.</translation>
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>tortoisecoin-core</name>
     <message>
         <source>Error creating %s</source>
         <translation type="unfinished">Fazi en ur grouiñ %s</translation>

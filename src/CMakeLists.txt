@@ -1,10 +1,10 @@
-# Copyright (c) 2023-present The Bitcoin Core developers
+# Copyright (c) 2023-present The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or https://opensource.org/license/mit/.
 
 include(AddWindowsResources)
 
-configure_file(${PROJECT_SOURCE_DIR}/cmake/bitcoin-build-config.h.in bitcoin-build-config.h USE_SOURCE_PERMISSIONS @ONLY)
+configure_file(${PROJECT_SOURCE_DIR}/cmake/tortoisecoin-build-config.h.in tortoisecoin-build-config.h USE_SOURCE_PERMISSIONS @ONLY)
 include_directories(${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
 
 #=============================
@@ -84,9 +84,9 @@ if(NOT CMAKE_ARCHIVE_OUTPUT_DIRECTORY)
 endif()
 
 add_custom_target(generate_build_info
-  BYPRODUCTS ${PROJECT_BINARY_DIR}/src/bitcoin-build-info.h
-  COMMAND ${CMAKE_COMMAND} -DBUILD_INFO_HEADER_PATH=${PROJECT_BINARY_DIR}/src/bitcoin-build-info.h -DSOURCE_DIR=${PROJECT_SOURCE_DIR} -P ${PROJECT_SOURCE_DIR}/cmake/script/GenerateBuildInfo.cmake
-  COMMENT "Generating bitcoin-build-info.h"
+  BYPRODUCTS ${PROJECT_BINARY_DIR}/src/tortoisecoin-build-info.h
+  COMMAND ${CMAKE_COMMAND} -DBUILD_INFO_HEADER_PATH=${PROJECT_BINARY_DIR}/src/tortoisecoin-build-info.h -DSOURCE_DIR=${PROJECT_SOURCE_DIR} -P ${PROJECT_SOURCE_DIR}/cmake/script/GenerateBuildInfo.cmake
+  COMMENT "Generating tortoisecoin-build-info.h"
   VERBATIM
 )
 add_library(bitcoin_clientversion STATIC EXCLUDE_FROM_ALL
@@ -200,25 +200,25 @@ if(ENABLE_WALLET)
   add_subdirectory(wallet)
 
   if(BUILD_WALLET_TOOL)
-    add_executable(bitcoin-wallet
-      bitcoin-wallet.cpp
-      init/bitcoin-wallet.cpp
+    add_executable(tortoisecoin-wallet
+      tortoisecoin-wallet.cpp
+      init/tortoisecoin-wallet.cpp
       wallet/wallettool.cpp
     )
-    add_windows_resources(bitcoin-wallet bitcoin-wallet-res.rc)
-    target_link_libraries(bitcoin-wallet
+    add_windows_resources(tortoisecoin-wallet tortoisecoin-wallet-res.rc)
+    target_link_libraries(tortoisecoin-wallet
       core_interface
       bitcoin_wallet
       bitcoin_common
       bitcoin_util
       Boost::headers
     )
-    install_binary_component(bitcoin-wallet HAS_MANPAGE)
+    install_binary_component(tortoisecoin-wallet HAS_MANPAGE)
   endif()
 endif()
 
 
-# P2P and RPC server functionality used by `bitcoind` and `bitcoin-qt` executables.
+# P2P and RPC server functionality used by `bitcoind` and `tortoisecoin-qt` executables.
 add_library(bitcoin_node STATIC EXCLUDE_FROM_ALL
   addrdb.cpp
   addrman.cpp
@@ -332,7 +332,7 @@ target_link_libraries(bitcoin_node
 )
 
 
-# Bitcoin Core bitcoind.
+# Tortoisecoin Core bitcoind.
 if(BUILD_DAEMON)
   add_executable(bitcoind
     bitcoind.cpp
@@ -347,17 +347,17 @@ if(BUILD_DAEMON)
   install_binary_component(bitcoind HAS_MANPAGE)
 endif()
 if(ENABLE_IPC AND BUILD_DAEMON)
-  add_executable(bitcoin-node
+  add_executable(tortoisecoin-node
     bitcoind.cpp
-    init/bitcoin-node.cpp
+    init/tortoisecoin-node.cpp
   )
-  target_link_libraries(bitcoin-node
+  target_link_libraries(tortoisecoin-node
     core_interface
     bitcoin_node
     bitcoin_ipc
     $<TARGET_NAME_IF_EXISTS:bitcoin_wallet>
   )
-  install_binary_component(bitcoin-node)
+  install_binary_component(tortoisecoin-node)
 endif()
 
 if(ENABLE_IPC AND BUILD_TESTS)
@@ -388,11 +388,11 @@ target_link_libraries(bitcoin_cli
 )
 
 
-# Bitcoin Core RPC client
+# Tortoisecoin Core RPC client
 if(BUILD_CLI)
-  add_executable(bitcoin-cli bitcoin-cli.cpp)
-  add_windows_resources(bitcoin-cli bitcoin-cli-res.rc)
-  target_link_libraries(bitcoin-cli
+  add_executable(tortoisecoin-cli tortoisecoin-cli.cpp)
+  add_windows_resources(tortoisecoin-cli tortoisecoin-cli-res.rc)
+  target_link_libraries(tortoisecoin-cli
     core_interface
     bitcoin_cli
     bitcoin_common
@@ -400,32 +400,32 @@ if(BUILD_CLI)
     libevent::core
     libevent::extra
   )
-  install_binary_component(bitcoin-cli HAS_MANPAGE)
+  install_binary_component(tortoisecoin-cli HAS_MANPAGE)
 endif()
 
 
 if(BUILD_TX)
-  add_executable(bitcoin-tx bitcoin-tx.cpp)
-  add_windows_resources(bitcoin-tx bitcoin-tx-res.rc)
-  target_link_libraries(bitcoin-tx
+  add_executable(tortoisecoin-tx tortoisecoin-tx.cpp)
+  add_windows_resources(tortoisecoin-tx tortoisecoin-tx-res.rc)
+  target_link_libraries(tortoisecoin-tx
     core_interface
     bitcoin_common
     bitcoin_util
     univalue
   )
-  install_binary_component(bitcoin-tx HAS_MANPAGE)
+  install_binary_component(tortoisecoin-tx HAS_MANPAGE)
 endif()
 
 
 if(BUILD_UTIL)
-  add_executable(bitcoin-util bitcoin-util.cpp)
-  add_windows_resources(bitcoin-util bitcoin-util-res.rc)
-  target_link_libraries(bitcoin-util
+  add_executable(tortoisecoin-util tortoisecoin-util.cpp)
+  add_windows_resources(tortoisecoin-util tortoisecoin-util-res.rc)
+  target_link_libraries(tortoisecoin-util
     core_interface
     bitcoin_common
     bitcoin_util
   )
-  install_binary_component(bitcoin-util HAS_MANPAGE)
+  install_binary_component(tortoisecoin-util HAS_MANPAGE)
 endif()
 
 
@@ -439,19 +439,19 @@ if(BUILD_KERNEL_LIB)
 endif()
 
 if(BUILD_UTIL_CHAINSTATE)
-  add_executable(bitcoin-chainstate
-    bitcoin-chainstate.cpp
+  add_executable(tortoisecoin-chainstate
+    tortoisecoin-chainstate.cpp
   )
   # TODO: The `SKIP_BUILD_RPATH` property setting can be deleted
   #       in the future after reordering Guix script commands to
   #       perform binary checks after the installation step.
   # Relevant discussions:
-  # - https://github.com/hebasto/bitcoin/pull/236#issuecomment-2183120953
-  # - https://github.com/bitcoin/bitcoin/pull/30312#issuecomment-2191235833
-  set_target_properties(bitcoin-chainstate PROPERTIES
+  # - https://github.com/hebasto/tortoisecoin/pull/236#issuecomment-2183120953
+  # - https://github.com/tortoisecoin/tortoisecoin/pull/30312#issuecomment-2191235833
+  set_target_properties(tortoisecoin-chainstate PROPERTIES
     SKIP_BUILD_RPATH OFF
   )
-  target_link_libraries(bitcoin-chainstate
+  target_link_libraries(tortoisecoin-chainstate
     PRIVATE
       core_interface
       bitcoinkernel

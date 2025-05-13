@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-# Copyright (c) 2022-present The Bitcoin Core developers
+# Copyright (c) 2022-present The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 """  Tests the coin_selection:* tracepoint API interface.
-     See https://github.com/bitcoin/bitcoin/blob/master/doc/tracing.md#context-coin_selection
+     See https://github.com/tortoisecoin/tortoisecoin/blob/master/doc/tracing.md#context-coin_selection
 """
 
 # Test will be skipped if we don't have bcc installed

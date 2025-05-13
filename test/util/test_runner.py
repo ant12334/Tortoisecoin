@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # Copyright 2014 BitPay Inc.
-# Copyright 2016-present The Bitcoin Core developers
+# Copyright 2016-present The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Test framework for bitcoin utils.
+"""Test framework for tortoisecoin utils.
 
 Runs automatically during `ctest --test-dir build/`.
 
@@ -39,7 +39,7 @@ def main():
     # Add the format/level to the logger
     logging.basicConfig(format=formatter, level=level)
 
-    bctester(os.path.join(env_conf["SRCDIR"], "test", "util", "data"), "bitcoin-util-test.json", env_conf)
+    bctester(os.path.join(env_conf["SRCDIR"], "test", "util", "data"), "tortoisecoin-util-test.json", env_conf)
 
 def bctester(testDir, input_basename, buildenv):
     """ Loads and parses the input file, runs all tests and reports results"""
@@ -74,9 +74,9 @@ def bctest(testDir, testObj, buildenv):
     """
     # Get the exec names and arguments
     execprog = os.path.join(buildenv["BUILDDIR"], "bin", testObj["exec"] + buildenv["EXEEXT"])
-    if testObj["exec"] == "./bitcoin-util":
+    if testObj["exec"] == "./tortoisecoin-util":
         execprog = os.getenv("BITCOINUTIL", default=execprog)
-    elif testObj["exec"] == "./bitcoin-tx":
+    elif testObj["exec"] == "./tortoisecoin-tx":
         execprog = os.getenv("BITCOINTX", default=execprog)
 
     execargs = testObj['args']

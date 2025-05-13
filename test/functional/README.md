@@ -24,7 +24,7 @@ don't have test cases for.
 - The oldest supported Python version is specified in [doc/dependencies.md](/doc/dependencies.md).
   Consider using [pyenv](https://github.com/pyenv/pyenv), which checks [.python-version](/.python-version),
   to prevent accidentally introducing modern syntax from an unsupported Python version.
-  The CI linter job also checks this, but [possibly not in all cases](https://github.com/bitcoin/bitcoin/pull/14884#discussion_r239585126).
+  The CI linter job also checks this, but [possibly not in all cases](https://github.com/tortoisecoin/tortoisecoin/pull/14884#discussion_r239585126).
 - See [the python lint script](/test/lint/lint-python.py) that checks for violations that
   could lead to bugs and issues in the test code.
 - Use [type hints](https://docs.python.org/3/library/typing.html) in your code to improve code readability
@@ -109,7 +109,7 @@ implements the test logic.
 
 - `P2PConnection` is the class used to connect to a bitcoind.  `P2PInterface`
 contains the higher level logic for processing P2P payloads and connecting to
-the Bitcoin Core node application logic. For custom behaviour, subclass the
+the Tortoisecoin Core node application logic. For custom behaviour, subclass the
 P2PInterface object and override the callback methods.
 
 `P2PConnection`s can be used as such:
