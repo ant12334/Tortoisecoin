@@ -24,7 +24,7 @@ class Ipc;
 //! and get access to other interfaces (Node, Chain, Wallet, etc).
 //!
 //! There is a different Init interface implementation for each process
-//! (tortoisecoin-gui, tortoisecoin-node, tortoisecoin-wallet, bitcoind, tortoisecoin-qt) and each
+//! (tortoisecoin-gui, tortoisecoin-node, tortoisecoin-wallet, tortoisecoind, tortoisecoin-qt) and each
 //! implementation can implement the make methods for interfaces it supports.
 //! The default make methods all return null.
 class Init

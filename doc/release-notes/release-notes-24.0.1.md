@@ -6,7 +6,7 @@ announced or released.
 
 Tortoisecoin Core version 24.0.1 is now available from:
 
-  <https://bitcoincore.org/bin/tortoisecoin-core-24.0.1/>
+  <https://tortoisecoincore.org/bin/tortoisecoin-core-24.0.1/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
@@ -17,7 +17,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://tortoisecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -25,7 +25,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
 installer (on Windows) or just copy over `/Applications/Tortoisecoin-Qt` (on macOS)
-or `bitcoind`/`tortoisecoin-qt` (on Linux).
+or `tortoisecoind`/`tortoisecoin-qt` (on Linux).
 
 Upgrading directly from a version of Tortoisecoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
@@ -91,7 +91,7 @@ not accept unconfirmed transactions as final, and if they insist on doing so,
 to take the appropriate steps to ensure they have some recourse or plan for
 when their assumptions do not hold.
 
-[Tortoisecoin Core 0.12.0]: https://bitcoincore.org/en/releases/0.12.0/#opt-in-replace-by-fee-transactions
+[Tortoisecoin Core 0.12.0]: https://tortoisecoincore.org/en/releases/0.12.0/#opt-in-replace-by-fee-transactions
 [bip125]: https://github.com/tortoisecoin/bips/blob/master/bip-0125.mediawiki
 
 Notable changes
@@ -247,7 +247,7 @@ GUI changes
 - Configuration changes made in the tortoisecoin GUI (such as the pruning setting,
 proxy settings, UPNP preferences) are now saved to `<datadir>/settings.json`
 file rather than to the Qt settings backend (windows registry or unix desktop
-config files), so these settings will now apply to bitcoind, instead of being
+config files), so these settings will now apply to tortoisecoind, instead of being
 ignored. (#15936, gui#602)
 
 - Also, the interaction between GUI settings and `tortoisecoin.conf` settings is

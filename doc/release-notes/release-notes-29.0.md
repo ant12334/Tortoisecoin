@@ -1,6 +1,6 @@
 Tortoisecoin Core version 29.0 is now available from:
 
-  <https://bitcoincore.org/bin/tortoisecoin-core-29.0/>
+  <https://tortoisecoincore.org/bin/tortoisecoin-core-29.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
@@ -11,7 +11,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://tortoisecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -19,7 +19,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
 installer (on Windows) or just copy over `/Applications/Tortoisecoin-Qt` (on macOS)
-or `bitcoind`/`tortoisecoin-qt` (on Linux).
+or `tortoisecoind`/`tortoisecoin-qt` (on Linux).
 
 Upgrading directly from a version of Tortoisecoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
@@ -54,7 +54,7 @@ For example, if you are using `-port=5555` with a non-standard value and not usi
 previously Tortoisecoin Core would listen for incoming Tor connections on `127.0.0.1:8334`.
 Now it would listen on `127.0.0.1:5556` (`-port` plus one). If you configured the hidden service manually
 in torrc now you have to change it from `HiddenServicePort 8333 127.0.0.1:8334` to `HiddenServicePort 8333
-127.0.0.1:5556`, or configure bitcoind with `-bind=127.0.0.1:8334=onion` to get the previous behavior.
+127.0.0.1:5556`, or configure tortoisecoind with `-bind=127.0.0.1:8334=onion` to get the previous behavior.
 (#31223)
 
 - Upon receiving an orphan transaction (an unconfirmed transaction that spends unknown inputs), the node will attempt to download missing parents from all peers who announced the orphan. This change may increase bandwidth usage but make orphan-handling more reliable. (#31397)
@@ -143,8 +143,8 @@ The build system has been migrated from Autotools to CMake:
 6. The build system supports component‐based installation. The names of the installable components coincide with the build target names. For example:
 ```
 cmake -B build
-cmake --build build --target bitcoind
-cmake --install build --component bitcoind
+cmake --build build --target tortoisecoind
+cmake --install build --component tortoisecoind
 ```
 
 7. If any of the `CPPFLAGS`, `CFLAGS`, `CXXFLAGS` or `LDFLAGS` environment variables were used in your Autotools-based build process, you should instead use the corresponding CMake variables (`APPEND_CPPFLAGS`, `APPEND_CFLAGS`, `APPEND_CXXFLAGS` and `APPEND_LDFLAGS`). Alternatively, if you opt to use the dedicated `CMAKE_<...>_FLAGS` variables, you must ensure that the resulting compiler or linker invocations are as expected.

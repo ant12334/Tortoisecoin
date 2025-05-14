@@ -1,15 +1,15 @@
-# bash programmable completion for bitcoind(1) and tortoisecoin-qt(1)
+# bash programmable completion for tortoisecoind(1) and tortoisecoin-qt(1)
 # Copyright (c) 2012-2022 The Tortoisecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_bitcoind() {
+_tortoisecoind() {
     local cur prev words=() cword
-    local bitcoind
+    local tortoisecoind
 
-    # save and use original argument to invoke bitcoind for -help
+    # save and use original argument to invoke tortoisecoind for -help
     # it might not be in $PATH
-    bitcoind="$1"
+    tortoisecoind="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -33,7 +33,7 @@ _bitcoind() {
             # only parse -help if sensible
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
                 local helpopts
-                helpopts=$($bitcoind -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($tortoisecoind -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
                 COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
             fi
 
@@ -45,7 +45,7 @@ _bitcoind() {
             ;;
     esac
 } &&
-complete -F _bitcoind bitcoind tortoisecoin-qt
+complete -F _tortoisecoind tortoisecoind tortoisecoin-qt
 
 # Local variables:
 # mode: shell-script

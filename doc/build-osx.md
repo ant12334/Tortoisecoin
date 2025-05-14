@@ -2,7 +2,7 @@
 
 **Updated for MacOS [15](https://www.apple.com/macos/macos-sequoia/)**
 
-This guide describes how to build bitcoind, command-line utilities, and GUI on macOS.
+This guide describes how to build tortoisecoind, command-line utilities, and GUI on macOS.
 
 ## Preparation
 
@@ -65,7 +65,7 @@ git clone https://github.com/tortoisecoin/tortoisecoin.git
 
 #### Wallet Dependencies
 
-It is not necessary to build wallet functionality to run `bitcoind` or  `tortoisecoin-qt`.
+It is not necessary to build wallet functionality to run `tortoisecoind` or  `tortoisecoin-qt`.
 
 ###### Descriptor Wallet Support
 
@@ -196,10 +196,10 @@ cmake --build build --target deploy
 
 ## Running Tortoisecoin Core
 
-Tortoisecoin Core should now be available at `./build/bin/bitcoind`.
+Tortoisecoin Core should now be available at `./build/bin/tortoisecoind`.
 If you compiled support for the GUI, it should be available at `./build/bin/tortoisecoin-qt`.
 
-The first time you run `bitcoind` or `tortoisecoin-qt`, it will start downloading the blockchain.
+The first time you run `tortoisecoind` or `tortoisecoin-qt`, it will start downloading the blockchain.
 This process could take many hours, or even days on slower than average systems.
 
 By default, blockchain and wallet data files will be stored in:
@@ -227,7 +227,7 @@ tail -f $HOME/Library/Application\ Support/Tortoisecoin/debug.log
 ## Other commands:
 
 ```shell
-./build/bin/bitcoind -daemon      # Starts the tortoisecoin daemon.
+./build/bin/tortoisecoind -daemon      # Starts the tortoisecoin daemon.
 ./build/bin/tortoisecoin-cli --help    # Outputs a list of command-line options.
 ./build/bin/tortoisecoin-cli help      # Outputs a list of RPC commands when the daemon is running.
 ./build/bin/tortoisecoin-qt -server # Starts the tortoisecoin-qt server mode, allows tortoisecoin-cli control

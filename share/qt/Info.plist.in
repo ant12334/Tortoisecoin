@@ -43,7 +43,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.bitcoinfoundation.Tortoisecoin-Qt</string>
+  <string>org.tortoisecoinfoundation.Tortoisecoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>

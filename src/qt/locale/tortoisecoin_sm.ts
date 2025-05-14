@@ -191,8 +191,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">I tua</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Manatua o le fa'amaonia o lau atigipusa e le mafai ona puipuia lelei lau bitcoins mai le fa'ama'i o malware o lo'o fa'ama'i i lau komepiuta.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your tortoisecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Manatua o le fa'amaonia o lau atigipusa e le mafai ona puipuia lelei lau tortoisecoins mai le fa'ama'i o malware o lo'o fa'ama'i i lau komepiuta.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -1437,8 +1437,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         <translation type="unfinished">E mafai e fefaʻatauaiga lata mai ona le mafai ona vaʻaia, ma o le mea lea, atonu e le tusa ai le tamaʻi palani o lau 'wallet'. O lenei fa'amaoniga o le a sa'o pe a mae'a ona fa'atufugaga lau 'wallet' ma le upega tafaʻilagi o le tortoisecoin, e pei o fa'amaoniga i lalo.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">O le taumafaiga e fa'aaoga bitcoins e a'afia i le fa'amaoniga e le'i fa'aalia o le a le taliaina e le upega.</translation>
+        <source>Attempting to spend tortoisecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">O le taumafaiga e fa'aaoga tortoisecoins e a'afia i le fa'amaoniga e le'i fa'aalia o le a le taliaina e le upega.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>

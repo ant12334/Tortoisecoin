@@ -3,7 +3,7 @@
 
 Tortoisecoin Core version 0.21.1 is now available from:
 
-  <https://bitcoincore.org/bin/tortoisecoin-core-0.21.1/>
+  <https://tortoisecoincore.org/bin/tortoisecoin-core-0.21.1/>
 
 This minor release includes various bug fixes and performance
 improvements, as well as updated translations.
@@ -14,7 +14,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://tortoisecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -22,7 +22,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
 installer (on Windows) or just copy over `/Applications/Tortoisecoin-Qt` (on Mac)
-or `bitcoind`/`tortoisecoin-qt` (on Linux).
+or `tortoisecoind`/`tortoisecoin-qt` (on Linux).
 
 Upgrading directly from a version of Tortoisecoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
@@ -53,7 +53,7 @@ for schnorr signatures (BIP340) and tapscript (BIP342).
 If activated, these improvements will allow users of single-signature
 scripts, multisignature scripts, and complex contracts to all use
 identical-appearing commitments that enhance their privacy and the
-fungibility of all bitcoins. Spenders will enjoy lower fees and the
+fungibility of all tortoisecoins. Spenders will enjoy lower fees and the
 ability to resolve many multisig scripts and complex contracts with the
 same efficiency, low fees, and large anonymity set as single-sig users.
 Taproot and schnorr also include efficiency improvements for full nodes
@@ -97,7 +97,7 @@ activates.  Alternatively, miners may manually start signaling on bit 2
 at any time; if taproot activates, they will need to ensure they update
 their nodes before block 709632 or non-upgraded nodes could cause them to mine on
 an invalid chain.  See the [versionbits
-FAQ](https://bitcoincore.org/en/2016/06/08/version-bits-miners-faq/) for
+FAQ](https://tortoisecoincore.org/en/2016/06/08/version-bits-miners-faq/) for
 details.
 
 
@@ -109,15 +109,15 @@ For more information about taproot, please see the following resources:
   - [BIP342 Validation of Taproot scripts](https://github.com/tortoisecoin/bips/blob/master/bip-0342.mediawiki)
 
 - Popular articles;
-  - [Taproot Is Coming: What It Is, and How It Will Benefit Tortoisecoin](https://bitcoinmagazine.com/technical/taproot-coming-what-it-and-how-it-will-benefit-tortoisecoin)
+  - [Taproot Is Coming: What It Is, and How It Will Benefit Tortoisecoin](https://tortoisecoinmagazine.com/technical/taproot-coming-what-it-and-how-it-will-benefit-tortoisecoin)
   - [What do Schnorr Signatures Mean for Tortoisecoin?](https://academy.binance.com/en/articles/what-do-schnorr-signatures-mean-for-tortoisecoin)
   - [The Schnorr Signature & Taproot Softfork Proposal](https://blog.bitmex.com/the-schnorr-signature-taproot-softfork-proposal/)
 
 - Development history overview
-  - [Taproot](https://bitcoinops.org/en/topics/taproot/)
-  - [Schnorr signatures](https://bitcoinops.org/en/topics/schnorr-signatures/)
-  - [Tapscript](https://bitcoinops.org/en/topics/tapscript/)
-  - [Soft fork activation](https://bitcoinops.org/en/topics/soft-fork-activation/)
+  - [Taproot](https://tortoisecoinops.org/en/topics/taproot/)
+  - [Schnorr signatures](https://tortoisecoinops.org/en/topics/schnorr-signatures/)
+  - [Tapscript](https://tortoisecoinops.org/en/topics/tapscript/)
+  - [Soft fork activation](https://tortoisecoinops.org/en/topics/soft-fork-activation/)
 
 - Other
   - [Questions and answers related to taproot](https://tortoisecoin.stackexchange.com/questions/tagged/taproot)

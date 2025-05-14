@@ -1,36 +1,36 @@
 #!/usr/bin/env bash
 #
-#  bitcoind The tortoisecoin core server.
+#  tortoisecoind The tortoisecoin core server.
 #
 #
 # chkconfig: 345 80 20
-# description: bitcoind
-# processname: bitcoind
+# description: tortoisecoind
+# processname: tortoisecoind
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/bitcoind, see below
-if [ -f /etc/sysconfig/bitcoind ]; then
-        . /etc/sysconfig/bitcoind
+# you can override defaults in /etc/sysconfig/tortoisecoind, see below
+if [ -f /etc/sysconfig/tortoisecoind ]; then
+        . /etc/sysconfig/tortoisecoind
 fi
 
 RETVAL=0
 
-prog=bitcoind
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/bitcoind
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/bitcoind}
+prog=tortoisecoind
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/tortoisecoind
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/tortoisecoind}
 
-# bitcoind defaults to /usr/bin/bitcoind, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/bitcoind}
+# tortoisecoind defaults to /usr/bin/tortoisecoind, override with BITCOIND_BIN
+tortoisecoind=${BITCOIND_BIN-/usr/bin/tortoisecoind}
 
-# bitcoind opts default to -disablewallet, override with BITCOIND_OPTS
-bitcoind_opts=${BITCOIND_OPTS--disablewallet}
+# tortoisecoind opts default to -disablewallet, override with BITCOIND_OPTS
+tortoisecoind_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $bitcoind $bitcoind_opts
+    daemon $DAEMONOPTS $tortoisecoind $tortoisecoind_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

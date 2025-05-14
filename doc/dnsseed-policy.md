@@ -44,7 +44,7 @@ related to the DNS seed operation.
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Tortoisecoin
 Core development team as well as posting on
-[tortoisecoin-dev](https://groups.google.com/g/bitcoindev).
+[tortoisecoin-dev](https://groups.google.com/g/tortoisecoindev).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

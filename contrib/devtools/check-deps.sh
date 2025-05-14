@@ -5,13 +5,13 @@ set -Eeuo pipefail
 
 # Declare paths to libraries
 declare -A LIBS
-LIBS[cli]="libbitcoin_cli.a"
-LIBS[common]="libbitcoin_common.a"
-LIBS[consensus]="libbitcoin_consensus.a"
-LIBS[crypto]="libbitcoin_crypto.a"
-LIBS[node]="libbitcoin_node.a"
-LIBS[util]="libbitcoin_util.a"
-LIBS[wallet]="libbitcoin_wallet.a"
+LIBS[cli]="libtortoisecoin_cli.a"
+LIBS[common]="libtortoisecoin_common.a"
+LIBS[consensus]="libtortoisecoin_consensus.a"
+LIBS[crypto]="libtortoisecoin_crypto.a"
+LIBS[node]="libtortoisecoin_node.a"
+LIBS[util]="libtortoisecoin_util.a"
+LIBS[wallet]="libtortoisecoin_wallet.a"
 
 # Declare allowed dependencies "X Y" where X is allowed to depend on Y. This
 # list is taken from doc/design/libraries.md.

@@ -37,7 +37,7 @@ class SignetMinerTest(BitcoinTestFramework):
     def skip_test_if_missing_module(self):
         self.skip_if_no_cli()
         self.skip_if_no_wallet()
-        self.skip_if_no_bitcoin_util()
+        self.skip_if_no_tortoisecoin_util()
 
     def run_test(self):
         node = self.nodes[0]

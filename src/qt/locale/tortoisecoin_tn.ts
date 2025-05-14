@@ -191,8 +191,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Boa</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Gakologelwang gore go tlhabolola wallet ya gago ga go kgone go tshireletsa bitcoins tsa gago ka botlalo go tswa go go robelwa ke malware e e golangweng mo khomphutheng ya gago.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your tortoisecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Gakologelwang gore go tlhabolola wallet ya gago ga go kgone go tshireletsa tortoisecoins tsa gago ka botlalo go tswa go go robelwa ke malware e e golangweng mo khomphutheng ya gago.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>

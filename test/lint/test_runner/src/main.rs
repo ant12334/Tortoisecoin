@@ -469,7 +469,7 @@ fn get_pathspecs_exclude_whitespace() -> Vec<String> {
             "doc/README_windows.txt",
             // Temporary excludes, or existing violations
             "doc/release-notes/release-notes-0.*",
-            "contrib/init/bitcoind.openrc",
+            "contrib/init/tortoisecoind.openrc",
             "contrib/macdeploy/macdeployqtplus",
             "src/crypto/sha256_sse4.cpp",
             "src/qt/res/src/*.svg",

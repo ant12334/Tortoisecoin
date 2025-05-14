@@ -1,6 +1,6 @@
 {
   "algorithm" : "ECDSA",
-  "schema" : "ecdsa_bitcoin_verify_schema.json",
+  "schema" : "ecdsa_tortoisecoin_verify_schema.json",
   "generatorVersion" : "0.9rc5",
   "numberOfTests" : 463,
   "header" : [
@@ -99,7 +99,7 @@
       "effect" : "In tortoisecoin exchanges, it may be used to make a double deposits or double withdrawals",
       "links" : [
         "https://en.tortoisecoin.it/wiki/Transaction_malleability",
-        "https://en.bitcoinwiki.org/wiki/Transaction_Malleability"
+        "https://en.tortoisecoinwiki.org/wiki/Transaction_Malleability"
       ]
     },
     "SmallRandS" : {

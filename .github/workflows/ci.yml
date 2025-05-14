@@ -249,7 +249,7 @@ jobs:
         if: matrix.job-type == 'standard'
         working-directory: build
         env:
-          BITCOIND: '${{ github.workspace }}\build\bin\Release\bitcoind.exe'
+          BITCOIND: '${{ github.workspace }}\build\bin\Release\tortoisecoind.exe'
           BITCOINCLI: '${{ github.workspace }}\build\bin\Release\tortoisecoin-cli.exe'
           BITCOINUTIL: '${{ github.workspace }}\build\bin\Release\tortoisecoin-util.exe'
           BITCOINWALLET: '${{ github.workspace }}\build\bin\Release\tortoisecoin-wallet.exe'
@@ -344,13 +344,13 @@ jobs:
         with:
           name: x86_64-w64-mingw32-executables-${{ github.run_id }}
 
-      - name: Run bitcoind.exe
-        run: ./bin/bitcoind.exe -version
+      - name: Run tortoisecoind.exe
+        run: ./bin/tortoisecoind.exe -version
 
       - name: Run unit tests
         # Can't use ctest here like other jobs as we don't have a CMake build tree.
         run: |
-          ./bin/test_bitcoin.exe -l test_suite
+          ./bin/test_tortoisecoin.exe -l test_suite
           ./src/secp256k1/bin/exhaustive_tests.exe
           ./src/secp256k1/bin/noverify_tests.exe
           ./src/secp256k1/bin/tests.exe
@@ -358,7 +358,7 @@ jobs:
           ./src/univalue/unitester.exe
 
       - name: Run benchmarks
-        run: ./bin/bench_bitcoin.exe -sanity-check
+        run: ./bin/bench_tortoisecoin.exe -sanity-check
 
       - name: Adjust paths in test/config.ini
         shell: pwsh

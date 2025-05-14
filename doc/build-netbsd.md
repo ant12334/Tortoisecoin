@@ -2,7 +2,7 @@
 
 **Updated for NetBSD [10.1](https://netbsd.org/releases/formal-10/NetBSD-10.1.html)**
 
-This guide describes how to build bitcoind, command-line utilities, and GUI on NetBSD.
+This guide describes how to build tortoisecoind, command-line utilities, and GUI on NetBSD.
 
 ## Preparation
 
@@ -45,7 +45,7 @@ git clone https://github.com/tortoisecoin/tortoisecoin.git
 
 #### Wallet Dependencies
 
-It is not necessary to build wallet functionality to run bitcoind or the GUI.
+It is not necessary to build wallet functionality to run tortoisecoind or the GUI.
 
 ###### Descriptor Wallet Support
 

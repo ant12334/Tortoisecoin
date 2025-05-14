@@ -191,8 +191,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Murahu</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Humbulani uri u ṅwalulula tshipatshi tshaṋu a zwi nga koni u tsireledza nga vhuḓalo bitcoins dzaṋu kha u tswiwa nga malware ine ya kavhila khomphyutha yaṋu.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your tortoisecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Humbulani uri u ṅwalulula tshipatshi tshaṋu a zwi nga koni u tsireledza nga vhuḓalo tortoisecoins dzaṋu kha u tswiwa nga malware ine ya kavhila khomphyutha yaṋu.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>

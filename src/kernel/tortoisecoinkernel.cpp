@@ -6,6 +6,6 @@
 #include <functional>
 #include <string>
 
-// Define G_TRANSLATION_FUN symbol in libbitcoinkernel library so users of the
+// Define G_TRANSLATION_FUN symbol in libtortoisecoinkernel library so users of the
 // library aren't required to export this symbol
 extern const TranslateFn G_TRANSLATION_FUN{nullptr};

@@ -47,7 +47,7 @@ TEST_EXIT_PASSED = 0
 TEST_EXIT_FAILED = 1
 TEST_EXIT_SKIPPED = 77
 
-TMPDIR_PREFIX = "bitcoin_func_test_"
+TMPDIR_PREFIX = "tortoisecoin_func_test_"
 
 
 class SkipTest(Exception):
@@ -73,24 +73,24 @@ class Binaries:
         self.bin_dir = bin_dir
 
     def daemon_argv(self):
-        "Return argv array that should be used to invoke bitcoind"
-        return self._argv(self.paths.bitcoind)
+        "Return argv array that should be used to invoke tortoisecoind"
+        return self._argv(self.paths.tortoisecoind)
 
     def rpc_argv(self):
         "Return argv array that should be used to invoke tortoisecoin-cli"
-        return self._argv(self.paths.bitcoincli)
+        return self._argv(self.paths.tortoisecoincli)
 
     def util_argv(self):
         "Return argv array that should be used to invoke tortoisecoin-util"
-        return self._argv(self.paths.bitcoinutil)
+        return self._argv(self.paths.tortoisecoinutil)
 
     def wallet_argv(self):
         "Return argv array that should be used to invoke tortoisecoin-wallet"
-        return self._argv(self.paths.bitcoinwallet)
+        return self._argv(self.paths.tortoisecoinwallet)
 
     def chainstate_argv(self):
         "Return argv array that should be used to invoke tortoisecoin-chainstate"
-        return self._argv(self.paths.bitcoinchainstate)
+        return self._argv(self.paths.tortoisecoinchainstate)
 
     def _argv(self, bin_path):
         """Return argv array that should be used to invoke the command.
@@ -218,7 +218,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         previous_releases_path = os.getenv("PREVIOUS_RELEASES_DIR") or os.getcwd() + "/releases"
         parser = argparse.ArgumentParser(usage="%(prog)s [options]")
         parser.add_argument("--nocleanup", dest="nocleanup", default=False, action="store_true",
-                            help="Leave bitcoinds and test.* datadir on exit or error")
+                            help="Leave tortoisecoinds and test.* datadir on exit or error")
         parser.add_argument("--cachedir", dest="cachedir", default=os.path.abspath(os.path.dirname(test_file) + "/../cache"),
                             help="Directory for caching pregenerated datadirs (default: %(default)s)")
         parser.add_argument("--tmpdir", dest="tmpdir", help="Root directory for datadirs (must not exist)")
@@ -279,11 +279,11 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
 
         paths = types.SimpleNamespace()
         binaries = {
-            "bitcoind": ("bitcoind", "BITCOIND"),
-            "tortoisecoin-cli": ("bitcoincli", "BITCOINCLI"),
-            "tortoisecoin-util": ("bitcoinutil", "BITCOINUTIL"),
-            "tortoisecoin-chainstate": ("bitcoinchainstate", "BITCOINCHAINSTATE"),
-            "tortoisecoin-wallet": ("bitcoinwallet", "BITCOINWALLET"),
+            "tortoisecoind": ("tortoisecoind", "BITCOIND"),
+            "tortoisecoin-cli": ("tortoisecoincli", "BITCOINCLI"),
+            "tortoisecoin-util": ("tortoisecoinutil", "BITCOINUTIL"),
+            "tortoisecoin-chainstate": ("tortoisecoinchainstate", "BITCOINCHAINSTATE"),
+            "tortoisecoin-wallet": ("tortoisecoinwallet", "BITCOINWALLET"),
         }
         for binary, [attribute_name, env_variable_name] in binaries.items():
             default_filename = os.path.join(
@@ -575,7 +575,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
                 test_node_i.replace_in_config([('[regtest]', '')])
 
     def start_node(self, i, *args, **kwargs):
-        """Start a bitcoind"""
+        """Start a tortoisecoind"""
 
         node = self.nodes[i]
 
@@ -586,7 +586,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
             coverage.write_all_rpc_commands(self.options.coveragedir, node.rpc)
 
     def start_nodes(self, extra_args=None, *args, **kwargs):
-        """Start multiple bitcoinds"""
+        """Start multiple tortoisecoinds"""
 
         if extra_args is None:
             extra_args = [None] * self.num_nodes
@@ -601,11 +601,11 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
                 coverage.write_all_rpc_commands(self.options.coveragedir, node.rpc)
 
     def stop_node(self, i, expected_stderr='', wait=0):
-        """Stop a bitcoind test node"""
+        """Stop a tortoisecoind test node"""
         self.nodes[i].stop_node(expected_stderr, wait=wait)
 
     def stop_nodes(self, wait=0):
-        """Stop multiple bitcoind test nodes"""
+        """Stop multiple tortoisecoind test nodes"""
         for node in self.nodes:
             # Issue RPC to stop nodes
             node.stop_node(wait=wait, wait_until_stopped=False)
@@ -747,7 +747,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         return blocks
 
     def create_outpoints(self, node, *, outputs):
-        """Send funds to a given list of `{address: amount}` targets using the bitcoind
+        """Send funds to a given list of `{address: amount}` targets using the tortoisecoind
         wallet and return the corresponding outpoints as a list of dictionaries
         `[{"txid": txid, "vout": vout1}, {"txid": txid, "vout": vout2}, ...]`.
         The result can be used to specify inputs for RPCs like `createrawtransaction`,
@@ -828,7 +828,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         # User can provide log level as a number or string (eg DEBUG). loglevel was caught as a string, so try to convert it to an int
         ll = int(self.options.loglevel) if self.options.loglevel.isdigit() else self.options.loglevel.upper()
         ch.setLevel(ll)
-        # Format logs the same as bitcoind's debug.log with microprecision (so log files can be concatenated and sorted)
+        # Format logs the same as tortoisecoind's debug.log with microprecision (so log files can be concatenated and sorted)
         formatter = logging.Formatter(fmt='%(asctime)s.%(msecs)03d000Z %(name)s (%(levelname)s): %(message)s', datefmt='%Y-%m-%dT%H:%M:%S')
         formatter.converter = time.gmtime
         fh.setFormatter(formatter)
@@ -946,10 +946,10 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         except ImportError:
             raise SkipTest("bcc python module not available")
 
-    def skip_if_no_bitcoind_tracepoints(self):
-        """Skip the running test if bitcoind has not been compiled with USDT tracepoint support."""
+    def skip_if_no_tortoisecoind_tracepoints(self):
+        """Skip the running test if tortoisecoind has not been compiled with USDT tracepoint support."""
         if not self.is_usdt_compiled():
-            raise SkipTest("bitcoind has not been built with USDT tracepoints enabled.")
+            raise SkipTest("tortoisecoind has not been built with USDT tracepoints enabled.")
 
     def skip_if_no_bpf_permissions(self):
         """Skip the running test if we don't have permissions to do BPF syscalls and load BPF maps."""
@@ -967,10 +967,10 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         if os.name != 'posix':
             raise SkipTest("not on a POSIX system")
 
-    def skip_if_no_bitcoind_zmq(self):
-        """Skip the running test if bitcoind has not been compiled with zmq support."""
+    def skip_if_no_tortoisecoind_zmq(self):
+        """Skip the running test if tortoisecoind has not been compiled with zmq support."""
         if not self.is_zmq_compiled():
-            raise SkipTest("bitcoind has not been built with zmq enabled.")
+            raise SkipTest("tortoisecoind has not been built with zmq enabled.")
 
     def skip_if_no_wallet(self):
         """Skip the running test if wallet has not been compiled."""
@@ -983,14 +983,14 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         if not self.is_wallet_tool_compiled():
             raise SkipTest("tortoisecoin-wallet has not been compiled")
 
-    def skip_if_no_bitcoin_util(self):
+    def skip_if_no_tortoisecoin_util(self):
         """Skip the running test if tortoisecoin-util has not been compiled."""
-        if not self.is_bitcoin_util_compiled():
+        if not self.is_tortoisecoin_util_compiled():
             raise SkipTest("tortoisecoin-util has not been compiled")
 
-    def skip_if_no_bitcoin_chainstate(self):
+    def skip_if_no_tortoisecoin_chainstate(self):
         """Skip the running test if tortoisecoin-chainstate has not been compiled."""
-        if not self.is_bitcoin_chainstate_compiled():
+        if not self.is_tortoisecoin_chainstate_compiled():
             raise SkipTest("tortoisecoin-chainstate has not been compiled")
 
     def skip_if_no_cli(self):
@@ -1032,11 +1032,11 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
         """Checks whether tortoisecoin-wallet was compiled."""
         return self.config["components"].getboolean("ENABLE_WALLET_TOOL")
 
-    def is_bitcoin_util_compiled(self):
+    def is_tortoisecoin_util_compiled(self):
         """Checks whether tortoisecoin-util was compiled."""
         return self.config["components"].getboolean("ENABLE_BITCOIN_UTIL")
 
-    def is_bitcoin_chainstate_compiled(self):
+    def is_tortoisecoin_chainstate_compiled(self):
         """Checks whether tortoisecoin-chainstate was compiled."""
         return self.config["components"].getboolean("ENABLE_BITCOIN_CHAINSTATE")
 

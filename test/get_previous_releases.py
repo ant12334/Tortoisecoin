@@ -109,7 +109,7 @@ def download_binary(tag, args) -> int:
         platform = "osx64"
     tarball = 'tortoisecoin-{tag}-{platform}.tar.gz'.format(
         tag=tag[1:], platform=platform)
-    tarballUrl = 'https://bitcoincore.org/{bin_path}/{tarball}'.format(
+    tarballUrl = 'https://tortoisecoincore.org/{bin_path}/{tarball}'.format(
         bin_path=bin_path, tarball=tarball)
 
     print('Fetching: {tarballUrl}'.format(tarballUrl=tarballUrl))
@@ -214,7 +214,7 @@ def build_release(tag, args) -> int:
         # Move binaries, so they're in the same place as in the
         # release download
         Path('bin').mkdir(exist_ok=True)
-        files = ['bitcoind', 'tortoisecoin-cli', 'tortoisecoin-tx']
+        files = ['tortoisecoind', 'tortoisecoin-cli', 'tortoisecoin-tx']
         for f in files:
             Path('src/'+f).rename('bin/'+f)
     return 0

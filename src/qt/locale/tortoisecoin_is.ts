@@ -174,8 +174,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Sláðu inn gamla lykilorðið og nýja lykilorðið fyrir veskið.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Mundu að dulkóðun vesksins þíns getur ekki verndað bitcoins þína að fullu gegn því að vera stolið af spilliforritum sem sýkja tölvuna þína.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your tortoisecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Mundu að dulkóðun vesksins þíns getur ekki verndað tortoisecoins þína að fullu gegn því að vera stolið af spilliforritum sem sýkja tölvuna þína.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>

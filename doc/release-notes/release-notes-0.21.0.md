@@ -3,7 +3,7 @@
 
 Tortoisecoin Core version 0.21.0 is now available from:
 
-  <https://bitcoincore.org/bin/tortoisecoin-core-0.21.0/>
+  <https://tortoisecoincore.org/bin/tortoisecoin-core-0.21.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
@@ -14,7 +14,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://tortoisecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -22,7 +22,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
 installer (on Windows) or just copy over `/Applications/Tortoisecoin-Qt` (on Mac)
-or `bitcoind`/`tortoisecoin-qt` (on Linux).
+or `tortoisecoind`/`tortoisecoin-qt` (on Linux).
 
 Upgrading directly from a version of Tortoisecoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
@@ -1139,7 +1139,7 @@ Tests
 - #18939 Add c++17-enable flag to fuzzing instructions (mzumsande)
 - #18957 Add a link from ZMQ doc to ZMQ example in contrib/ (meeDamian)
 - #19058 Drop protobuf stuff (hebasto)
-- #19061 Add link to Visual Studio build readme (maitrebitcoin)
+- #19061 Add link to Visual Studio build readme (maitretortoisecoin)
 - #19072 Expand section on Getting Started (MarcoFalke)
 - #18968 noban precludes maxuploadtarget disconnects (MarcoFalke)
 - #19005 Add documentation for 'checklevel' argument in 'verifychain' RPC… (kcalvinalvin)
@@ -1161,7 +1161,7 @@ Tests
 - #19765 Fix getmempoolancestors RPC result doc (MarcoFalke)
 - #19786 Remove label from good first issue template (MarcoFalke)
 - #19646 Updated outdated help command for getblocktemplate (jakeleventhal)
-- #18817 Document differences in bitcoind and tortoisecoin-qt locale handling (practicalswift)
+- #18817 Document differences in tortoisecoind and tortoisecoin-qt locale handling (practicalswift)
 - #19870 update PyZMQ install instructions, fix `zmq_sub.py` file permissions (jonatack)
 - #19903 Update build-openbsd.md with GUI support (grubles)
 - #19241 help: Generate checkpoint height from chainparams (luke-jr)

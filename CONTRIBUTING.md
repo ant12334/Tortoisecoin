@@ -36,7 +36,7 @@ list or changes that are
 Some of them might no longer be applicable. So if you are interested, but
 unsure, you might want to leave a comment on the issue first.
 
-You may also participate in the [Tortoisecoin Core PR Review Club](https://bitcoincore.reviews/).
+You may also participate in the [Tortoisecoin Core PR Review Club](https://tortoisecoincore.reviews/).
 
 ### Good First Issue Label
 
@@ -65,10 +65,10 @@ Discussion about codebase improvements happens in GitHub issues and pull
 requests.
 
 The developer
-[mailing list](https://groups.google.com/g/bitcoindev)
+[mailing list](https://groups.google.com/g/tortoisecoindev)
 should be used to discuss complicated or controversial consensus or P2P protocol changes before working on
 a patch set.
-Archives can be found on [https://gnusha.org/pi/bitcoindev/](https://gnusha.org/pi/bitcoindev/).
+Archives can be found on [https://gnusha.org/pi/tortoisecoindev/](https://gnusha.org/pi/tortoisecoindev/).
 
 
 Contributor Workflow

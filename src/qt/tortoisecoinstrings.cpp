@@ -8,7 +8,7 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *bitcoin_strings[] = {
+static const char UNUSED *tortoisecoin_strings[] = {
 QT_TRANSLATE_NOOP("tortoisecoin-core", "The %s developers"),
 QT_TRANSLATE_NOOP("tortoisecoin-core", ""
 "%s corrupt. Try using the wallet tool tortoisecoin-wallet to salvage or restoring "

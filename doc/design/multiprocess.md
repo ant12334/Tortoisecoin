@@ -31,7 +31,7 @@ The Tortoisecoin Core software has historically employed a monolithic architectu
 
 ## Current Architecture
 
-The current system features two primary executables: `bitcoind` and `tortoisecoin-qt`. `bitcoind` combines a Tortoisecoin P2P node with an integrated JSON-RPC server, wallet, and indexes. `tortoisecoin-qt` extends this by incorporating a Qt-based GUI. This monolithic structure, although robust, presents challenges such as limited operational flexibility and increased security risks due to the tight integration of components.
+The current system features two primary executables: `tortoisecoind` and `tortoisecoin-qt`. `tortoisecoind` combines a Tortoisecoin P2P node with an integrated JSON-RPC server, wallet, and indexes. `tortoisecoin-qt` extends this by incorporating a Qt-based GUI. This monolithic structure, although robust, presents challenges such as limited operational flexibility and increased security risks due to the tight integration of components.
 
 ## Proposed Architecture
 

@@ -6,7 +6,7 @@
 #define BITCOIN_QT_BITCOINAMOUNTFIELD_H
 
 #include <consensus/amount.h>
-#include <qt/bitcoinunits.h>
+#include <qt/tortoisecoinunits.h>
 
 #include <QWidget>
 

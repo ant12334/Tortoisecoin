@@ -140,9 +140,9 @@ target_link_libraries(fuzz
   core_interface
   fuzzer_interface
   test_fuzz
-  bitcoin_cli
-  bitcoin_common
-  bitcoin_util
+  tortoisecoin_cli
+  tortoisecoin_common
+  tortoisecoin_util
   minisketch
   leveldb
   univalue

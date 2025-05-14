@@ -5,7 +5,7 @@
 """Script for verifying Tortoisecoin Core release binaries.
 
 This script attempts to download the sum file SHA256SUMS and corresponding
-signature file SHA256SUMS.asc from bitcoincore.org and tortoisecoin.org and
+signature file SHA256SUMS.asc from tortoisecoincore.org and tortoisecoin.org and
 compares them.
 
 The sum-signature file is signed by a number of builder keys. This script
@@ -46,7 +46,7 @@ from hashlib import sha256
 from pathlib import PurePath, Path
 
 # The primary host; this will fail if we can't retrieve files from here.
-HOST1 = "https://bitcoincore.org"
+HOST1 = "https://tortoisecoincore.org"
 HOST2 = "https://tortoisecoin.org"
 VERSIONPREFIX = "tortoisecoin-core-"
 SUMS_FILENAME = 'SHA256SUMS'
@@ -453,7 +453,7 @@ def verify_binary_hashes(hashes_to_verify: list[list[str]]) -> tuple[ReturnCode,
 
 
 def verify_published_handler(args: argparse.Namespace) -> ReturnCode:
-    WORKINGDIR = Path(tempfile.gettempdir()) / f"bitcoin_verify_binaries.{args.version}"
+    WORKINGDIR = Path(tempfile.gettempdir()) / f"tortoisecoin_verify_binaries.{args.version}"
 
     def cleanup():
         log.info("cleaning up files")
@@ -513,7 +513,7 @@ def verify_published_handler(args: argparse.Namespace) -> ReturnCode:
         log.error(f"No files matched the platform specified. Did you mean: {closest_match}")
         return ReturnCode.NO_BINARIES_MATCH
 
-    # remove binaries that are known not to be hosted by bitcoincore.org
+    # remove binaries that are known not to be hosted by tortoisecoincore.org
     fragments_to_remove = ['-unsigned', '-debug', '-codesignatures']
     for fragment in fragments_to_remove:
         nobinaries = [i for i in hashes_to_verify if fragment in i[1]]
@@ -686,7 +686,7 @@ def main():
         default=bool_from_env('BINVERIFY_REQUIRE_ALL_HOSTS'),
         help=(
             f'If set, require all hosts ({HOST1}, {HOST2}) to provide signatures. '
-            '(Sometimes tortoisecoin.org lags behind bitcoincore.org.)')
+            '(Sometimes tortoisecoin.org lags behind tortoisecoincore.org.)')
     )
 
     bin_parser = subparsers.add_parser("bin", help="Verify local binaries.")

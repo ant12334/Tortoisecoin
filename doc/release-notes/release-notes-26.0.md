@@ -3,7 +3,7 @@
 
 Tortoisecoin Core version 26.0 is now available from:
 
-  <https://bitcoincore.org/bin/tortoisecoin-core-26.0/>
+  <https://tortoisecoincore.org/bin/tortoisecoin-core-26.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
@@ -14,7 +14,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://tortoisecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -22,7 +22,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
 installer (on Windows) or just copy over `/Applications/Tortoisecoin-Qt` (on macOS)
-or `bitcoind`/`tortoisecoin-qt` (on Linux).
+or `tortoisecoind`/`tortoisecoin-qt` (on Linux).
 
 Upgrading directly from a version of Tortoisecoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
@@ -97,7 +97,7 @@ New RPCs
   Meanwhile, the original chainstate will complete the initial block download process in
   the background, eventually validating up to the block that the snapshot is based upon.
 
-  The result is a usable bitcoind instance that is current with the network tip in a
+  The result is a usable tortoisecoind instance that is current with the network tip in a
   matter of minutes rather than hours. UTXO snapshot are typically obtained via
   third-party sources (HTTP, torrent, etc.) which is reasonable since their contents
   are always checked by hash.
@@ -141,7 +141,7 @@ mempool minimum feerate (but not minimum relay feerate). (#27609)
 Updated settings
 ----------------
 
-- `bitcoind` and `tortoisecoin-qt` will now raise an error on startup
+- `tortoisecoind` and `tortoisecoin-qt` will now raise an error on startup
  if a datadir that is being used contains a tortoisecoin.conf file that
  will be ignored, which can happen when a datadir= line is used in
  a tortoisecoin.conf file. The error message is just a diagnostic intended
@@ -160,8 +160,8 @@ New settings
 Tools and Utilities
 -------------------
 
-- A new `bitcoinconsensus_verify_script_with_spent_outputs` function is available in libconsensus which optionally accepts the spent outputs of the transaction being verified.
-- A new `bitcoinconsensus_SCRIPT_FLAGS_VERIFY_TAPROOT` flag is available in libconsensus that will verify scripts with the Taproot spending rules.
+- A new `tortoisecoinconsensus_verify_script_with_spent_outputs` function is available in libconsensus which optionally accepts the spent outputs of the transaction being verified.
+- A new `tortoisecoinconsensus_SCRIPT_FLAGS_VERIFY_TAPROOT` flag is available in libconsensus that will verify scripts with the Taproot spending rules.
 
 Wallet
 ------

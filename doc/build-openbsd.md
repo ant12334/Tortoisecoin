@@ -2,7 +2,7 @@
 
 **Updated for OpenBSD [7.6](https://www.openbsd.org/76.html)**
 
-This guide describes how to build bitcoind, command-line utilities, and GUI on OpenBSD.
+This guide describes how to build tortoisecoind, command-line utilities, and GUI on OpenBSD.
 
 ## Preparation
 
@@ -25,7 +25,7 @@ git clone https://github.com/tortoisecoin/tortoisecoin.git
 
 #### Wallet Dependencies
 
-It is not necessary to build wallet functionality to run either `bitcoind` or `tortoisecoin-qt`.
+It is not necessary to build wallet functionality to run either `tortoisecoind` or `tortoisecoin-qt`.
 SQLite is required to build the wallet.
 
 

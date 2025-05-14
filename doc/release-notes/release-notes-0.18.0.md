@@ -1,6 +1,6 @@
 Tortoisecoin Core version 0.18.0 is now available from:
 
-  <https://bitcoincore.org/bin/tortoisecoin-core-0.18.0/>
+  <https://tortoisecoincore.org/bin/tortoisecoin-core-0.18.0/>
 
 This is a new major version release, including new features, various bug
 fixes and performance improvements, as well as updated translations.
@@ -11,7 +11,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://tortoisecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -19,7 +19,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has
 completely shut down (which might take a few minutes for older
 versions), then run the installer (on Windows) or just copy over
-`/Applications/Tortoisecoin-Qt` (on Mac) or `bitcoind`/`tortoisecoin-qt` (on
+`/Applications/Tortoisecoin-Qt` (on Mac) or `tortoisecoind`/`tortoisecoin-qt` (on
 Linux).
 
 The first time you run version 0.15.0 or newer, your chainstate database
@@ -52,11 +52,11 @@ pre-compiled distribution also provides binaries for the RISC-V
 platform.
 
 If you are using the `systemd` unit configuration file located at
-`contrib/init/bitcoind.service`, it has been changed to use
-`/var/lib/bitcoind` as the data directory instead of
+`contrib/init/tortoisecoind.service`, it has been changed to use
+`/var/lib/tortoisecoind` as the data directory instead of
 `~tortoisecoin/.tortoisecoin`. When switching over to the new configuration file,
-please make sure that the filesystem on which `/var/lib/bitcoind` will
-exist has enough space (check using `df -h /var/lib/bitcoind`), and
+please make sure that the filesystem on which `/var/lib/tortoisecoind` will
+exist has enough space (check using `df -h /var/lib/tortoisecoind`), and
 optionally copy over your existing data directory. See the [systemd init
 file section](#systemd-init-file) for more details.
 
@@ -119,15 +119,15 @@ Configuration option changes
   disconnect/ban behavior will not cause a node that is whitelisting
   another to be dropped by peers.  Users can still explicitly enable
   this behavior with the command line option (and may want to consider
-  [contacting](https://bitcoincore.org/en/contact/) the Tortoisecoin Core
+  [contacting](https://tortoisecoincore.org/en/contact/) the Tortoisecoin Core
   project to let us know about their use-case, as this feature could be
   deprecated in the future).
 
 systemd init file
 -----------------
 
-The systemd init file (`contrib/init/bitcoind.service`) has been changed
-to use `/var/lib/bitcoind` as the data directory instead of
+The systemd init file (`contrib/init/tortoisecoind.service`) has been changed
+to use `/var/lib/tortoisecoind` as the data directory instead of
 `~tortoisecoin/.tortoisecoin`. This change makes Tortoisecoin Core more consistent with
 other services, and makes the systemd init config more consistent with
 existing Upstart and OpenRC configs.
@@ -359,7 +359,7 @@ Deprecated or removed RPCs
   require or use the wallet component. Calling `generatetoaddress` with
   an address returned by the `getnewaddress` RPC gives the same
   functionality as the old `generate` RPC.  To continue using `generate`
-  in this version, restart bitcoind with the `-deprecatedrpc=generate`
+  in this version, restart tortoisecoind with the `-deprecatedrpc=generate`
   configuration option.
 
 - Be reminded that parts of the `validateaddress` command have been
@@ -589,9 +589,9 @@ Changes for particular platforms
 - #14023 Remove accounts RPCs (jnewbery)
 - #13825 Kill accounts (jnewbery)
 - #10605 Add AssertLockHeld assertions in CWallet::ListCoins (ryanofsky)
-- #12490 Remove deprecated wallet rpc features from `bitcoin_server` (jnewbery)
+- #12490 Remove deprecated wallet rpc features from `tortoisecoin_server` (jnewbery)
 - #14138 Set `encrypted_batch` to nullptr after delete. Avoid double free in the case of NDEBUG (practicalswift)
-- #14168 Remove `ENABLE_WALLET` from `libbitcoin_server.a` (jnewbery)
+- #14168 Remove `ENABLE_WALLET` from `libtortoisecoin_server.a` (jnewbery)
 - #12493 Reopen CDBEnv after encryption instead of shutting down (achow101)
 - #14282 Remove `-usehd` option (jnewbery)
 - #14146 Remove trailing separators from `-walletdir` arg (PierreRochard)
@@ -709,7 +709,7 @@ Changes for particular platforms
 - #13248 Make proxy icon from statusbar clickable (mess110)
 - #12818 TransactionView: highlight replacement tx after fee bump (Sjors)
 - #13529 Use new Qt5 connect syntax (promag)
-- #14162 Also log and print messages or questions like bitcoind (MarcoFalke)
+- #14162 Also log and print messages or questions like tortoisecoind (MarcoFalke)
 - #14385 Avoid system harfbuzz and bz2 (theuni)
 - #14450 Fix QCompleter popup regression (hebasto)
 - #14177 Set C locale for amountWidget (hebasto)
@@ -766,7 +766,7 @@ Changes for particular platforms
 - #14183 Remove unused Qt 4 dependencies (ken2812221)
 - #14127 Avoid getifaddrs when unavailable (greenaddress)
 - #14184 Scripts and tools: increased timeout downloading (cisba)
-- #14204 Move `interfaces/*` to `libbitcoin_server` (laanwj)
+- #14204 Move `interfaces/*` to `libtortoisecoin_server` (laanwj)
 - #14208 Actually remove `ENABLE_WALLET` (jnewbery)
 - #14212 Remove libssl from LDADD unless GUI (MarcoFalke)
 - #13578 Upgrade zeromq to 4.2.5 and avoid deprecated zeromq API functions (mruddy)
@@ -798,7 +798,7 @@ Changes for particular platforms
 - #15549 gitian: Improve error handling (laanwj)
 - #15548 use full version string in setup.exe (MarcoFalke)
 - #11526 Visual Studio build configuration for Tortoisecoin Core (sipsorcery)
-- #15110 build\_msvc: Fix the build problem in `libbitcoin_server` (Mr-Leshiy)
+- #15110 build\_msvc: Fix the build problem in `libtortoisecoin_server` (Mr-Leshiy)
 - #14372 msvc: build secp256k1 and leveldb locally (ken2812221)
 - #15325 msvc: Fix silent merge conflict between #13926 and #14372 (ken2812221)
 - #15391 Add compile time verification of assumptions we're currently making implicitly/tacitly (practicalswift)
@@ -859,7 +859,7 @@ Changes for particular platforms
 - #14631 Move deterministic address import to `setup_nodes` (jnewbery)
 - #14630 test: Remove travis specific code (MarcoFalke)
 - #14528 travis: Compile once on xenial (MarcoFalke)
-- #14092 Dry run `bench_bitcoin` as part `make check` to allow for quick identification of assertion/sanitizer failures in benchmarking code (practicalswift)
+- #14092 Dry run `bench_tortoisecoin` as part `make check` to allow for quick identification of assertion/sanitizer failures in benchmarking code (practicalswift)
 - #14664 `example_test.py`: fixup coinbase height argument, derive number clearly (instagibbs)
 - #14522 Add invalid P2P message tests (jamesob)
 - #14619 Fix value display name in `test_runner` help text (merland)
@@ -903,7 +903,7 @@ Changes for particular platforms
 - #14969 Fix `cuckoocache_tests` TSAN failure introduced in 14935 (practicalswift)
 - #14964 Fix race in `mempool_accept` (MarcoFalke)
 - #14829 travis: Enable functional tests in the threadsanitizer (tsan) build job (practicalswift)
-- #14985 Remove `thread_local` from `test_bitcoin` (MarcoFalke)
+- #14985 Remove `thread_local` from `test_tortoisecoin` (MarcoFalke)
 - #15005 Bump timeout to run tests in travis thread sanitizer (MarcoFalke)
 - #15013 Avoid race in `p2p_timeouts` (MarcoFalke)
 - #14960 lint/format-strings: Correctly exclude escaped percent symbols (luke-jr)
@@ -981,7 +981,7 @@ Changes for particular platforms
 - #13724 contrib: Support ARM and RISC-V symbol check (ken2812221)
 - #13159 Don't close old debug log file handle prematurely when trying to re-open (on SIGHUP) (practicalswift)
 - #14186 tortoisecoin-cli: don't translate command line options (HashUnlimited)
-- #14057 logging: Only log `using config file path_to_bitcoin.conf` message on startup if conf file exists (leishman)
+- #14057 logging: Only log `using config file path_to_tortoisecoin.conf` message on startup if conf file exists (leishman)
 - #14164 Update univalue subtree (MarcoFalke)
 - #14272 init: Remove deprecated args from hidden args (MarcoFalke)
 - #14494 Error if # is used in rpcpassword in conf (MeshCollider)
@@ -1091,7 +1091,7 @@ Changes for particular platforms
 - #15754 getrpcinfo docs (benthecarman)
 - #15763 Update bips.md for 0.18.0 (sipa)
 - #15757 List new RPCs in psbt.md and descriptors.md (sipa)
-- #15765 correct bitcoinconsensus_version in shared-libraries.md (fanquake)
+- #15765 correct tortoisecoinconsensus_version in shared-libraries.md (fanquake)
 - #15792 describe onlynet option in doc/tor.md (jonatack)
 - #15802 mention creating application support tortoisecoin folder on OSX (JimmyMow)
 - #15799 Clarify RPC versioning (MarcoFalke)
@@ -1122,7 +1122,7 @@ Thanks to everyone who directly contributed to this release:
 - Ben Carman
 - Ben Woosley
 - benthecarman
-- bitcoinhodler
+- tortoisecoinhodler
 - Carl Dong
 - Chakib Benziane
 - Chris Moore

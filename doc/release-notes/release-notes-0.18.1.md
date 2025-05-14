@@ -1,6 +1,6 @@
 Tortoisecoin Core version 0.18.1 is now available from:
 
-  <https://bitcoincore.org/bin/tortoisecoin-core-0.18.1/>
+  <https://tortoisecoincore.org/bin/tortoisecoin-core-0.18.1/>
 
 This is a new minor version release, including new features, various bug
 fixes and performance improvements, as well as updated translations.
@@ -11,7 +11,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://tortoisecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -19,7 +19,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has
 completely shut down (which might take a few minutes for older
 versions), then run the installer (on Windows) or just copy over
-`/Applications/Tortoisecoin-Qt` (on Mac) or `bitcoind`/`tortoisecoin-qt` (on
+`/Applications/Tortoisecoin-Qt` (on Mac) or `tortoisecoind`/`tortoisecoin-qt` (on
 Linux).
 
 The first time you run version 0.15.0 or newer, your chainstate database

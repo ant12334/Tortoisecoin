@@ -188,8 +188,8 @@ La firma ye possible solamentu con direcciones del tipu 'legacy'.</translation>
         <translation type="unfinished">Atrás</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Recuerda que cifrar la tua cartera nun puede protexer completamente los tuyos bitcoins de ser robados por malware que infecte tu ordenador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your tortoisecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Recuerda que cifrar la tua cartera nun puede protexer completamente los tuyos tortoisecoins de ser robados por malware que infecte tu ordenador.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>

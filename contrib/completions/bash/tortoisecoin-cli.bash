@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 # call $tortoisecoin-cli for RPC
-_bitcoin_rpc() {
+_tortoisecoin_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -14,16 +14,16 @@ _bitcoin_rpc() {
                 ;;
         esac
     done
-    $bitcoin_cli "${rpcargs[@]}" "$@"
+    $tortoisecoin_cli "${rpcargs[@]}" "$@"
 }
 
-_bitcoin_cli() {
+_tortoisecoin_cli() {
     local cur prev words=() cword
-    local bitcoin_cli
+    local tortoisecoin_cli
 
     # save and use original argument to invoke tortoisecoin-cli for -help, help and RPC
     # as tortoisecoin-cli might not be in $PATH
-    bitcoin_cli="$1"
+    tortoisecoin_cli="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -109,12 +109,12 @@ _bitcoin_cli() {
 
             # only parse -help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($bitcoin_cli -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($tortoisecoin_cli -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_bitcoin_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_tortoisecoin_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -127,7 +127,7 @@ _bitcoin_cli() {
             ;;
     esac
 } &&
-complete -F _bitcoin_cli tortoisecoin-cli
+complete -F _tortoisecoin_cli tortoisecoin-cli
 
 # Local variables:
 # mode: shell-script

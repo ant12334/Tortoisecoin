@@ -3,7 +3,7 @@
 
 Tortoisecoin Core version 22.0 is now available from:
 
-  <https://bitcoincore.org/bin/tortoisecoin-core-22.0/>
+  <https://tortoisecoincore.org/bin/tortoisecoin-core-22.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
@@ -14,7 +14,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://tortoisecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -22,7 +22,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
 installer (on Windows) or just copy over `/Applications/Tortoisecoin-Qt` (on Mac)
-or `bitcoind`/`tortoisecoin-qt` (on Linux).
+or `tortoisecoind`/`tortoisecoin-qt` (on Linux).
 
 Upgrading directly from a version of Tortoisecoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
@@ -152,7 +152,7 @@ Updated settings
 
 Changes to Wallet or GUI related settings can be found in the GUI or Wallet section below.
 
-- Passing an invalid `-rpcauth` argument now cause bitcoind to fail to start.  (#20461)
+- Passing an invalid `-rpcauth` argument now cause tortoisecoind to fail to start.  (#20461)
 
 Tools and Utilities
 -------------------
@@ -411,7 +411,7 @@ A detailed list of changes in this version follows. To keep the list to a manage
 - tortoisecoin/tortoisecoin#22686 Use GetSelectionAmount in ApproximateBestSubset (achow101)
 
 ### RPC and other APIs
-- tortoisecoin/tortoisecoin#18335, tortoisecoin/tortoisecoin#21484 cli: Print useful error if bitcoind rpc work queue exceeded (LarryRuane)
+- tortoisecoin/tortoisecoin#18335, tortoisecoin/tortoisecoin#21484 cli: Print useful error if tortoisecoind rpc work queue exceeded (LarryRuane)
 - tortoisecoin/tortoisecoin#18466 Fix invalid parameter error codes for `{sign,verify}message` RPCs (theStack)
 - tortoisecoin/tortoisecoin#18772 Calculate fees in `getblock` using BlockUndo data (robot-visions)
 - tortoisecoin/tortoisecoin#19033 http: Release work queue after event base finish (promag)
@@ -524,7 +524,7 @@ A detailed list of changes in this version follows. To keep the list to a manage
 - tortoisecoin-core/gui#375 Emit dataChanged signal to dynamically re-sort Peers table (hebasto)
 - tortoisecoin-core/gui#393 Fix regression in "Encrypt Wallet" menu item (hebasto)
 - tortoisecoin-core/gui#396 Ensure external signer option remains disabled without signers (achow101)
-- tortoisecoin-core/gui#406 Handle new added plurals in `bitcoin_en.ts` (hebasto)
+- tortoisecoin-core/gui#406 Handle new added plurals in `tortoisecoin_en.ts` (hebasto)
 
 ### Build system
 - tortoisecoin/tortoisecoin#17227 Add Android packaging support (icota)
@@ -611,7 +611,7 @@ A detailed list of changes in this version follows. To keep the list to a manage
 - tortoisecoin/tortoisecoin#21495 build, qt: Fix static builds on macOS Big Sur (hebasto)
 - tortoisecoin/tortoisecoin#21497 Do not opt-in unused CoreWLAN stuff in depends for macOS (hebasto)
 - tortoisecoin/tortoisecoin#21543 Enable safe warnings for msvc builds (hebasto)
-- tortoisecoin/tortoisecoin#21565 Make `bitcoin_qt.m4` more generic (fanquake)
+- tortoisecoin/tortoisecoin#21565 Make `tortoisecoin_qt.m4` more generic (fanquake)
 - tortoisecoin/tortoisecoin#21610 remove -Wdeprecated-register from NOWARN flags (fanquake)
 - tortoisecoin/tortoisecoin#21613 enable -Wdocumentation (fanquake)
 - tortoisecoin/tortoisecoin#21629 Fix configuring when building depends with `NO_BDB=1` (fanquake)
@@ -806,7 +806,7 @@ A detailed list of changes in this version follows. To keep the list to a manage
 - tortoisecoin/tortoisecoin#21810 fuzz: Various RPC fuzzer follow-ups (practicalswift)
 - tortoisecoin/tortoisecoin#21814 Fix `feature_config_args.py` intermittent issue (MarcoFalke)
 - tortoisecoin/tortoisecoin#21821 Add missing test for empty P2WSH redeem (MarcoFalke)
-- tortoisecoin/tortoisecoin#21822 Resolve bug in `interface_bitcoin_cli.py` (klementtan)
+- tortoisecoin/tortoisecoin#21822 Resolve bug in `interface_tortoisecoin_cli.py` (klementtan)
 - tortoisecoin/tortoisecoin#21846 fuzz: Add `-fsanitize=integer` suppression needed for RPC fuzzer (`generateblock`) (practicalswift)
 - tortoisecoin/tortoisecoin#21849 fuzz: Limit toxic test globals to their respective scope (MarcoFalke)
 - tortoisecoin/tortoisecoin#21867 use MiniWallet for `p2p_blocksonly.py` (theStack)
@@ -896,10 +896,10 @@ A detailed list of changes in this version follows. To keep the list to a manage
 - tortoisecoin/tortoisecoin#20715 util: Add argsmanager::getcommand() and use it in tortoisecoin-wallet (MarcoFalke)
 - tortoisecoin/tortoisecoin#20735 script: Remove outdated extract-osx-sdk.sh (hebasto)
 - tortoisecoin/tortoisecoin#20817 lint: Update list of spelling linter false positives, bump to codespell 2.0.0 (theStack)
-- tortoisecoin/tortoisecoin#20884 script: Improve robustness of bitcoind.service on startup (hebasto)
+- tortoisecoin/tortoisecoin#20884 script: Improve robustness of tortoisecoind.service on startup (hebasto)
 - tortoisecoin/tortoisecoin#20906 contrib: Embed c++11 patch in `install_db4.sh` (gruve-p)
 - tortoisecoin/tortoisecoin#21004 contrib: Fix docker args conditional in gitian-build (setpill)
-- tortoisecoin/tortoisecoin#21007 bitcoind: Add -daemonwait option to wait for initialization (laanwj)
+- tortoisecoin/tortoisecoin#21007 tortoisecoind: Add -daemonwait option to wait for initialization (laanwj)
 - tortoisecoin/tortoisecoin#21041 log: Move "Pre-allocating up to position 0x[…] in […].dat" log message to debug category (practicalswift)
 - tortoisecoin/tortoisecoin#21059 Drop boost/preprocessor dependencies (hebasto)
 - tortoisecoin/tortoisecoin#21087 guix: Passthrough `BASE_CACHE` into container (dongcarl)

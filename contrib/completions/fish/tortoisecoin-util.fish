@@ -2,7 +2,7 @@
 complete --command tortoisecoin-util --no-files
 
 # Extract options
-function __fish_bitcoin_util_get_options
+function __fish_tortoisecoin_util_get_options
     set --local cmd (commandline -opc)[1]
     set --local options
 
@@ -14,7 +14,7 @@ function __fish_bitcoin_util_get_options
 end
 
 # Extract commands
-function __fish_bitcoin_util_get_commands
+function __fish_tortoisecoin_util_get_commands
     set --local cmd (commandline -opc)[1]
     set --local commands
 
@@ -27,12 +27,12 @@ end
 # Add options
 complete \
     --command tortoisecoin-util \
-    --condition "not __fish_seen_subcommand_from (__fish_bitcoin_util_get_commands)" \
-    --arguments "(__fish_bitcoin_util_get_options)"
+    --condition "not __fish_seen_subcommand_from (__fish_tortoisecoin_util_get_commands)" \
+    --arguments "(__fish_tortoisecoin_util_get_options)"
 
 # Add commands
 complete \
     --command tortoisecoin-util \
-    --condition "not __fish_seen_subcommand_from (__fish_bitcoin_util_get_commands)" \
-    --arguments "(__fish_bitcoin_util_get_commands)"
+    --condition "not __fish_seen_subcommand_from (__fish_tortoisecoin_util_get_commands)" \
+    --arguments "(__fish_tortoisecoin_util_get_commands)"
 

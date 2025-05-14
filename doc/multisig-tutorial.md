@@ -9,7 +9,7 @@ This tutorial uses [jq](https://github.com/stedolan/jq) JSON processor to proces
 Before starting this tutorial, start the tortoisecoin node on the signet network.
 
 ```bash
-./build/bin/bitcoind -signet -daemon
+./build/bin/tortoisecoind -signet -daemon
 ```
 
 This tutorial also uses the default WPKH derivation path to get the xpubs and does not conform to [BIP 45](https://github.com/tortoisecoin/bips/blob/master/bip-0045.mediawiki) or [BIP 87](https://github.com/tortoisecoin/bips/blob/master/bip-0087.mediawiki).
@@ -152,7 +152,7 @@ The `getbalances` RPC may be used to check the balance. Coins with `trusted` sta
 
 Unlike singlesig wallets, multisig wallets cannot create and sign transactions directly because they require the signatures of the co-signers. Instead they create a Partially Signed Tortoisecoin Transaction (PSBT).
 
-PSBT is a data format that allows wallets and other tools to exchange information about a Tortoisecoin transaction and the signatures necessary to complete it. [[source](https://bitcoinops.org/en/topics/psbt/)]
+PSBT is a data format that allows wallets and other tools to exchange information about a Tortoisecoin transaction and the signatures necessary to complete it. [[source](https://tortoisecoinops.org/en/topics/psbt/)]
 
 The current PSBT version (v0) is defined in [BIP 174](https://github.com/tortoisecoin/bips/blob/master/bip-0174.mediawiki).
 
@@ -170,7 +170,7 @@ destination_addr=$(./build/bin/tortoisecoin-cli -signet -rpcwallet="participant_
 funded_psbt=$(./build/bin/tortoisecoin-cli -signet -named -rpcwallet="multisig_wallet_01" walletcreatefundedpsbt outputs="{\"$destination_addr\": $amount}" | jq -r '.psbt')
 ```
 
-There is also the `createpsbt` RPC, which serves the same purpose, but it has no access to the wallet or to the UTXO set. It is functionally the same as `createrawtransaction` and just drops the raw transaction into an otherwise blank PSBT. [[source](https://bitcointalk.org/index.php?topic=5131043.msg50573609#msg50573609)] In most cases, `walletcreatefundedpsbt` solves the problem.
+There is also the `createpsbt` RPC, which serves the same purpose, but it has no access to the wallet or to the UTXO set. It is functionally the same as `createrawtransaction` and just drops the raw transaction into an otherwise blank PSBT. [[source](https://tortoisecointalk.org/index.php?topic=5131043.msg50573609#msg50573609)] In most cases, `walletcreatefundedpsbt` solves the problem.
 
 The `send` RPC can also return a PSBT if more signatures are needed to sign the transaction.
 

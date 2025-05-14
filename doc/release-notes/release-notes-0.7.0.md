@@ -1,7 +1,7 @@
 Tortoisecoin version 0.7.0 is now available for download at:
   http://sourceforge.net/projects/tortoisecoin/files/Tortoisecoin/tortoisecoin-0.7.0/
 
-We recommend that everybody running prior versions of bitcoind/Tortoisecoin-Qt
+We recommend that everybody running prior versions of tortoisecoind/Tortoisecoin-Qt
 upgrade to this release, except for users running Mac OSX 10.5.
 
 Please report bugs using the issue tracker at github:
@@ -30,7 +30,7 @@ Code:
 /Applications/Tortoisecoin-Qt
 (on Mac) or
 Code:
-bitcoind/tortoisecoin-qt
+tortoisecoind/tortoisecoin-qt
 (on Linux).
 
 If you were running on Linux with a version that might have been compiled
@@ -131,7 +131,7 @@ Internal codebase
 Miscellaneous
 
 * Reopen debug.log upon SIGHUP
-* Bash programmable completion for bitcoind(1)
+* Bash programmable completion for tortoisecoind(1)
 * On supported OS's, each thread is given a useful name
 
 

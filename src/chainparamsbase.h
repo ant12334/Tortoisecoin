@@ -14,7 +14,7 @@
 class ArgsManager;
 
 /**
- * CBaseChainParams defines the base parameters (shared between tortoisecoin-cli and bitcoind)
+ * CBaseChainParams defines the base parameters (shared between tortoisecoin-cli and tortoisecoind)
  * of a given instance of the Tortoisecoin system.
  */
 class CBaseChainParams

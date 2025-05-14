@@ -89,14 +89,14 @@ add_custom_target(generate_build_info
   COMMENT "Generating tortoisecoin-build-info.h"
   VERBATIM
 )
-add_library(bitcoin_clientversion STATIC EXCLUDE_FROM_ALL
+add_library(tortoisecoin_clientversion STATIC EXCLUDE_FROM_ALL
   clientversion.cpp
 )
-target_link_libraries(bitcoin_clientversion
+target_link_libraries(tortoisecoin_clientversion
   PRIVATE
     core_interface
 )
-add_dependencies(bitcoin_clientversion generate_build_info)
+add_dependencies(tortoisecoin_clientversion generate_build_info)
 
 add_subdirectory(crypto)
 add_subdirectory(util)
@@ -104,7 +104,7 @@ if(ENABLE_IPC)
   add_subdirectory(ipc)
 endif()
 
-add_library(bitcoin_consensus STATIC EXCLUDE_FROM_ALL
+add_library(tortoisecoin_consensus STATIC EXCLUDE_FROM_ALL
   arith_uint256.cpp
   consensus/merkle.cpp
   consensus/tx_check.cpp
@@ -117,10 +117,10 @@ add_library(bitcoin_consensus STATIC EXCLUDE_FROM_ALL
   script/script_error.cpp
   uint256.cpp
 )
-target_link_libraries(bitcoin_consensus
+target_link_libraries(tortoisecoin_consensus
   PRIVATE
     core_interface
-    bitcoin_crypto
+    tortoisecoin_crypto
     secp256k1
 )
 
@@ -129,8 +129,8 @@ if(WITH_ZMQ)
 endif()
 
 # Home for common functionality shared by different executables and libraries.
-# Similar to `bitcoin_util` library, but higher-level.
-add_library(bitcoin_common STATIC EXCLUDE_FROM_ALL
+# Similar to `tortoisecoin_util` library, but higher-level.
+add_library(tortoisecoin_common STATIC EXCLUDE_FROM_ALL
   addresstype.cpp
   base58.cpp
   bech32.cpp
@@ -182,11 +182,11 @@ add_library(bitcoin_common STATIC EXCLUDE_FROM_ALL
   script/signingprovider.cpp
   script/solver.cpp
 )
-target_link_libraries(bitcoin_common
+target_link_libraries(tortoisecoin_common
   PRIVATE
     core_interface
-    bitcoin_consensus
-    bitcoin_util
+    tortoisecoin_consensus
+    tortoisecoin_util
     univalue
     secp256k1
     Boost::headers
@@ -208,9 +208,9 @@ if(ENABLE_WALLET)
     add_windows_resources(tortoisecoin-wallet tortoisecoin-wallet-res.rc)
     target_link_libraries(tortoisecoin-wallet
       core_interface
-      bitcoin_wallet
-      bitcoin_common
-      bitcoin_util
+      tortoisecoin_wallet
+      tortoisecoin_common
+      tortoisecoin_util
       Boost::headers
     )
     install_binary_component(tortoisecoin-wallet HAS_MANPAGE)
@@ -218,8 +218,8 @@ if(ENABLE_WALLET)
 endif()
 
 
-# P2P and RPC server functionality used by `bitcoind` and `tortoisecoin-qt` executables.
-add_library(bitcoin_node STATIC EXCLUDE_FROM_ALL
+# P2P and RPC server functionality used by `tortoisecoind` and `tortoisecoin-qt` executables.
+add_library(tortoisecoin_node STATIC EXCLUDE_FROM_ALL
   addrdb.cpp
   addrman.cpp
   banman.cpp
@@ -312,15 +312,15 @@ add_library(bitcoin_node STATIC EXCLUDE_FROM_ALL
   validation.cpp
   validationinterface.cpp
   versionbits.cpp
-  $<$<TARGET_EXISTS:bitcoin_wallet>:wallet/init.cpp>
-  $<$<NOT:$<TARGET_EXISTS:bitcoin_wallet>>:dummywallet.cpp>
+  $<$<TARGET_EXISTS:tortoisecoin_wallet>:wallet/init.cpp>
+  $<$<NOT:$<TARGET_EXISTS:tortoisecoin_wallet>>:dummywallet.cpp>
 )
-target_link_libraries(bitcoin_node
+target_link_libraries(tortoisecoin_node
   PRIVATE
     core_interface
-    bitcoin_common
-    bitcoin_util
-    $<TARGET_NAME_IF_EXISTS:bitcoin_zmq>
+    tortoisecoin_common
+    tortoisecoin_util
+    $<TARGET_NAME_IF_EXISTS:tortoisecoin_zmq>
     leveldb
     minisketch
     univalue
@@ -332,19 +332,19 @@ target_link_libraries(bitcoin_node
 )
 
 
-# Tortoisecoin Core bitcoind.
+# Tortoisecoin Core tortoisecoind.
 if(BUILD_DAEMON)
-  add_executable(bitcoind
+  add_executable(tortoisecoind
     tortoisecoind.cpp
     init/tortoisecoind.cpp
   )
-  add_windows_resources(bitcoind bitcoind-res.rc)
-  target_link_libraries(bitcoind
+  add_windows_resources(tortoisecoind tortoisecoind-res.rc)
+  target_link_libraries(tortoisecoind
     core_interface
-    bitcoin_node
-    $<TARGET_NAME_IF_EXISTS:bitcoin_wallet>
+    tortoisecoin_node
+    $<TARGET_NAME_IF_EXISTS:tortoisecoin_wallet>
   )
-  install_binary_component(bitcoind HAS_MANPAGE)
+  install_binary_component(tortoisecoind HAS_MANPAGE)
 endif()
 if(ENABLE_IPC AND BUILD_DAEMON)
   add_executable(tortoisecoin-node
@@ -353,35 +353,35 @@ if(ENABLE_IPC AND BUILD_DAEMON)
   )
   target_link_libraries(tortoisecoin-node
     core_interface
-    bitcoin_node
-    bitcoin_ipc
-    $<TARGET_NAME_IF_EXISTS:bitcoin_wallet>
+    tortoisecoin_node
+    tortoisecoin_ipc
+    $<TARGET_NAME_IF_EXISTS:tortoisecoin_wallet>
   )
   install_binary_component(tortoisecoin-node)
 endif()
 
 if(ENABLE_IPC AND BUILD_TESTS)
-    # bitcoin_ipc_test library target is defined here in src/CMakeLists.txt
+    # tortoisecoin_ipc_test library target is defined here in src/CMakeLists.txt
     # instead of src/test/CMakeLists.txt so capnp files in src/test/ are able to
     # reference capnp files in src/ipc/capnp/ by relative path. The Cap'n Proto
     # compiler only allows importing by relative path when the importing and
     # imported files are underneath the same compilation source prefix, so the
     # source prefix must be src/, not src/test/
-    add_library(bitcoin_ipc_test STATIC EXCLUDE_FROM_ALL
+    add_library(tortoisecoin_ipc_test STATIC EXCLUDE_FROM_ALL
       test/ipc_test.cpp
     )
-    target_capnp_sources(bitcoin_ipc_test ${PROJECT_SOURCE_DIR}
+    target_capnp_sources(tortoisecoin_ipc_test ${PROJECT_SOURCE_DIR}
       test/ipc_test.capnp
     )
-    add_dependencies(bitcoin_ipc_test bitcoin_ipc_headers)
+    add_dependencies(tortoisecoin_ipc_test tortoisecoin_ipc_headers)
 endif()
 
 
-add_library(bitcoin_cli STATIC EXCLUDE_FROM_ALL
+add_library(tortoisecoin_cli STATIC EXCLUDE_FROM_ALL
   compat/stdin.cpp
   rpc/client.cpp
 )
-target_link_libraries(bitcoin_cli
+target_link_libraries(tortoisecoin_cli
   PUBLIC
     core_interface
     univalue
@@ -394,9 +394,9 @@ if(BUILD_CLI)
   add_windows_resources(tortoisecoin-cli tortoisecoin-cli-res.rc)
   target_link_libraries(tortoisecoin-cli
     core_interface
-    bitcoin_cli
-    bitcoin_common
-    bitcoin_util
+    tortoisecoin_cli
+    tortoisecoin_common
+    tortoisecoin_util
     libevent::core
     libevent::extra
   )
@@ -409,8 +409,8 @@ if(BUILD_TX)
   add_windows_resources(tortoisecoin-tx tortoisecoin-tx-res.rc)
   target_link_libraries(tortoisecoin-tx
     core_interface
-    bitcoin_common
-    bitcoin_util
+    tortoisecoin_common
+    tortoisecoin_util
     univalue
   )
   install_binary_component(tortoisecoin-tx HAS_MANPAGE)
@@ -422,8 +422,8 @@ if(BUILD_UTIL)
   add_windows_resources(tortoisecoin-util tortoisecoin-util-res.rc)
   target_link_libraries(tortoisecoin-util
     core_interface
-    bitcoin_common
-    bitcoin_util
+    tortoisecoin_common
+    tortoisecoin_util
   )
   install_binary_component(tortoisecoin-util HAS_MANPAGE)
 endif()
@@ -454,7 +454,7 @@ if(BUILD_UTIL_CHAINSTATE)
   target_link_libraries(tortoisecoin-chainstate
     PRIVATE
       core_interface
-      bitcoinkernel
+      tortoisecoinkernel
   )
 endif()
 

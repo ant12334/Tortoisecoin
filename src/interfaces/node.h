@@ -66,7 +66,7 @@ public:
     virtual std::string getName() = 0;
 };
 
-//! Top-level interface for a tortoisecoin node (bitcoind process).
+//! Top-level interface for a tortoisecoin node (tortoisecoind process).
 class Node
 {
 public:

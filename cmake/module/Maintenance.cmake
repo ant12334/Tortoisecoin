@@ -23,7 +23,7 @@ function(add_maintenance_targets)
     return()
   endif()
 
-  foreach(target IN ITEMS bitcoind tortoisecoin-qt tortoisecoin-cli tortoisecoin-tx tortoisecoin-util tortoisecoin-wallet test_bitcoin bench_bitcoin)
+  foreach(target IN ITEMS tortoisecoind tortoisecoin-qt tortoisecoin-cli tortoisecoin-tx tortoisecoin-util tortoisecoin-wallet test_tortoisecoin bench_tortoisecoin)
     if(TARGET ${target})
       list(APPEND executables $<TARGET_FILE:${target}>)
     endif()
@@ -43,7 +43,7 @@ function(add_maintenance_targets)
 endfunction()
 
 function(add_windows_deploy_target)
-  if(MINGW AND TARGET tortoisecoin-qt AND TARGET bitcoind AND TARGET tortoisecoin-cli AND TARGET tortoisecoin-tx AND TARGET tortoisecoin-wallet AND TARGET tortoisecoin-util AND TARGET test_bitcoin)
+  if(MINGW AND TARGET tortoisecoin-qt AND TARGET tortoisecoind AND TARGET tortoisecoin-cli AND TARGET tortoisecoin-tx AND TARGET tortoisecoin-wallet AND TARGET tortoisecoin-util AND TARGET test_tortoisecoin)
     find_program(MAKENSIS_EXECUTABLE makensis)
     if(NOT MAKENSIS_EXECUTABLE)
       add_custom_target(deploy
@@ -60,12 +60,12 @@ function(add_windows_deploy_target)
       OUTPUT ${PROJECT_BINARY_DIR}/tortoisecoin-win64-setup.exe
       COMMAND ${CMAKE_COMMAND} -E make_directory ${PROJECT_BINARY_DIR}/release
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:tortoisecoin-qt> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:tortoisecoin-qt>
-      COMMAND ${CMAKE_STRIP} $<TARGET_FILE:bitcoind> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:bitcoind>
+      COMMAND ${CMAKE_STRIP} $<TARGET_FILE:tortoisecoind> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:tortoisecoind>
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:tortoisecoin-cli> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:tortoisecoin-cli>
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:tortoisecoin-tx> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:tortoisecoin-tx>
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:tortoisecoin-wallet> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:tortoisecoin-wallet>
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:tortoisecoin-util> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:tortoisecoin-util>
-      COMMAND ${CMAKE_STRIP} $<TARGET_FILE:test_bitcoin> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:test_bitcoin>
+      COMMAND ${CMAKE_STRIP} $<TARGET_FILE:test_tortoisecoin> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:test_tortoisecoin>
       COMMAND ${MAKENSIS_EXECUTABLE} -V2 ${PROJECT_BINARY_DIR}/tortoisecoin-win64-setup.nsi
       VERBATIM
     )

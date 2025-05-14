@@ -4,9 +4,9 @@
 
 #include <tortoisecoin-build-config.h> // IWYU pragma: keep
 
-#include <qt/bitcoingui.h>
+#include <qt/tortoisecoingui.h>
 
-#include <qt/bitcoinunits.h>
+#include <qt/tortoisecoinunits.h>
 #include <qt/clientmodel.h>
 #include <qt/createwalletdialog.h>
 #include <qt/guiconstants.h>

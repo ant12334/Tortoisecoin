@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.bitcoinfoundation.Tortoisecoin-Qt";
+        return @"org.tortoisecoinfoundation.Tortoisecoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

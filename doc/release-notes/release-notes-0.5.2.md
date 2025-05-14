@@ -7,7 +7,7 @@ Please report bugs using the issue tracker at github:
 https://github.com/tortoisecoin/tortoisecoin/issues
 
 Stable source code is hosted at Gitorious:
-http://gitorious.org/tortoisecoin/bitcoind-stable/archive-tarball/v0.5.2#.tar.gz
+http://gitorious.org/tortoisecoin/tortoisecoind-stable/archive-tarball/v0.5.2#.tar.gz
 
 BUG FIXES
 

@@ -1,6 +1,6 @@
 Tortoisecoin Core version 28.0 is now available from:
 
-  <https://bitcoincore.org/bin/tortoisecoin-core-28.0/>
+  <https://tortoisecoincore.org/bin/tortoisecoin-core-28.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
@@ -11,7 +11,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://tortoisecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -19,7 +19,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
 installer (on Windows) or just copy over `/Applications/Tortoisecoin-Qt` (on macOS)
-or `bitcoind`/`tortoisecoin-qt` (on Linux).
+or `tortoisecoind`/`tortoisecoin-qt` (on Linux).
 
 Upgrading directly from a version of Tortoisecoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
@@ -28,8 +28,8 @@ wallet versions of Tortoisecoin Core are generally supported.
 Running Tortoisecoin Core binaries on macOS requires self signing.
 ```
 cd /path/to/tortoisecoin-28.0/bin
-xattr -d com.apple.quarantine tortoisecoin-cli tortoisecoin-qt tortoisecoin-tx tortoisecoin-util tortoisecoin-wallet bitcoind test_bitcoin
-codesign -s - tortoisecoin-cli tortoisecoin-qt tortoisecoin-tx tortoisecoin-util tortoisecoin-wallet bitcoind test_bitcoin
+xattr -d com.apple.quarantine tortoisecoin-cli tortoisecoin-qt tortoisecoin-tx tortoisecoin-util tortoisecoin-wallet tortoisecoind test_tortoisecoin
+codesign -s - tortoisecoin-cli tortoisecoin-qt tortoisecoin-tx tortoisecoin-util tortoisecoin-wallet tortoisecoind test_tortoisecoin
 ```
 
 Compatibility
@@ -73,10 +73,10 @@ See [JSON-RPC-interface.md](https://github.com/tortoisecoin/tortoisecoin/blob/ma
 JSON-RPC clients may need to be updated to be compatible with the JSON-RPC server.
 Please open an issue on GitHub if any compatibility issues are found.
 
-libbitcoinconsensus Removal
+libtortoisecoinconsensus Removal
 ---------------------------
 
-The libbitcoin-consensus library was deprecated in 27.0 and is now completely removed. (#29648)
+The libtortoisecoin-consensus library was deprecated in 27.0 and is now completely removed. (#29648)
 
 P2P and Network Changes
 -----------------------
@@ -260,7 +260,7 @@ Tests
 
 - The BIP94 timewarp attack mitigation is now active on the `regtest` network. (#30681)
 
-- A new `-testdatadir` option has been added to `test_bitcoin` to allow specifying the
+- A new `-testdatadir` option has been added to `test_tortoisecoin` to allow specifying the
   location of unit test data directories. (#26564)
 
 Blockstorage

@@ -1,6 +1,6 @@
 Tortoisecoin Core version 27.0 is now available from:
 
-  <https://bitcoincore.org/bin/tortoisecoin-core-27.0/>
+  <https://tortoisecoincore.org/bin/tortoisecoin-core-27.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
@@ -11,7 +11,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://tortoisecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -19,7 +19,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
 installer (on Windows) or just copy over `/Applications/Tortoisecoin-Qt` (on macOS)
-or `bitcoind`/`tortoisecoin-qt` (on Linux).
+or `tortoisecoind`/`tortoisecoin-qt` (on Linux).
 
 Upgrading directly from a version of Tortoisecoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
@@ -37,10 +37,10 @@ unsupported systems.
 Notable changes
 ===============
 
-libbitcoinconsensus
+libtortoisecoinconsensus
 -------------------
 
-- libbitcoinconsensus is deprecated and will be removed for v28. This library has
+- libtortoisecoinconsensus is deprecated and will be removed for v28. This library has
   existed for nearly 10 years with very little known uptake or impact. It has
   become a maintenance burden.
 
@@ -48,7 +48,7 @@ libbitcoinconsensus
   the library can continue to use the final release indefinitely, with the
   understanding that Taproot is its final consensus update.
 
-  In the future, libbitcoinkernel will provide a much more useful API that is
+  In the future, libtortoisecoinkernel will provide a much more useful API that is
   aware of the UTXO set, and therefore be able to fully validate transactions and
   blocks. (#29189)
 

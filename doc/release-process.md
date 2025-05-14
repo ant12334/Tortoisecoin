@@ -57,11 +57,11 @@ Release Process
 - Clear the release notes and move them to the wiki (see "Write the release notes" below).
 - Translations on Transifex:
     - Pull translations from Transifex into the master branch.
-    - Create [a new resource](https://www.transifex.com/tortoisecoin/tortoisecoin/content/) named after the major version with the slug `qt-translation-<RRR>x`, where `RRR` is the major branch number padded with zeros. Use `src/qt/locale/bitcoin_en.xlf` to create it.
+    - Create [a new resource](https://www.transifex.com/tortoisecoin/tortoisecoin/content/) named after the major version with the slug `qt-translation-<RRR>x`, where `RRR` is the major branch number padded with zeros. Use `src/qt/locale/tortoisecoin_en.xlf` to create it.
     - In the project workflow settings, ensure that [Translation Memory Fill-up](https://help.transifex.com/en/articles/6224817-setting-up-translation-memory-fill-up) is enabled and that [Translation Memory Context Matching](https://help.transifex.com/en/articles/6224753-translation-memory-with-context) is disabled.
     - Update the Transifex slug in [`.tx/config`](/.tx/config) to the slug of the resource created in the first step. This identifies which resource the translations will be synchronized from.
     - Make an announcement that translators can start translating for the new version. You can use one of the [previous announcements](https://www.transifex.com/tortoisecoin/communication/) as a template.
-    - Change the auto-update URL for the resource to `master`, e.g. `https://raw.githubusercontent.com/tortoisecoin/tortoisecoin/master/src/qt/locale/bitcoin_en.xlf`. (Do this only after the previous steps, to prevent an auto-update from interfering.)
+    - Change the auto-update URL for the resource to `master`, e.g. `https://raw.githubusercontent.com/tortoisecoin/tortoisecoin/master/src/qt/locale/tortoisecoin_en.xlf`. (Do this only after the previous steps, to prevent an auto-update from interfering.)
 
 #### After branch-off (on the major release branch)
 
@@ -70,7 +70,7 @@ Release Process
 - Clear the release notes: `cp doc/release-notes-empty-template.md doc/release-notes.md`
 - Create a pinned meta-issue for testing the release candidate (see [this issue](https://github.com/tortoisecoin/tortoisecoin/issues/27621) for an example) and provide a link to it in the release announcements where useful.
 - Translations on Transifex
-    - Change the auto-update URL for the new major version's resource away from `master` and to the branch, e.g. `https://raw.githubusercontent.com/tortoisecoin/tortoisecoin/<branch>/src/qt/locale/bitcoin_en.xlf`. Do not forget this or it will keep tracking the translations on master instead, drifting away from the specific major release.
+    - Change the auto-update URL for the new major version's resource away from `master` and to the branch, e.g. `https://raw.githubusercontent.com/tortoisecoin/tortoisecoin/<branch>/src/qt/locale/tortoisecoin_en.xlf`. Do not forget this or it will keep tracking the translations on master instead, drifting away from the specific major release.
 - Prune inputs from the qa-assets repo (See [pruning
   inputs](https://github.com/tortoisecoin-core/qa-assets#pruning-inputs)).
 
@@ -236,7 +236,7 @@ cat "$VERSION"/*/all.SHA256SUMS.asc > SHA256SUMS.asc
 ```
 
 
-- Upload to the bitcoincore.org server:
+- Upload to the tortoisecoincore.org server:
     1. The contents of each `./tortoisecoin/guix-build-${VERSION}/output/${HOST}/` directory.
 
        Guix will output all of the results into host subdirectories, but the SHA256SUMS
@@ -263,22 +263,22 @@ cat "$VERSION"/*/all.SHA256SUMS.asc > SHA256SUMS.asc
   ```
 
   Insert the magnet URI into the announcement sent to mailing lists. This permits
-  people without access to `bitcoincore.org` to download the binary distribution.
+  people without access to `tortoisecoincore.org` to download the binary distribution.
   Also put it into the `optional_magnetlink:` slot in the YAML file for
-  bitcoincore.org.
+  tortoisecoincore.org.
 
 - Archive the release notes for the new version to `doc/release-notes/release-notes-${VERSION}.md`
   (branch `master` and branch of the release).
 
-- Update the bitcoincore.org website
+- Update the tortoisecoincore.org website
 
   - blog post
 
-  - maintained versions [table](https://github.com/tortoisecoin-core/bitcoincore.org/commits/master/_includes/posts/maintenance-table.md)
+  - maintained versions [table](https://github.com/tortoisecoin-core/tortoisecoincore.org/commits/master/_includes/posts/maintenance-table.md)
 
   - RPC documentation update
 
-      - See https://github.com/tortoisecoin-core/bitcoincore.org/blob/master/contrib/doc-gen/
+      - See https://github.com/tortoisecoin-core/tortoisecoincore.org/blob/master/contrib/doc-gen/
 
 
 - Update repositories
@@ -289,7 +289,7 @@ cat "$VERSION"/*/all.SHA256SUMS.asc > SHA256SUMS.asc
 
   - Update packaging repo
 
-      - Push the flatpak to flathub, e.g. https://github.com/flathub/org.bitcoincore.tortoisecoin-qt/pull/2
+      - Push the flatpak to flathub, e.g. https://github.com/flathub/org.tortoisecoincore.tortoisecoin-qt/pull/2
 
       - Push the snap, see https://github.com/tortoisecoin-core/packaging/blob/main/snap/local/build.md
 
@@ -299,9 +299,9 @@ cat "$VERSION"/*/all.SHA256SUMS.asc > SHA256SUMS.asc
 
   - tortoisecoin-dev and tortoisecoin-core-dev mailing list
 
-  - Tortoisecoin Core announcements list https://bitcoincore.org/en/list/announcements/join/
+  - Tortoisecoin Core announcements list https://tortoisecoincore.org/en/list/announcements/join/
 
-  - Tortoisecoin Core Twitter https://twitter.com/bitcoincoreorg
+  - Tortoisecoin Core Twitter https://twitter.com/tortoisecoincoreorg
 
   - Celebrate
 
