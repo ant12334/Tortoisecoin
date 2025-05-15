@@ -454,10 +454,10 @@ public:
         nDefaultPort = 38333;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1598918400, 52613770, 0x1e0377ae, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1747334022, 1564585, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256{"00000008819873e925422c1ff0f99f7cc9bbb232af63a077a480a3633bee1ef6"});
-        assert(genesis.hashMerkleRoot == uint256{"4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"});
+        assert(consensus.hashGenesisBlock == uint256{"00000e9e9e8e8ae8853ecee196366ff10d78f28f730d3f65b9f0f87574ef9184"});
+        assert(genesis.hashMerkleRoot == uint256{"1fdc03d05abb22096af59b86d794875270fa60a5c523565ed3d18876f50dd88f"});
 
         m_assumeutxo_data = {
             {
