@@ -61,7 +61,7 @@ To run:
 
 * UI elements like BitcoinAmountField, which inherit from QWidget.
 * `tortoisecoinstrings.cpp`: automatically generated
-* `tortoisecoinunits.(h/cpp)`: BTC / mBTC / etc. handling
+* `tortoisecoinunits.(h/cpp)`: TTC / mTTC / etc. handling
 * `callback.h`
 * `guiconstants.h`: UI colors, app name, etc.
 * `guiutil.h`: several helper functions
