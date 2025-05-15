@@ -120,7 +120,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].period = 2016;
 
         consensus.nMinimumChainWork = uint256{"0000000000000000000000000000000000000000b1f3b93b65b16d035a82be84"};
-        consensus.defaultAssumeValid = uint256{"00000000000000000001b658dd1120e82e66d2790811f89ede9742ada3ed6d77"}; // 886157
+        consensus.defaultAssumeValid = uint256{}; // 886157
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
