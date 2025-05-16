@@ -38,7 +38,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         }
         return pindexLast->nBits;
     }
-if (pindex->nHeight == 0) // If genesis block, return PoW limit
+if (pindexLast->nHeight == 0) // If genesis block, return PoW limit
 {
     return nProofOfWorkLimit;
 }
