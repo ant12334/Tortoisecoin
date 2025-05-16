@@ -38,14 +38,6 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         }
         return pindexLast->nBits;
     }
-if (pindexLast->nHeight == 0) // If genesis block, return PoW limit
-{
-    return nProofOfWorkLimit;
-}
-else
-{
-    return pindex->nBits;
-}
     // Go back by what we want to be 14 days worth of blocks
     int nHeightFirst = pindexLast->nHeight - (params.DifficultyAdjustmentInterval()-1);
     assert(nHeightFirst >= 0);
