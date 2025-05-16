@@ -109,7 +109,7 @@ def download_binary(tag, args) -> int:
         platform = "osx64"
     tarball = 'tortoisecoin-{tag}-{platform}.tar.gz'.format(
         tag=tag[1:], platform=platform)
-    tarballUrl = 'https://tortoisecoincore.org/{bin_path}/{tarball}'.format(
+    tarballUrl = 'https://bitcoin.org/{bin_path}/{tarball}'.format(
         bin_path=bin_path, tarball=tarball)
 
     print('Fetching: {tarballUrl}'.format(tarballUrl=tarballUrl))

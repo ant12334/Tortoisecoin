@@ -53,7 +53,7 @@ set(CMAKE_TRY_COMPILE_PLATFORM_VARIABLES
 project(BitcoinCore
   VERSION ${CLIENT_VERSION_MAJOR}.${CLIENT_VERSION_MINOR}.${CLIENT_VERSION_BUILD}
   DESCRIPTION "Tortoisecoin client software"
-  HOMEPAGE_URL "https://tortoisecoincore.org/"
+  HOMEPAGE_URL "https://bitcoin.org/"
   LANGUAGES NONE
 )
 

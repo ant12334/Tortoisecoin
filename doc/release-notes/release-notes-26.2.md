@@ -3,7 +3,7 @@
 
 Tortoisecoin Core version 26.2 is now available from:
 
-  <https://tortoisecoincore.org/bin/tortoisecoin-core-26.2/>
+  <https://bitcoin.org/bin/tortoisecoin-core-26.2/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
@@ -14,7 +14,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://tortoisecoincore.org/en/list/announcements/join/>
+  <https://bitcoin.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
