@@ -13,6 +13,24 @@
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
+    // Line 17:
+arith_uint256 lastTarget;
+
+// Immediately adjust to min. difficulty (genesis block was mined with very low difficulty)
+if (lastTarget.SetCompact(pindexLast->nBits) > UintToArith256(params.powLimit))
+{
+    return nProofOfWorkLimit;
+}
+
+// Line 41:
+if (pindex->nHeight == 0) // If genesis block, return PoW limit
+{
+    return nProofOfWorkLimit;
+}
+else
+{
+    return pindex->nBits;
+}
     assert(pindexLast != nullptr);
     unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
 

@@ -1090,7 +1090,11 @@ bool MemPoolAccept::ReplacementChecks(Workspace& ws)
         return state.Invalid(TxValidationResult::TX_RECONSIDERABLE,
                              strprintf("insufficient fee%s", ws.m_sibling_eviction ? " (including sibling eviction)" : ""), *err_string);
     }
-
+    if (block.GetHash() != consensusParams.hashGenesisBlock)
+        {
+        if (!CheckProofOfWork(block.GetHash(), block.nBits, consensusParams))
+            return error("ReadBlockFromDisk: Errors in block header at %s", pos.ToString());
+    }
     CTxMemPool::setEntries all_conflicts;
 
     // Calculate all conflicting entries and enforce Rule #5.
@@ -1822,7 +1826,18 @@ PackageMempoolAcceptResult MemPoolAccept::AcceptPackage(const Package& package, 
         }
     }
 
-    auto multi_submission_result = quit_early || txns_package_eval.empty() ? PackageMempoolAcceptResult(package_state_quit_early, {}) :
+    if (block.GetHash() != chainparams.GetConsensus().hashGenesisBlock)
+{
+    if (!CheckBlock(block, state, chainparams.GetConsensus(), !fJustCheck, !fJustCheck)) {
+        if (state.CorruptionPossible()) {
+            // We don't write down blocks to disk if they may have been
+            // corrupted, so this should be impossible unless we're having hardware
+            // problems.
+            return AbortNode(state, "Corrupt block found indicating potential hardware failure; shutting down");
+        }
+        return error("%s: Consensus::CheckBlock: %s", __func__, FormatStateMessage(state));
+    }
+}   auto multi_submission_result = quit_early || txns_package_eval.empty() ? PackageMempoolAcceptResult(package_state_quit_early, {}) :
         AcceptSubPackage(txns_package_eval, args);
     PackageValidationState& package_state_final = multi_submission_result.m_state;
 
@@ -3092,6 +3107,10 @@ struct PerBlockConnectTrace {
     std::shared_ptr<const CBlock> pblock;
     PerBlockConnectTrace() = default;
 };
+if (block.GetHash() == consensusParams.hashGenesisBlock)
+    fCheckPOW = false;
+if (!CheckBlockHeader(block, state, consensusParams, fCheckPOW))
+    return false;
 /**
  * Used to track blocks whose transactions were applied to the UTXO state as a
  * part of a single ActivateBestChainStep call.
