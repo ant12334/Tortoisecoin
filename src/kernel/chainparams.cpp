@@ -125,10 +125,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xf9;
-        pchMessageStart[1] = 0xbe;
-        pchMessageStart[2] = 0xb4;
-        pchMessageStart[3] = 0xd9;
+         pchMessageStart[0] = 0x7e;
+         pchMessageStart[1] = 0xbe;
+         pchMessageStart[2] = 0x3d;
+         pchMessageStart[3] = 0x1b;
         nDefaultPort = 8533;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 720;
@@ -481,10 +481,10 @@ public:
         nDefaultPort = 38333;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1598918400, 52613770, 0x1e0377ae, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1747427580, 2055956743, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256{"00000008819873e925422c1ff0f99f7cc9bbb232af63a077a480a3633bee1ef6"});
-        assert(genesis.hashMerkleRoot == uint256{"4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"});
+        assert(consensus.hashGenesisBlock == uint256{"000000006e00afcd00a29a5853034ba4d6a4424d7b02110f380c42d9bfce0b70"});
+        assert(genesis.hashMerkleRoot == uint256{"a45b7d5e889d9986936e9681a64cd2bd1628c2cc07baaed070ba08a6669e4f19"});
 
         m_assumeutxo_data = {
             {
@@ -585,10 +585,10 @@ public:
             consensus.vDeployments[deployment_pos].min_activation_height = version_bits_params.min_activation_height;
         }
 
-        genesis = CreateGenesisBlock(1296688602, 2, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1747427580, 2055956743, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256{"0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206"});
-        assert(genesis.hashMerkleRoot == uint256{"4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"});
+        assert(consensus.hashGenesisBlock == uint256{"000000006e00afcd00a29a5853034ba4d6a4424d7b02110f380c42d9bfce0b70"});
+        assert(genesis.hashMerkleRoot == uint256{"a45b7d5e889d9986936e9681a64cd2bd1628c2cc07baaed070ba08a6669e4f19"});
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();
