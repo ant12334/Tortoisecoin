@@ -5,13 +5,13 @@ set -Eeuo pipefail
 
 # Declare paths to libraries
 declare -A LIBS
-LIBS[cli]="libbitcoin_cli.a"
-LIBS[common]="libbitcoin_common.a"
-LIBS[consensus]="libbitcoin_consensus.a"
-LIBS[crypto]="libbitcoin_crypto.a"
-LIBS[node]="libbitcoin_node.a"
-LIBS[util]="libbitcoin_util.a"
-LIBS[wallet]="libbitcoin_wallet.a"
+LIBS[cli]="libtortoisecoin_cli.a"
+LIBS[common]="libtortoisecoin_common.a"
+LIBS[consensus]="libtortoisecoin_consensus.a"
+LIBS[crypto]="libtortoisecoin_crypto.a"
+LIBS[node]="libtortoisecoin_node.a"
+LIBS[util]="libtortoisecoin_util.a"
+LIBS[wallet]="libtortoisecoin_wallet.a"
 
 # Declare allowed dependencies "X Y" where X is allowed to depend on Y. This
 # list is taken from doc/design/libraries.md.
@@ -47,7 +47,7 @@ SUPPRESS["init.cpp.o bdb.cpp.o _ZN6wallet27BerkeleyDatabaseSanityCheckEv"]=1
 # init/common.cpp file calls InitError and InitWarning from interface_ui which
 # is currently part of the node library. interface_ui should just be part of the
 # common library instead, and is moved in
-# https://github.com/bitcoin/bitcoin/issues/10102
+# https://github.com/tortoisecoin/tortoisecoin/issues/10102
 SUPPRESS["common.cpp.o interface_ui.cpp.o _Z11InitWarningRK13bilingual_str"]=1
 SUPPRESS["common.cpp.o interface_ui.cpp.o _Z9InitErrorRK13bilingual_str"]=1
 
