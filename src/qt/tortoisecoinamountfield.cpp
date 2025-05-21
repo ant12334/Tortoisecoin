@@ -125,7 +125,7 @@ public:
 
             const QFontMetrics fm(fontMetrics());
             int h = lineEdit()->minimumSizeHint().height();
-            int w = GUIUtil::TextWidth(fm, TortoisecoinUnits::format(TortoisecoinUnit::BTC, TortoisecoinUnits::maxMoney(), false, TortoisecoinUnits::SeparatorStyle::ALWAYS));
+            int w = GUIUtil::TextWidth(fm, TortoisecoinUnits::format(TortoisecoinUnit::TTC, TortoisecoinUnits::maxMoney(), false, TortoisecoinUnits::SeparatorStyle::ALWAYS));
             w += 2; // cursor blinking space
 
             QStyleOptionSpinBox opt;
@@ -150,7 +150,7 @@ public:
     }
 
 private:
-    TortoisecoinUnit currentUnit{TortoisecoinUnit::BTC};
+    TortoisecoinUnit currentUnit{TortoisecoinUnit::TTC};
     CAmount singleStep{CAmount(100000)}; // satoshis
     mutable QSize cachedMinimumSizeHint;
     bool m_allow_empty{true};

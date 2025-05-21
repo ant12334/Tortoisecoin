@@ -1,6 +1,6 @@
 Tortoisecoin Core version 28.0 is now available from:
 
-  <https://tortoisecoincore.org/bin/tortoisecoin-core-28.0/>
+  <https://bitcoincore.org/bin/tortoisecoin-core-28.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
@@ -11,7 +11,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://tortoisecoincore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -344,7 +344,7 @@ Thanks to everyone who directly contributed to this release:
 - Michael Dietz
 - Murch
 - nanlour
-- pablomartin4btc
+- pablomartin4TTC
 - Peter Todd
 - Pieter Wuille
 - @RandyMcMillan

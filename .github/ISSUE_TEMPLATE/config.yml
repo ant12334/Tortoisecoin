@@ -4,5 +4,5 @@ contact_links:
     url: https://github.com/tortoisecoin/tortoisecoin/blob/master/SECURITY.md
     about: View security policy
   - name: Tortoisecoin Core Developers
-    url: https://tortoisecoincore.org
+    url: https://bitcoincore.org
     about: Tortoisecoin Core homepage

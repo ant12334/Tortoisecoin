@@ -40,9 +40,9 @@ public:
       @note Source: https://en.tortoisecoin.it/wiki/Units . Please add only sensible ones
      */
     enum class Unit {
-        BTC,
-        mBTC,
-        uBTC,
+        TTC,
+        mTTC,
+        uTTC,
         SAT
     };
     Q_ENUM(Unit)

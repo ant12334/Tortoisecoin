@@ -73,7 +73,7 @@ class SimulateTxTest(TortoisecoinTestFramework):
         tx1changepos = funding["changepos"]
         tortoisecoin_fee = Decimal(funding["fee"])
 
-        # w0 sees fee + 5 btc decrease, w2 sees + 5 btc
+        # w0 sees fee + 5 TTC decrease, w2 sees + 5 TTC
         assert_approx(w0.simulaterawtransaction([tx1])["balance_change"], -(Decimal("5") + tortoisecoin_fee))
         assert_approx(w2.simulaterawtransaction([tx1])["balance_change"], Decimal("5"))
 

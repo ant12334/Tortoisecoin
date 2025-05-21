@@ -189,13 +189,13 @@ bool OptionsModel::Init(bilingual_str& error)
 
     // Display
     if (!settings.contains("DisplayTortoisecoinUnit")) {
-        settings.setValue("DisplayTortoisecoinUnit", QVariant::fromValue(TortoisecoinUnit::BTC));
+        settings.setValue("DisplayTortoisecoinUnit", QVariant::fromValue(TortoisecoinUnit::TTC));
     }
     QVariant unit = settings.value("DisplayTortoisecoinUnit");
     if (unit.canConvert<TortoisecoinUnit>()) {
         m_display_tortoisecoin_unit = unit.value<TortoisecoinUnit>();
     } else {
-        m_display_tortoisecoin_unit = TortoisecoinUnit::BTC;
+        m_display_tortoisecoin_unit = TortoisecoinUnit::TTC;
         settings.setValue("DisplayTortoisecoinUnit", QVariant::fromValue(m_display_tortoisecoin_unit));
     }
 
@@ -461,7 +461,7 @@ QVariant OptionsModel::getOption(OptionID option, const std::string& suffix) con
         return QVariant::fromValue(m_font_money);
     case CoinControlFeatures:
         return fCoinControlFeatures;
-    case EnablePSBTControls:
+    case EnablePSTTControls:
         return settings.value("enable_psbt_controls");
     case Prune:
         return PruneEnabled(setting());
@@ -642,7 +642,7 @@ bool OptionsModel::setOption(OptionID option, const QVariant& value, const std::
         settings.setValue("fCoinControlFeatures", fCoinControlFeatures);
         Q_EMIT coinControlFeaturesChanged(fCoinControlFeatures);
         break;
-    case EnablePSBTControls:
+    case EnablePSTTControls:
         m_enable_psbt_controls = value.toBool();
         settings.setValue("enable_psbt_controls", m_enable_psbt_controls);
         break;

@@ -185,7 +185,7 @@ bool parseTortoisecoinURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if (!TortoisecoinUnits::parse(TortoisecoinUnit::BTC, i->second, &rv.amount)) {
+                if (!TortoisecoinUnits::parse(TortoisecoinUnit::TTC, i->second, &rv.amount)) {
                     return false;
                 }
             }
@@ -217,7 +217,7 @@ QString formatTortoisecoinURI(const SendCoinsRecipient &info)
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(TortoisecoinUnits::format(TortoisecoinUnit::BTC, info.amount, false, TortoisecoinUnits::SeparatorStyle::NEVER));
+        ret += QString("?amount=%1").arg(TortoisecoinUnits::format(TortoisecoinUnit::TTC, info.amount, false, TortoisecoinUnits::SeparatorStyle::NEVER));
         paramCount++;
     }
 

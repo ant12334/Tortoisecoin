@@ -3,7 +3,7 @@
 
 Tortoisecoin Core version 0.20.0 is now available from:
 
-  <https://tortoisecoincore.org/bin/tortoisecoin-core-0.20.0/>
+  <https://bitcoincore.org/bin/tortoisecoin-core-0.20.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
@@ -14,7 +14,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://tortoisecoincore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -206,7 +206,7 @@ GUI changes
   peer selection. See the `-asmap` configuration option in _New
   Settings_, above.  (#18402)
 
-- A "known bug" [announced](https://tortoisecoincore.org/en/releases/0.18.0/#wallet-gui)
+- A "known bug" [announced](https://bitcoincore.org/en/releases/0.18.0/#wallet-gui)
   in the release notes of version 0.18 has been fixed.  The issue
   affected anyone who simultaneously used multiple Tortoisecoin Core wallets
   and the GUI coin control feature. (#18894)
@@ -247,7 +247,7 @@ Documentation changes
 ---------------------
 
 - Tortoisecoin Core's automatically-generated source code documentation is
-  now available at https://doxygen.tortoisecoincore.org.  (#17596)
+  now available at https://doxygen.bitcoincore.org.  (#17596)
 
 Low-level changes
 =================
@@ -775,7 +775,7 @@ Build system
 - #17503 Remove bitness from tortoisecoin-qt help message and manpage (laanwj)
 - #17539 Update and improve Developer Notes (hebasto)
 - #17561 Changed MiniUPnPc link to https in dependencies.md (sandakersmann)
-- #17596 Change doxygen URL to doxygen.tortoisecoincore.org (laanwj)
+- #17596 Change doxygen URL to doxygen.bitcoincore.org (laanwj)
 - #17598 Update release process with latest changes (MarcoFalke)
 - #17617 Unify unix epoch time descriptions (jonatack)
 - #17637 script: Add keyserver to verify-commits readme (emilengler)
@@ -801,7 +801,7 @@ Build system
 - #18278 interfaces: Describe and follow some code conventions (ryanofsky)
 - #18283 Explain rebase policy in CONTRIBUTING.md (MarcoFalke)
 - #18340 Mention MAKE=gmake workaround when building on a BSD (fanquake)
-- #18341 Replace remaining literal BTC with `CURRENCY_UNIT` (domob1812)
+- #18341 Replace remaining literal TTC with `CURRENCY_UNIT` (domob1812)
 - #18342 Add fuzzing quickstart guides for libFuzzer and afl-fuzz (practicalswift)
 - #18344 Fix nit in getblockchaininfo (stevenroose)
 - #18379 Comment fix merkle.cpp (4d55397500)

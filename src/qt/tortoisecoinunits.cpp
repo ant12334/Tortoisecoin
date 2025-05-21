@@ -10,7 +10,7 @@
 
 #include <cassert>
 
-static constexpr auto MAX_DIGITS_BTC = 16;
+static constexpr auto MAX_DIGITS_TTC = 16;
 
 TortoisecoinUnits::TortoisecoinUnits(QObject *parent):
         QAbstractListModel(parent),
@@ -21,9 +21,9 @@ TortoisecoinUnits::TortoisecoinUnits(QObject *parent):
 QList<TortoisecoinUnit> TortoisecoinUnits::availableUnits()
 {
     QList<TortoisecoinUnit> unitlist;
-    unitlist.append(Unit::BTC);
-    unitlist.append(Unit::mBTC);
-    unitlist.append(Unit::uBTC);
+    unitlist.append(Unit::TTC);
+    unitlist.append(Unit::mTTC);
+    unitlist.append(Unit::uTTC);
     unitlist.append(Unit::SAT);
     return unitlist;
 }
@@ -31,9 +31,9 @@ QList<TortoisecoinUnit> TortoisecoinUnits::availableUnits()
 QString TortoisecoinUnits::longName(Unit unit)
 {
     switch (unit) {
-    case Unit::BTC: return QString("BTC");
-    case Unit::mBTC: return QString("mBTC");
-    case Unit::uBTC: return QString::fromUtf8("µBTC (bits)");
+    case Unit::TTC: return QString("TTC");
+    case Unit::mTTC: return QString("mTTC");
+    case Unit::uTTC: return QString::fromUtf8("µTTC (bits)");
     case Unit::SAT: return QString("Satoshi (sat)");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
@@ -42,9 +42,9 @@ QString TortoisecoinUnits::longName(Unit unit)
 QString TortoisecoinUnits::shortName(Unit unit)
 {
     switch (unit) {
-    case Unit::BTC: return longName(unit);
-    case Unit::mBTC: return longName(unit);
-    case Unit::uBTC: return QString("bits");
+    case Unit::TTC: return longName(unit);
+    case Unit::mTTC: return longName(unit);
+    case Unit::uTTC: return QString("bits");
     case Unit::SAT: return QString("sat");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
@@ -53,9 +53,9 @@ QString TortoisecoinUnits::shortName(Unit unit)
 QString TortoisecoinUnits::description(Unit unit)
 {
     switch (unit) {
-    case Unit::BTC: return QString("Tortoisecoins");
-    case Unit::mBTC: return QString("Milli-Tortoisecoins (1 / 1" THIN_SP_UTF8 "000)");
-    case Unit::uBTC: return QString("Micro-Tortoisecoins (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case Unit::TTC: return QString("Tortoisecoins");
+    case Unit::mTTC: return QString("Milli-Tortoisecoins (1 / 1" THIN_SP_UTF8 "000)");
+    case Unit::uTTC: return QString("Micro-Tortoisecoins (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     case Unit::SAT: return QString("Satoshi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
@@ -64,9 +64,9 @@ QString TortoisecoinUnits::description(Unit unit)
 qint64 TortoisecoinUnits::factor(Unit unit)
 {
     switch (unit) {
-    case Unit::BTC: return 100'000'000;
-    case Unit::mBTC: return 100'000;
-    case Unit::uBTC: return 100;
+    case Unit::TTC: return 100'000'000;
+    case Unit::mTTC: return 100'000;
+    case Unit::uTTC: return 100;
     case Unit::SAT: return 1;
     } // no default case, so the compiler can warn about missing cases
     assert(false);
@@ -75,9 +75,9 @@ qint64 TortoisecoinUnits::factor(Unit unit)
 int TortoisecoinUnits::decimals(Unit unit)
 {
     switch (unit) {
-    case Unit::BTC: return 8;
-    case Unit::mBTC: return 5;
-    case Unit::uBTC: return 2;
+    case Unit::TTC: return 8;
+    case Unit::mTTC: return 5;
+    case Unit::uTTC: return 2;
     case Unit::SAT: return 0;
     } // no default case, so the compiler can warn about missing cases
     assert(false);
@@ -94,7 +94,7 @@ QString TortoisecoinUnits::format(Unit unit, const CAmount& nIn, bool fPlus, Sep
     qint64 quotient = n_abs / coin;
     QString quotient_str = QString::number(quotient);
     if (justify) {
-        quotient_str = quotient_str.rightJustified(MAX_DIGITS_BTC - num_decimals, ' ');
+        quotient_str = quotient_str.rightJustified(MAX_DIGITS_TTC - num_decimals, ' ');
     }
 
     // Use SI-style thin space separators as these are locale independent and can't be
@@ -232,9 +232,9 @@ namespace {
 qint8 ToQint8(TortoisecoinUnit unit)
 {
     switch (unit) {
-    case TortoisecoinUnit::BTC: return 0;
-    case TortoisecoinUnit::mBTC: return 1;
-    case TortoisecoinUnit::uBTC: return 2;
+    case TortoisecoinUnit::TTC: return 0;
+    case TortoisecoinUnit::mTTC: return 1;
+    case TortoisecoinUnit::uTTC: return 2;
     case TortoisecoinUnit::SAT: return 3;
     } // no default case, so the compiler can warn about missing cases
     assert(false);
@@ -243,9 +243,9 @@ qint8 ToQint8(TortoisecoinUnit unit)
 TortoisecoinUnit FromQint8(qint8 num)
 {
     switch (num) {
-    case 0: return TortoisecoinUnit::BTC;
-    case 1: return TortoisecoinUnit::mBTC;
-    case 2: return TortoisecoinUnit::uBTC;
+    case 0: return TortoisecoinUnit::TTC;
+    case 1: return TortoisecoinUnit::mTTC;
+    case 2: return TortoisecoinUnit::uTTC;
     case 3: return TortoisecoinUnit::SAT;
     }
     assert(false);

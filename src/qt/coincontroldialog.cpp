@@ -492,7 +492,7 @@ void CoinControlDialog::updateLabels(CCoinControl& m_coin_control, WalletModel *
     }
 
     // actually update labels
-    TortoisecoinUnit nDisplayUnit = TortoisecoinUnit::BTC;
+    TortoisecoinUnit nDisplayUnit = TortoisecoinUnit::TTC;
     if (model && model->getOptionsModel())
         nDisplayUnit = model->getOptionsModel()->getDisplayUnit();
 

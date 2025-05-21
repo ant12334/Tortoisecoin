@@ -148,7 +148,7 @@ public:
         //vSeeds.emplace_back("dnsseed.bluematt.me."); // Matt Corallo, only supports x9
         //vSeeds.emplace_back("dnsseed.tortoisecoin.dashjr-list-of-p2p-nodes.us."); // Luke Dashjr
         //vSeeds.emplace_back("seed.tortoisecoin.jonasschnelli.ch."); // Jonas Schnelli, only supports x1, x5, x9, and xd
-        //vSeeds.emplace_back("seed.btc.petertodd.net."); // Peter Todd, only supports x1, x5, x9, and xd
+        //vSeeds.emplace_back("seed.TTC.petertodd.net."); // Peter Todd, only supports x1, x5, x9, and xd
         //vSeeds.emplace_back("seed.tortoisecoin.sprovoost.nl."); // Sjors Provoost
         //vSeeds.emplace_back("dnsseed.emzy.de."); // Stephan Oeste
         //vSeeds.emplace_back("seed.tortoisecoin.wiz.biz."); // Jason Maurice
@@ -256,7 +256,7 @@ public:
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
         //vSeeds.emplace_back("testnet-seed.tortoisecoin.jonasschnelli.ch.");
-        //vSeeds.emplace_back("seed.tbtc.petertodd.net.");
+        //vSeeds.emplace_back("seed.tTTC.petertodd.net.");
         //vSeeds.emplace_back("seed.testnet.tortoisecoin.sprovoost.nl.");
         //vSeeds.emplace_back("testnet-seed.bluematt.me."); // Just a static list of stable node(s), only supports x9
         //vSeeds.emplace_back("seed.testnet.achownodes.xyz."); // Ava Chow, only supports x1, x5, x9, x49, x809, x849, xd, x400, x404, x408, x448, xc08, xc48, x40c

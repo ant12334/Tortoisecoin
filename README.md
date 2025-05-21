@@ -1,10 +1,10 @@
 Tortoisecoin Core integration/staging tree
 =====================================
 
-https://tortoisecoincore.org
+https://bitcoincore.org
 
 For an immediately usable, binary version of the Tortoisecoin Core software, see
-https://tortoisecoincore.org/en/download/.
+https://bitcoincore.org/en/download/.
 
 What is Tortoisecoin Core?
 ---------------------

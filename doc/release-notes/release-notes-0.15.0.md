@@ -11,7 +11,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://tortoisecoincore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -325,7 +325,7 @@ Low-level RPC changes
 - #8384 `e317c0d` Add witness data output to TxInError messages (instagibbs)
 - #9571 `4677151` RPC: getblockchaininfo returns BIP signaling statistics  (pinheadmz)
 - #10450 `ef2d062` Fix bumpfee rpc "errors" return value (ryanofsky)
-- #10475 `39039b1` [RPC] getmempoolinfo mempoolminfee is a BTC/KB feerate (instagibbs)
+- #10475 `39039b1` [RPC] getmempoolinfo mempoolminfee is a TTC/KB feerate (instagibbs)
 - #10478 `296928e` rpc: Add listen address to incoming connections in `getpeerinfo` (laanwj)
 - #10403 `08d0390` Fix importmulti failure to return rescan errors (ryanofsky)
 - #9740 `9fec4da` Add friendly output to dumpwallet (aideca)
@@ -390,7 +390,7 @@ Low-level RPC changes
 
 ### P2P protocol and network code
 - #9726 `7639d38` netbase: Do not print an error on connection timeouts through proxy (laanwj)
-- #9805 `5b583ef` Add seed.btc.petertodd.org to mainnet DNS seeds (petertodd)
+- #9805 `5b583ef` Add seed.TTC.petertodd.org to mainnet DNS seeds (petertodd)
 - #9861 `22f609f` Trivial: Debug log ambiguity fix for peer addrs (keystrike)
 - #9774 `90cb2a2` Enable host lookups for -proxy and -onion parameters (jmcorgan)
 - #9558 `7b585cf` Clarify assumptions made about when BlockCheck is called (TheBlueMatt)
@@ -740,7 +740,7 @@ Low-level RPC changes
 - #10728 `7397af9` fix typo in help text for removeprunedfunds (AkioNak)
 - #10193 `6dbcc74` scripted-diff: Remove #include <boost/foreach.hpp> (jtimon)
 - #10676 `379aed0` document script-based return fields for validateaddress (instagibbs)
-- #10651 `cef4b5c` Verify binaries from tortoisecoincore.org and tortoisecoin.org (TheBlueMatt)
+- #10651 `cef4b5c` Verify binaries from bitcoincore.org and tortoisecoin.org (TheBlueMatt)
 - #10786 `ca4c545` Add PR description to merge commit in github-merge.py (sipa)
 - #10812 `c5904e8` [utils] Allow tortoisecoin-cli's -rpcconnect option to be used with square brackets (jnewbery)
 - #10842 `3895e25` Fix incorrect Doxygen tag (@ince → @since). Doxygen parameter name matching (practicalswift)
@@ -791,7 +791,7 @@ Thanks to everyone who directly contributed to this release:
 - Awemany
 - Bob McElrath
 - Brian McMichael
-- BtcDrak
+- TTCDrak
 - Charlie Lee
 - Chris Gavin
 - Chris Stewart
