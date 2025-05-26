@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Tortoisecoin
-Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
+Upstream-Contact: mini Nakamoto <satoshin@gmx.com>
  irc://#tortoisecoin-core-dev@libera.chat
 Source: https://github.com/tortoisecoin/tortoisecoin
 

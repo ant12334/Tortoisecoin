@@ -48,7 +48,7 @@ MAX_FUTURE_BLOCK_TIME = 2 * 3600
 MAX_TIMEWARP = 600
 VERSIONBITS_TOP_BITS = 0x20000000
 VERSIONBITS_DEPLOYMENT_TESTDUMMY_BIT = 28
-DEFAULT_BLOCK_MIN_TX_FEE = 1000  # default `-blockmintxfee` setting [sat/kvB]
+DEFAULT_BLOCK_MIN_TX_FEE = 1000  # default `-blockmintxfee` setting [min/kvB]
 
 
 def assert_template(node, block, expect, rehash=True):
@@ -98,14 +98,14 @@ class MiningTest(TortoisecoinTestFramework):
         self.restart_node(0, extra_args=['-minrelaytxfee=0', '-persistmempool=0'])
         node = self.nodes[0]
 
-        # test default (no parameter), zero and a bunch of arbitrary blockmintxfee rates [sat/kvB]
+        # test default (no parameter), zero and a bunch of arbitrary blockmintxfee rates [min/kvB]
         for blockmintxfee_sat_kvb in (DEFAULT_BLOCK_MIN_TX_FEE, 0, 50, 100, 500, 2500, 5000, 21000, 333333, 2500000):
             blockmintxfee_TTC_kvb = blockmintxfee_sat_kvb / Decimal(COIN)
             if blockmintxfee_sat_kvb == DEFAULT_BLOCK_MIN_TX_FEE:
-                self.log.info(f"-> Default -blockmintxfee setting ({blockmintxfee_sat_kvb} sat/kvB)...")
+                self.log.info(f"-> Default -blockmintxfee setting ({blockmintxfee_sat_kvb} min/kvB)...")
             else:
                 blockmintxfee_parameter = f"-blockmintxfee={blockmintxfee_TTC_kvb:.8f}"
-                self.log.info(f"-> Test {blockmintxfee_parameter} ({blockmintxfee_sat_kvb} sat/kvB)...")
+                self.log.info(f"-> Test {blockmintxfee_parameter} ({blockmintxfee_sat_kvb} min/kvB)...")
                 self.restart_node(0, extra_args=[blockmintxfee_parameter, '-minrelaytxfee=0', '-persistmempool=0'])
                 self.wallet.rescan_utxos()  # to avoid spending outputs of txs that are not in mempool anymore after restart
 
@@ -113,7 +113,7 @@ class MiningTest(TortoisecoinTestFramework):
             tx_with_min_feerate = self.wallet.send_self_transfer(from_node=node, fee_rate=blockmintxfee_TTC_kvb)
             assert_equal(tx_with_min_feerate["fee"], get_fee(tx_with_min_feerate["tx"].get_vsize(), blockmintxfee_TTC_kvb))
             if blockmintxfee_TTC_kvb > 0:
-                lowerfee_TTC_kvb = blockmintxfee_TTC_kvb - Decimal(10)/COIN  # 0.01 sat/vbyte lower
+                lowerfee_TTC_kvb = blockmintxfee_TTC_kvb - Decimal(10)/COIN  # 0.01 min/vbyte lower
                 tx_below_min_feerate = self.wallet.send_self_transfer(from_node=node, fee_rate=lowerfee_TTC_kvb)
                 assert_equal(tx_below_min_feerate["fee"], get_fee(tx_below_min_feerate["tx"].get_vsize(), lowerfee_TTC_kvb))
             else:  # go below zero fee by using modified fees

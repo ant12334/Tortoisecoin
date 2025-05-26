@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
+// Copyright (c) 2009-2010 mini Nakamoto
 // Copyright (c) 2009-2022 The Tortoisecoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -15,7 +15,7 @@
 #include <type_traits>
 
 const std::string CURRENCY_UNIT = "TTC"; // One formatted unit
-const std::string CURRENCY_ATOM = "sat"; // One indivisible minimum value unit
+const std::string CURRENCY_ATOM = "min"; // One indivisible minimum value unit
 
 /* Used to determine type of fee estimation requested */
 enum class FeeEstimateMode {
@@ -23,7 +23,7 @@ enum class FeeEstimateMode {
     ECONOMICAL,   //!< Force estimateSmartFee to use non-conservative estimates
     CONSERVATIVE, //!< Force estimateSmartFee to use conservative estimates
     TTC_KVB,      //!< Use TTC/kvB fee rate unit
-    SAT_VB,       //!< Use sat/vB fee rate unit
+    SAT_VB,       //!< Use min/vB fee rate unit
 };
 
 /**
@@ -32,7 +32,7 @@ enum class FeeEstimateMode {
 class CFeeRate
 {
 private:
-    /** Fee rate in sat/kvB (satoshis per 1000 virtualbytes) */
+    /** Fee rate in min/kvB (satoshis per 1000 virtualbytes) */
     CAmount nSatoshisPerK;
 
 public:

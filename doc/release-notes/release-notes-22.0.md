@@ -394,7 +394,7 @@ A detailed list of changes in this version follows. To keep the list to a manage
 - tortoisecoin/tortoisecoin#21574 Drop JSONRPCRequest constructors after #21366 (ryanofsky)
 - tortoisecoin/tortoisecoin#21666 Miscellaneous external signer changes (fanquake)
 - tortoisecoin/tortoisecoin#21759 Document coin selection code (glozow)
-- tortoisecoin/tortoisecoin#21786 Ensure sat/vB feerates are in range (mantissa of 3) (jonatack)
+- tortoisecoin/tortoisecoin#21786 Ensure min/vB feerates are in range (mantissa of 3) (jonatack)
 - tortoisecoin/tortoisecoin#21944 Fix issues when `walletdir` is root directory (prayank23)
 - tortoisecoin/tortoisecoin#22042 Replace size/weight estimate tuple with struct for named fields (instagibbs)
 - tortoisecoin/tortoisecoin#22051 Basic Taproot derivation support for descriptors (sipa)

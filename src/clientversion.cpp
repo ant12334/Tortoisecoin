@@ -20,7 +20,7 @@ using util::Join;
  * for both tortoisecoind and tortoisecoin-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string UA_NAME("Satoshi");
+const std::string UA_NAME("mini");
 
 
 #include <tortoisecoin-build-info.h>

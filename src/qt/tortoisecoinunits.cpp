@@ -34,7 +34,7 @@ QString TortoisecoinUnits::longName(Unit unit)
     case Unit::TTC: return QString("TTC");
     case Unit::mTTC: return QString("mTTC");
     case Unit::uTTC: return QString::fromUtf8("µTTC (bits)");
-    case Unit::SAT: return QString("Satoshi (sat)");
+    case Unit::SAT: return QString("mini (min)");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
@@ -45,7 +45,7 @@ QString TortoisecoinUnits::shortName(Unit unit)
     case Unit::TTC: return longName(unit);
     case Unit::mTTC: return longName(unit);
     case Unit::uTTC: return QString("bits");
-    case Unit::SAT: return QString("sat");
+    case Unit::SAT: return QString("min");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
@@ -56,7 +56,7 @@ QString TortoisecoinUnits::description(Unit unit)
     case Unit::TTC: return QString("Tortoisecoins");
     case Unit::mTTC: return QString("Milli-Tortoisecoins (1 / 1" THIN_SP_UTF8 "000)");
     case Unit::uTTC: return QString("Micro-Tortoisecoins (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-    case Unit::SAT: return QString("Satoshi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case Unit::SAT: return QString("mini (min) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }

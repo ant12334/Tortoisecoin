@@ -1361,7 +1361,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Progress increase per hour</source>
-        <translation type="unfinished">Postotak povećanja napretka na sat</translation>
+        <translation type="unfinished">Postotak povećanja napretka na min</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
@@ -2346,7 +2346,7 @@ Ako imate ovu grešku, od trgovca zatražite URI koji je kompatibilan sa BIP21.<
     </message>
     <message>
         <source>1 &amp;hour</source>
-        <translation type="unfinished">1 &amp;sat</translation>
+        <translation type="unfinished">1 &amp;min</translation>
     </message>
     <message>
         <source>1 d&amp;ay</source>
